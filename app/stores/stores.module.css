@@ -1,0 +1,51 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  .container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .storeInfo, 
+  .contactForm, 
+  .photoPlaceholder {
+    margin-bottom: 50px;
+  }
+  
+  .storeInfo h2,
+  .contactForm h2,
+  .photoPlaceholder h2 {
+    margin-bottom: 15px;
+  }
+  
+  .mapPlaceholder, .photoBlock {
+    background-color: #e2e8f0;
+    color: #475569;
+    text-align: center;
+    padding: 60px;
+    border-radius: 8px;
+    font-style: italic;
+  }
+  
+  .privacy {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+  }
+  
+  .privacy input[type="checkbox"] {
+    transform: scale(1.2);
+  }
+  
+  .privacy a {
+    color: #ae2e28;
+    text-decoration: underline;
+  }
+  

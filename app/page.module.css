@@ -167,3 +167,25 @@ a.secondary {
     filter: invert();
   }
 }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.8;
+  color: #ffffff;
+}
+
+.container .section {
+  margin-bottom: 40px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container h2 {
+  margin-bottom: 15px;
+}
+

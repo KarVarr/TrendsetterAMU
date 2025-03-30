@@ -3,6 +3,11 @@
   --font-russo-one: "Russo One", sans-serif;
 }
 
+html, body {
+  background-color: #192ed5;
+  color: white; /* Чтобы текст был читаемым */
+}
+
 body {
   font-family: var(--font-russo-one);
   margin: 0;
@@ -16,7 +21,6 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background: #333;
   color: white;
   padding: 15px;
   z-index: 1000;
@@ -31,7 +35,6 @@ main {
 }
 
 footer {
-  background: #222;
   color: white;
   text-align: center;
   padding: 10px;
