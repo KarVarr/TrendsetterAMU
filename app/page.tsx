@@ -1,3 +1,3 @@
 export default function EmptyPage() {
-  return <div>Empty Page</div>;
+  return <div>Home Page</div>;
 }

@@ -11,5 +11,5 @@
 //   );
 // }
 export default function EmptyPage() {
-  return <div>Home Page</div>;
+  return <div>Home 2 Page</div>;
 }

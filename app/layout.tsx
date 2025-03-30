@@ -1,16 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Russo_One } from "next/font/google";
 import "./globals.css";
 import { TheHeader } from "@/components/TheHeader";
 import { TheFooter } from "@/components/TheFooter";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const russoOne = Russo_One({
+  weight: "400",
+  variable: "--font-russo-one",
   subsets: ["latin"],
 });
 
@@ -26,10 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={russoOne.variable}>
         <TheHeader />
         <main className="container">{children}</main>
-        
         <TheFooter />
       </body>
     </html>
