@@ -63,7 +63,7 @@ export default function AboutPage() {
       </section>
 
       <section className={styles.contact}>
-        <h2>LET'S WORK Together</h2>
+        <h2>LETS WORK Together</h2>
         <p>Contact us to collaborate and grow together!</p>
       </section>
     </div>
