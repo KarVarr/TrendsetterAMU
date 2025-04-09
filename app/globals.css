@@ -1,11 +1,12 @@
 /* Подключаем шрифт */
 :root {
   --font-russo-one: "Russo One", sans-serif;
+  --font-hanken-grotesk: "Hanken Grotesk", sans-serif;
 }
 
 html, body {
-  background-color: #192ed5;
-  color: white; /* Чтобы текст был читаемым */
+  background-color: #ffffff;
+  color: rgb(255, 255, 255); /* Чтобы текст был читаемым */
 }
 
 body {
@@ -17,6 +18,8 @@ body {
 }
 
 header {
+  font-family: var(--font-hanken-grotesk);
+  text-transform: uppercase;
   position: fixed;
   top: 0;
   left: 0;

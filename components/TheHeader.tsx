@@ -6,14 +6,23 @@ export const TheHeader = () => {
     return (
         <header className={styles.header}>
             <div className={styles.logo}>
-                <Image src="/logo.png" alt="Logo" width={130} height={50}/>
+                <Image src="/logoRed.png" alt="Logo" width={130} height={50}/>
             </div>
-            <div className={styles.menu}>
-                <Link href="/">Home</Link>
-                <Link href="/about">About</Link>
-                <Link href="/contact">Contacts</Link>
-                <Link href="/stores">Stores</Link>
-                <Link href="/amu">AMU</Link>
+            <div className={styles.nav}>
+            
+                <div className={styles.menu}>
+                    <Link href="/">Home</Link>
+                    <Link href="/about">About</Link>
+                    <Link href="/contact">Contacts</Link>
+                    <Link href="/stores">Stores</Link>
+                    <Link href="/amu">AMU</Link>
+                </div>
+                <div className={styles.language}>
+                    <div>|</div>
+                    <div>🌐</div>
+                    <Link href="/">LET'S TALK</Link>
+                </div>
+                
             </div>
         </header>
     )

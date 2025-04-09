@@ -1,44 +1,39 @@
 import styles from './page.module.css';
+import Image from "next/image";
 
 export default function TheHome() {
   return (
-    <div className={styles.container}>
-      <h1>Trendsetter A multibrand</h1>
-      
-      <section className={styles.section}>
-        <h2>Наша история</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat orci eu sem feugiat, ut egestas orci sollicitudin. Duis condimentum purus nec tellus bibendum, vitae porta magna faucibus. Suspendisse potenti.
-        </p>
-      </section>
+    <section className={styles.hero}>
 
-      <section className={styles.section}>
-        <h2>Как все начиналось</h2>
-        <p>
-          Donec commodo, nunc sit amet fermentum bibendum, tortor augue vehicula arcu, vitae dictum nibh libero sed dolor. Sed sit amet sapien ut est vehicula tristique vitae quis arcu.
-        </p>
-      </section>
+      <div className={styles.container}>
 
-      <section className={styles.section}>
-        <h2>Наши достижения</h2>
-        <p>
-          Maecenas ultrices, sapien nec tincidunt placerat, ex dui facilisis elit, ac pretium justo urna id augue. Vivamus at neque arcu. Integer ut volutpat lacus, vel efficitur neque.
-        </p>
-      </section>
-      
-      <section className={styles.section}>
-        <h2>Наши ценности</h2>
-        <p>
-          Quisque consectetur ullamcorper suscipit. Phasellus at dui eget magna ullamcorper volutpat at id metus. Nullam aliquam lectus nec risus interdum, a vulputate magna vestibulum.
-        </p>
-      </section>
+        <div className={styles.titleBlock}>
 
-      <section className={styles.section}>
-        <h2>Планы на будущее</h2>
-        <p>
-          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut id libero sit amet risus tincidunt molestie. Sed vulputate vitae erat ac interdum.
+          <div className={styles.smileWrapper}>
+              <Image src="/smile.png" alt="Logo" width={100} height={100}></Image>
+            </div>
+
+          <h1 className={styles.title}>
+            <span>TRENDSETTER</span>
+            <span className={styles.amuLetters}>А́</span>
+            <div className={styles.miltibrand}>
+              <span className={styles.amuLetters}>MU</span>
+              <span>LTIBRAND</span>
+            </div>
+            
+          </h1>
+
+          <p className={styles.description}>
+                  WE ARE A FULL-SERVICE CREATIVE STUDIO CREATING BEAUTIFUL DIGITAL EXPERIENCES AND PRODUCTS. OUR MISSION IS TO MAKE WORK PROCESS MEANINGFUL.
+                </p>
+        </div>
+
+        <p className={styles.subtext}>
+            WE WON'T REST UNTIL WE DRESS EVERYONE
         </p>
-      </section>
-    </div>
+
+      </div>
+
+    </section>
   );
 }

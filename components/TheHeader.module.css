@@ -2,8 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%; /* Убедимся, что хедер не шире экрана */
-    margin: 0 auto; /* Центрируем */
+    width: 98%; /* Убедимся, что хедер не шире экрана */
+    margin: 0 30px; /* Центрируем */
     position: fixed;
     top: 0;
     left: 0;
@@ -16,19 +16,12 @@
     align-items: center;
 }
 
-.logo::before {
-    content: "";
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle at top left, rgba(185,141,119,255), rgba(213,82,170,255), rgba(139,61,196,255));
-    border-radius: 50%;
-    filter: blur(50px);
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.9;
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .menu {
@@ -38,7 +31,7 @@
 }
 
 .menu a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     white-space: nowrap; /* Запрещаем перенос слов */
     padding: 10px 15px; /* сразу устанавливаем padding */
@@ -47,6 +40,23 @@
     background-color: transparent;
 }
 
-.menu a:hover {
+.menu a:hover, .language a:hover {
     background-color: #ae2e28;
 }
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.language a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    white-space: nowrap; /* Запрещаем перенос слов */
+    padding: 10px 0px; /* сразу устанавливаем padding */
+    border-radius: 30px; /* для овальной формы (можешь подобрать свое значение) */
+    transition: background-color 0.3s ease; /* плавность перехода */
+    background-color: transparent;
+}
+

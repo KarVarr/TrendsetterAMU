@@ -173,7 +173,7 @@ a.secondary {
   margin: 0 auto;
   padding: 20px;
   line-height: 1.8;
-  color: #ffffff;
+  color: #000000;
 }
 
 .container .section {
@@ -187,5 +187,87 @@ a.secondary {
 
 .container h2 {
   margin-bottom: 15px;
+}
+
+
+.hero {
+  padding: 100px 20px;
+  position: relative;
+  background: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  
+}
+
+.titleBlock {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  line-height: 1.2;
+}
+
+
+.avatar {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.smileWrapper {
+  position: absolute;
+  top: 40px;
+  left: -120px; /* подгони вручную */
+}
+
+.title span {
+  display: block;
+  font-size: 130px;
+}
+
+.miltibrand {
+  display: flex;
+  flex-direction: row;
+}
+
+.amuLetters {
+  color: #192ed5;
+}
+
+.miltibrandLetters {
+  display: flex;
+}
+.slash {
+  position: absolute;
+  width: 20px;
+  height: 400px;
+  background: black;
+  transform: rotate(30deg);
+  top: -60px;
+  left: 220px;
+  z-index: -1;
+}
+
+
+.description {
+  position:absolute;
+  top: 170px;
+  right: -130px;
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  max-width: 400px;
+  margin: 30px auto 10px;
+  line-height: 1.5;
+}
+
+.subtext {
+  font-size: 16px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
