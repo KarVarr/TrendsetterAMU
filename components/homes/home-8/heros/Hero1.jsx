@@ -16,21 +16,22 @@ export default function Hero1() {
               height={208}
               alt="Image Description"
             />{" "}
-            Jane Garsia
+            Trendsetter
           </span>
           <span
             className="d-block wow fadeRotateIn"
             data-wow-delay="0.2s"
             data-wow-offset={0}
+            style={{ color: "blue" }}
           >
-            Creative
+            A 
           </span>
           <span
             className="d-block text-center wow fadeRotateIn"
             data-wow-delay="0.4s"
             data-wow-offset={0}
           >
-            Studio{" "}
+            multibrand{" "}
             <Image
               className="hs-image-3 wow fadeInLeft"
               data-wow-delay="0.8s"
