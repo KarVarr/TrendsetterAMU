@@ -1,7 +1,7 @@
 "use client";
 import AnimatedText from "@/components/common/AnimatedText";
 import ModalVideo from "@/components/common/ModalVideo";
-import { parallaxMouseMovement } from "@/utlis/parallax";
+import { parallaxMouseMovement } from "@/utils/parallax";
 import Image from "next/image";
 
 import { useEffect, useState } from "react";
