@@ -65,10 +65,10 @@ export default function ModernContactPage() {
                     <h1 className="hs-title-5 font-alt overflow-hidden mb-0">
                       <span className="d-block wow fadeRotateIn">
                         {" "}
-                        LET’S WORK{" "}
+                        LET’S{" "}
                       </span>
                       <span className="d-block text-end wow fadeRotateIn">
-                        TOGETHER
+                        TALK
                       </span>
                     </h1>
                   </div>

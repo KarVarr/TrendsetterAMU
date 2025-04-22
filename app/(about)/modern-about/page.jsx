@@ -65,7 +65,7 @@ export default function ModernAboutPage() {
                     <h1 className="hs-title-5 font-alt overflow-hidden mb-0">
                       <span className="d-block wow fadeRotateIn"> About </span>
                       <span className="d-block text-end wow fadeRotateIn">
-                        Studio
+                        Us
                       </span>
                     </h1>
                   </div>
@@ -115,10 +115,10 @@ export default function ModernAboutPage() {
                   >
                     <span className="btn-ellipse-inner">
                       <span className="btn-ellipse-unhovered">
-                        View services
+                        View store
                       </span>
                       <span className="btn-ellipse-hovered" aria-hidden="true">
-                        View services
+                        View store
                       </span>
                     </span>
                   </Link>
@@ -132,7 +132,7 @@ export default function ModernAboutPage() {
                           Established
                         </span>
                         <span className="d-inline-block wow fadeRotateIn">
-                          in 2019
+                          in 2023
                         </span>
                       </h2>
                       <div className="row">

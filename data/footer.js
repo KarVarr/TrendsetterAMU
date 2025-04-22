@@ -13,16 +13,12 @@ export const footerLinks2 = [
 
 export const socialLinks = [
   {
-    href: "#",
+    href: "https://instagram.com/trendsetter.a.multibrand/",
     text: "Instagram",
   },
   {
-    href: "#",
-    text: "Facebook",
-  },
-  {
-    href: "#",
-    text: "YouTube",
+    href: "https://t.me/trendsetteramultibrand",
+    text: "Telegram",
   },
   {
     href: "#",

@@ -7,15 +7,15 @@ export default function Marquee() {
       <div className="marquee marquee-style-3 mb-30 mb-md-0 z-index-1">
         <div className="marquee-track marquee-animation-1a">
           <div>Benefits</div>
-          <div aria-hidden="true">Benefits</div>
-          <div aria-hidden="true">Benefits</div>
-          <div aria-hidden="true">Benefits</div>
-          <div aria-hidden="true">Benefits</div>
-          <div aria-hidden="true">Benefits</div>
-          <div aria-hidden="true">Benefits</div>
-          <div aria-hidden="true">Benefits</div>
-          <div aria-hidden="true">Benefits</div>
-          <div aria-hidden="true">Benefits</div>
+          <div aria-hidden="true">H&M</div>
+          <div aria-hidden="true">M&S</div>
+          <div aria-hidden="true">SINSAY</div>
+          <div aria-hidden="true">RESERVED</div>
+          <div aria-hidden="true">H&M</div>
+          <div aria-hidden="true">M&S</div>
+          <div aria-hidden="true">SINSAY</div>
+          <div aria-hidden="true">RESERVED</div>
+          <div aria-hidden="true">H&M</div>
         </div>
       </div>
       {/* End Marquee Text Line */}

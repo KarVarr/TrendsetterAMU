@@ -64,9 +64,9 @@ export default function ModernServicesPage() {
                 <div className="row">
                   <div className="col-9 col-sm-8">
                     <h1 className="hs-title-5 font-alt overflow-hidden mb-0">
-                      <span className="d-block wow fadeRotateIn"> Modern </span>
+                      <span className="d-block wow fadeRotateIn"> Our </span>
                       <span className="d-block text-end wow fadeRotateIn">
-                        Services
+                        Shop
                       </span>
                     </h1>
                   </div>
@@ -100,6 +100,10 @@ export default function ModernServicesPage() {
                       data-splitting="lines"
                     >
                       <h2 className="section-title-inline-1">Our Values</h2>
+                      Скоро открытие нашего магазина 
+                      Приходите к нам
+                      г. Ереван, ТЦ Ташир стрит, Северный проспект 6/2.
+
                       As an award-winning group of passionate professionals, we
                       excel in the realms of branding, design, and engineering.
                       Our team is driven by a shared mission to make work
@@ -123,7 +127,7 @@ export default function ModernServicesPage() {
                     dark ? "white opacity-1" : "black"
                   }  mt-0 mb-80`}
                 />
-                <Service />
+                <Service /> {/* Вот тут надо карту добавить */}
                 <div className="row">
                   <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
                     <hr
@@ -135,8 +139,9 @@ export default function ModernServicesPage() {
                     <div className="row">
                       <div className="col-sm-6 col-md-7 text-center text-sm-start mb-xs-20">
                         <p className="section-descr mb-0 black">
+                          Напишите нам если у Вас остались вопросы!
                           We use the power of design to solve complex problems
-                          and cultivate business solutions.
+                          and cultivate business solutions. 
                         </p>
                       </div>
                       <div className="col-sm-6 col-md-5 text-center text-sm-end local-scroll">
