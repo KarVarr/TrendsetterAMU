@@ -8,6 +8,7 @@ import Testimonials from "./Testimonials";
 import Contact from "./Contact";
 import Link from "next/link";
 import Accordion from "./Accordion";
+import YandexMap from "@/components/maps/YandexMap";
 
 export default function Home8({
   onePage = false,
@@ -98,7 +99,7 @@ export default function Home8({
                         Established
                       </span>
                       <span className="d-inline-block wow fadeRotateIn">
-                        in 2019
+                        in 2023
                       </span>
                     </h2>
                     <div className="row">
@@ -111,7 +112,7 @@ export default function Home8({
                   </div>
                   <div className="section-image-behind">
                     <Image
-                      src="/assets/images/demo-modern/section-image-1.jpg"
+                      src="/assets/images/demo-modern/section-image-2.jpg"
                       loading="lazy"
                       width={820}
                       height={1270}
@@ -135,7 +136,7 @@ export default function Home8({
             <div className="row">
               <div className="col-sm-6">
                 <h2 className="section-caption mb-0 mb-xs-10 black">
-                  Services
+                  Shops (Services)
                 </h2>
               </div>
               <div className="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end">
@@ -198,8 +199,27 @@ export default function Home8({
               className={` ${dark ? "white opacity-1" : "black"}  mt-3 mb-0`}
             />
           </div>
-          {/* Services Grid */}
-          <Service />
+          {/* Services Grid ???????????????????????????????????????????????????? Shop now*/}
+          
+          <div
+              className="section-descr-extralarge wow linesAnimIn"
+              data-wow-offset="0"
+              data-splitting="lines"
+            >
+              <h2 className="section-title-inline-1">Our Values</h2>
+              Скоро открытие нашего магазина 
+              Приходите к нам
+              г. Ереван, ТЦ Ташир стрит, Северный проспект 6/2.
+
+              As an award-winning group of passionate professionals, we
+              excel in the realms of branding, design, and engineering.
+              Our team is driven by a shared mission to make work
+              meaningful, striving to infuse each project with purpose,
+              creativity, and innovation.
+            </div>
+            <div className="col-12">
+              <YandexMap />
+            </div>
           {/* End Services Grid */}
           <div className="row">
             <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
@@ -269,7 +289,7 @@ export default function Home8({
             <div className="row">
               <div className="col-sm-6">
                 <h2 className="section-caption mb-0 mb-xs-10 black">
-                  Portfolio
+                  AMU (Portfolio)
                 </h2>
               </div>
               <div className="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end">
@@ -335,15 +355,27 @@ export default function Home8({
           <div className="row">
             <div className="col-10 col-sm-9">
               <h3 className="hs-title-5 font-alt overflow-hidden mb-100 mb-md-40">
-                <span className="d-block wow fadeRotateIn"> Selected </span>
-                <span className="d-block text-end wow fadeRotateIn">
+                <span className="d-block wow fadeRotateIn"> AMU </span>
+                {/* <span className="d-block text-end wow fadeRotateIn">
                   {" "}
-                  Works{" "}
-                </span>
+                  Designe{" "}
+                </span> */}
               </h3>
             </div>
           </div>
-          <Portfolio />
+          {/* <Portfolio /> */}
+
+          <div
+              className="section-descr-extralarge wow linesAnimIn"
+              data-wow-offset="0"
+              data-splitting="lines"
+            >
+              <h2 className="section-title-inline-1">Про Amu</h2>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus sapiente perferendis explicabo saepe, ipsum cum. Praesentium iure quos nisi cum facilis? Iure ullam impedit porro exercitationem sit voluptate minus. In.
+            </div>
+
+            <Service />
+
           {/* End Portfolio Grid */}
         </div>
       </section>
@@ -485,9 +517,9 @@ export default function Home8({
           <div className="row">
             <div className="col-11 col-sm-10">
               <h3 className="hs-title-5 font-alt overflow-hidden mb-100 mb-md-40">
-                <span className="d-block wow fadeRotateIn"> Let’s Work </span>
+                <span className="d-block wow fadeRotateIn"> Let’s </span>
                 <span className="d-block text-end wow fadeRotateIn">
-                  Together
+                  Talk
                 </span>
               </h3>
             </div>

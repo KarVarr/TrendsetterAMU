@@ -32,13 +32,15 @@ export default function Blog() {
             `}
             >
               <div className="post-prev-2-img">
-                <Link href={`/modern-blog-single/${post.id}`}>
+                <Link href={`https://www.instagram.com/p/DI8l6fFsp1b/`} legacyBehavior>
+                <a target="_blank" rel="noopener noreferrer">
                   <Image
                     src={post.imageSrc}
                     width={700}
                     height={479}
                     alt="Image Description"
                   />
+                  </a>
                 </Link>
               </div>
               <h3 className="post-prev-2-title">
