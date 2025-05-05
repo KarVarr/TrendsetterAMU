@@ -21,7 +21,7 @@ export const socialLinks = [
     text: "Telegram",
   },
   {
-    href: "#",
+    href: "https://www.linkedin.com/company/trendsetter-%D0%B0%CC%81-multibrand/",
     text: "LinkedIn",
   },
 ];

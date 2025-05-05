@@ -5,11 +5,15 @@ import Service from "@/components/homes/home-8/Service";
 import ParallaxContainer from "@/components/common/ParallaxContainer";
 
 import { modernMultipage } from "@/data/menu";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
+import YandexMap from "@/components/maps/YandexMap";
+
 import Image from "next/image";
 import Link from "next/link";
 const onePage = false;
 const dark = false;
+
+
 export const metadata = {
   title:
     "Modern Services || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
@@ -127,7 +131,17 @@ export default function ModernServicesPage() {
                     dark ? "white opacity-1" : "black"
                   }  mt-0 mb-80`}
                 />
-                <Service /> {/* Вот тут надо карту добавить */}
+                {/* <Service /> Вот тут надо карту добавить */}
+
+
+                <div className="row mb-100 mb-md-60">
+                  {/* здесь выводим карту */}
+                  <div className="col-12">
+                    <YandexMap />
+                  </div>
+                </div>
+
+
                 <div className="row">
                   <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
                     <hr
@@ -139,9 +153,9 @@ export default function ModernServicesPage() {
                     <div className="row">
                       <div className="col-sm-6 col-md-7 text-center text-sm-start mb-xs-20">
                         <p className="section-descr mb-0 black">
-                          Напишите нам если у Вас остались вопросы!
+                          Напишите нам если у Вас остались вопросы! 
                           We use the power of design to solve complex problems
-                          and cultivate business solutions. 
+                          and cultivate business solutions!
                         </p>
                       </div>
                       <div className="col-sm-6 col-md-5 text-center text-sm-end local-scroll">

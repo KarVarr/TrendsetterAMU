@@ -57,17 +57,17 @@ export default function Hero2() {
       {/* End Scroll Down */}
       {/* Social Media Links */}
       <div className="hs-social left wow fadeInUp" data-wow-offset={0}>
-        <a href="#" className="hs-social-link">
+        <a href="https://www.instagram.com/trendsetter.a.multibrand/" className="hs-social-link">
           <span className="visually-hidden">Instagram</span>
           <i className="fa-instagram" />
         </a>
         <a href="#" className="hs-social-link">
           <span className="visually-hidden">Twitter</span>
-          <i className="fa-twitter" />
+          <i className="fa-telegram" />
         </a>
         <a href="#" className="hs-social-link">
           <span className="visually-hidden">Facebook</span>
-          <i className="fa-facebook-f" />
+          <i className="fa-linkedin" />
         </a>
       </div>
       {/* End Social Media Links */}
