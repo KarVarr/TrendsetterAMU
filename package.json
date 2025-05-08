@@ -19,6 +19,7 @@
     "jarallax": "^2.2.1",
     "next": "15.2.4",
     "next-i18next": "^15.4.2",
+    "nodemailer": "^7.0.3",
     "photoswipe": "^5.4.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

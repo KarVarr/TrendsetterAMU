@@ -13,7 +13,6 @@ const YandexMap = ({
   const mapRef = useRef(null);
   const hasMap = useRef(false); // 🔒 Флаг, чтобы избежать повторной инициализации
 
-  console.log("YANDEX API KEY:", apiKey);
   useEffect(() => {
     if (!mapRef.current || hasMap.current) return;
 
