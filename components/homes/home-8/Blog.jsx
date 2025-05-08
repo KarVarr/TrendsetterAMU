@@ -58,10 +58,8 @@ export default function Blog() {
       {/* Newsletter Form */}
       <div className="row mt-100 mt-sm-60 wow fadeInUp">
         <div className="col-lg-8 offset-lg-2">
-          <h2 className="section-title-tiny mb-30">
-            <span className="icon-ellipse" /> Subscribe our newsletter
-          </h2>
-          <form
+          
+          {/* <form
             onSubmit={(e) => e.preventDefault()}
             id="mailchimp"
             className="form newsletter-modern"
@@ -107,7 +105,32 @@ export default function Blog() {
               aria-live="polite"
               aria-atomic="true"
             />
-          </form>
+          </form> */}
+
+            <div className="text-center mb-40">
+              <h2 className="section-title-tiny mb-30 d-inline-flex align-items-center justify-content-center">
+                <span className="icon-ellipse me-2" /> The latest news is on our telegram
+              </h2>
+              <div>
+                <a
+                  href="https://t.me/trendsetteramultibrand"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-mod btn-border btn-medium btn-circle text-nowrap"
+                  data-btn-animate="y"
+                >
+                  <span className="btn-animate-y">
+                    <span className="btn-animate-y-1">Subscribe Now</span>
+                    <span className="btn-animate-y-2" aria-hidden="true">
+                      Subscribe Now
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+
+
         </div>
       </div>{" "}
     </>

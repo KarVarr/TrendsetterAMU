@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import Script from "next/script";
 
+const apiKey = process.env.NEXT_PUBLIC_YANDEX_MAPS_API_KEY;
 const YandexMap = ({
   center = [40.183347, 44.514810],
   zoom = 16,
@@ -12,6 +13,7 @@ const YandexMap = ({
   const mapRef = useRef(null);
   const hasMap = useRef(false); // 🔒 Флаг, чтобы избежать повторной инициализации
 
+  console.log("YANDEX API KEY:", apiKey);
   useEffect(() => {
     if (!mapRef.current || hasMap.current) return;
 
@@ -42,7 +44,7 @@ const YandexMap = ({
   return (
     <>
       <Script
-        src={`https://api-maps.yandex.ru/2.1/?apikey=${process.env.NEXT_PUBLIC_YANDEX_MAPS_API_KEY}&lang=ru_RU`}
+        src={`https://api-maps.yandex.ru/2.1/?apikey=${apiKey}&lang=ru_RU`}
         strategy="lazyOnload" // ✅ Лучше чем beforeInteractive для этой библиотеки
       />
       <div ref={mapRef} style={{ width, height }} />
