@@ -32,16 +32,13 @@ export default function Home8({
                 className="section-descr-extralarge mb-100 mb-md-60 wow linesAnimIn"
                 data-splitting="lines"
               >
-                <h2 className="section-title-inline-1">About Studio</h2>
-                Jane Garsia Studio is an independent full-service studio
-                creating beautiful digital experiences and products. We are an
-                award winning group specializing in branding, design and
-                engineering. Our mission is to make work meaningful.
+                <h2 className="section-title-inline-1">Trendsetter</h2>
+                is an international startup in the fashion retail industry. We are developing a multi-brand store offering clothing, footwear, and accessories from popular global brands such as H&M, Reserved, Sinsay, House, and others.
               </div>
               {/* Accordion */}
               <Accordion />
               {/* End Accordion */}
-              <div className="local-scroll text-center">
+              {/* <div className="local-scroll text-center">
                 {onePage ? (
                   <>
                     <a
@@ -87,7 +84,7 @@ export default function Home8({
                     </Link>
                   </>
                 )}
-              </div>
+              </div> */}
               <div
                 className="page-section scrollSpysection  pb-0"
                 id="established"
@@ -102,13 +99,13 @@ export default function Home8({
                         in 2023
                       </span>
                     </h2>
-                    <div className="row">
+                    {/* <div className="row">
                       <div className="col-md-6 offset-md-3 col-lg-4 offset-lg-4">
                         <p className="section-descr mb-0">
                           We believe that things should be useful yet beautiful.
                         </p>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="section-image-behind">
                     <Image
@@ -136,7 +133,7 @@ export default function Home8({
             <div className="row">
               <div className="col-sm-6">
                 <h2 className="section-caption mb-0 mb-xs-10 black">
-                  Shops (Services)
+                  Our  (Services)
                 </h2>
               </div>
               <div className="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end">
@@ -200,34 +197,38 @@ export default function Home8({
             />
           </div>
           {/* Services Grid ???????????????????????????????????????????????????? Shop now*/}
-          
+          <div className="row">
+            <div className="col-10 col-sm-9">
+              <h3 className="hs-title-5 font-alt overflow-hidden mb-100 mb-md-40">
+                <span className="d-block wow fadeRotateIn"> SHOP </span>
+                {/* <span className="d-block text-end wow fadeRotateIn">
+                  {" "}
+                  Designe{" "}
+                </span> */}
+              </h3>
+            </div>
+          </div>
           <div
               className="section-descr-extralarge wow linesAnimIn"
               data-wow-offset="0"
               data-splitting="lines"
             >
-              <h2 className="section-title-inline-1">Our Values</h2>
-              Скоро открытие нашего магазина 
-              Приходите к нам
-              г. Ереван, ТЦ Ташир стрит, Северный проспект 6/2.
-
-              As an award-winning group of passionate professionals, we
-              excel in the realms of branding, design, and engineering.
-              Our team is driven by a shared mission to make work
-              meaningful, striving to infuse each project with purpose,
-              creativity, and innovation.
+              Our store is opening soon!
+              Come visit us in Yerevan at Tashir Street Shopping Mall, 6/2 Northern Avenue.
             </div>
-            <div className="col-12">
+            <div className="col-12 mt-5 mt-md-6">
               <YandexMap />
             </div>
-          {/* End Services Grid */}
-          <div className="row">
-            <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-              <hr
-                className={` ${dark ? "white opacity-1" : "black"}  mt-0 mb-20`}
-              />
 
-              <div className="row">
+          {/* End Services Grid */}
+          <div className="row ">
+            <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+            
+              {/* <hr
+                className={` ${dark ? "white opacity-1" : "black"}  mt-0 mb-20`}
+              /> */}
+
+              {/* <div className="row">
                 <div className="col-sm-6 col-md-7 text-center text-sm-start mb-xs-20">
                   <p className="section-descr mb-0 black">
                     We use the power of design to solve complex problems and
@@ -273,9 +274,10 @@ export default function Home8({
                     </>
                   )}
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
+          
         </div>
       </section>
       <section
@@ -289,7 +291,7 @@ export default function Home8({
             <div className="row">
               <div className="col-sm-6">
                 <h2 className="section-caption mb-0 mb-xs-10 black">
-                  AMU (Portfolio)
+                  OUR BRAND (Portfolio)
                 </h2>
               </div>
               <div className="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end">
@@ -366,15 +368,49 @@ export default function Home8({
           {/* <Portfolio /> */}
 
           <div
-              className="section-descr-extralarge wow linesAnimIn"
+              className="section-descr-extralarge wow linesAnimIn mb-4"
               data-wow-offset="0"
               data-splitting="lines"
             >
-              <h2 className="section-title-inline-1">Про Amu</h2>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus sapiente perferendis explicabo saepe, ipsum cum. Praesentium iure quos nisi cum facilis? Iure ullam impedit porro exercitationem sit voluptate minus. In.
+              {/* <h2 className="section-title-inline-1">Про Amu</h2> */}
+              At AMU, we specialize in elevated everyday basics—timeless pieces designed to become your wardrobe’s go-to staples. Inspired by industry leaders like H&M, Uniqlo, Zara, and Lululemon, our mission is to deliver essential clothing that blends effortless style with premium quality.
+            </div>
+
+            <div
+              className="section-descr-extralarge wow linesAnimIn mb-4"
+              data-wow-offset="0"
+              data-splitting="lines"
+            >
+              We focus on core bestsellers that reflect modern streetwear sensibilities while staying true to minimalism and function. 
+            </div>
+
+            <div
+              className="section-descr-extralarge wow linesAnimIn mb-4"
+              data-wow-offset="0"
+              data-splitting="lines"
+            >
+              We focus on core bestsellers that reflect modern streetwear sensibilities while staying true to minimalism and function. 
             </div>
 
             <Service />
+            
+            <div
+              className="section-descr-extralarge wow linesAnimIn mb-4"
+              data-wow-offset="0"
+              data-splitting="lines"
+            >
+              All items are produced in plain, solid colors—no prints or graphics—ensuring versatility and timeless appeal. We have detailed size charts that include plus sizes to ensure our clothing is inclusive, well-fitting, and accessible to everyone.
+            </div>
+
+            <div
+              className="section-descr-extralarge wow linesAnimIn mb-4"
+              data-wow-offset="0"
+              data-splitting="lines"
+            >
+              At AMU, we believe in pure, uncompromising style—liberating essentials designed to move with you.
+            </div>
+
+            
 
           {/* End Portfolio Grid */}
         </div>
@@ -387,7 +423,7 @@ export default function Home8({
       >
         <div className="container">
           <div className="mb-100 mb-md-40">
-            <div className="row">
+            {/* <div className="row">
               <div className="col-sm-6">
                 <h2 className="section-caption mb-0 mb-xs-10 black">
                   Our Blog
@@ -448,7 +484,7 @@ export default function Home8({
                   </>
                 )}
               </div>
-            </div>
+            </div> */}
             <hr
               className={` ${dark ? "white opacity-1" : "black"}  mt-3 mb-0`}
             />

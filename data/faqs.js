@@ -51,27 +51,15 @@ export const faqDataMain = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula porttitor rutrum. Ut laoreet sodales rutrum. Ut eget tristique nibh. Cras mattis est eget lacus dignissim, non consectetur velit pellentesque. Ut sit amet placerat eros, id gravida arcu. Sed felis purus, tempor ac vestibulum nec, consectetur at purus.",
   },
 ];
+
+//ABOUT
 export const faqs3 = [
   {
     question: "Our Story",
-    answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            condimentum, mauris a bibendum cursus, risus quam venenatis ipsum,
-            in facilisis tellus lacus ac augue. Fusce placerat condimentum
-            luctus. Pellentesque venenatis lacus eu ex sollicitudin maximus.
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-            per inceptos himenaeos. Vestibulum rhoncus eros vitae enim lobortis
-            cursus. Suspendisse potenti. Ut sed tortor ut dolor consequat congue
-            a lacinia ante. Phasellus vel urna eu lacus luctus luctus vitae quis`,
+    answer: `Since 2023, we have been successfully selling on the Wildberries platform and hold exclusive supply agreements. In 2025, we are expanding offline by opening a retail store in the Republic of Armenia.`,
   },
   {
     question: "Our Mission",
-    answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            condimentum, mauris a bibendum cursus, risus quam venenatis ipsum,
-            in facilisis tellus lacus ac augue. Fusce placerat condimentum
-            luctus. Pellentesque venenatis lacus eu ex sollicitudin maximus.
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-            per inceptos himenaeos. Vestibulum rhoncus eros vitae enim lobortis
-            cursus. Suspendisse potenti. Ut sed tortor ut dolor consequat congue
-            a lacinia ante. Phasellus vel urna eu lacus luctus luctus vitae quis`,
+    answer: `is to make stylish and high-quality clothing accessible to everyone. We aim to dress the entire country where we operate — affordably, fashionably, and with attention to customer needs. We are a flexible startup with ambitious plans, currently building a core team to drive growth and scale the brand in the region.`,
   },
 ];

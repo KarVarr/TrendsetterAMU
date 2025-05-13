@@ -128,34 +128,40 @@ export const services3 = [
 
 export const services4 = [
   {
-    title: "Branding",
+    title: "Jeans",
     imageSrc: "/assets/images/demo-modern/services/1.jpg",
-    alt: "Image Description",
-    align: "text-center",
-  },
-  {
-    title: "UI/UX Design",
-    imageSrc: "/assets/images/demo-modern/services/2.jpg",
     alt: "Image Description",
     align: "text-end",
   },
   {
-    title: "Photography",
+    title: "T-shirts",
+    imageSrc: "/assets/images/demo-modern/services/2.jpg",
+    alt: "Image Description",
+    align: "text-center",
+  },
+  {
+    title: "Hoodies",
     imageSrc: "/assets/images/demo-modern/services/3.jpg",
     alt: "Image Description",
     align: "text-start",
   },
   {
-    title: "Development",
+    title: "Joggers",
     imageSrc: "/assets/images/demo-modern/services/4.jpg",
     alt: "Image Description",
-    align: "text-end",
+    align: "text-start",
   },
   {
-    title: "Motion Design",
+    title: "Sweatshirts",
     imageSrc: "/assets/images/demo-modern/services/5.jpg",
     alt: "Image Description",
     align: "text-center",
+  },
+  {
+    title: "Underwear",
+    imageSrc: "/assets/images/demo-modern/services/6.jpg",
+    alt: "Image Description",
+    align: "text-end",
   },
 ];
 

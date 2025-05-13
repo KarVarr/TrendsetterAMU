@@ -6,18 +6,18 @@ import Link from "next/link";
 export default function Blog() {
   return (
     <>
-      <div className="row">
+      {/* <div className="row">
         <div className="col-8 col-sm-7">
           <h3 className="hs-title-5 font-alt overflow-hidden mb-100 mb-md-40">
             <span className="d-block wow fadeRotateIn"> Latest </span>
             <span className="d-block text-end wow fadeRotateIn"> News </span>
           </h3>
         </div>
-      </div>
+      </div> */}
       {/* Blog Grid */}
       <div className="row gy-4">
         {/* Post Item */}
-        {blogs8.map((post, index) => (
+        {/* {blogs8.map((post, index) => (
           <div
             key={index}
             className={`post-prev-2 col-md-6 col-lg-4`}
@@ -51,7 +51,7 @@ export default function Blog() {
               <div className="post-prev-2-info">{post.date}</div>
             </div>
           </div>
-        ))}
+        ))} */}
         {/* End Post Item */}
       </div>
       {/* End Blog Grid */}
@@ -59,7 +59,7 @@ export default function Blog() {
       <div className="row mt-100 mt-sm-60 wow fadeInUp">
         <div className="col-lg-8 offset-lg-2">
           
-          {/* <form
+          <form
             onSubmit={(e) => e.preventDefault()}
             id="mailchimp"
             className="form newsletter-modern"
@@ -105,9 +105,9 @@ export default function Blog() {
               aria-live="polite"
               aria-atomic="true"
             />
-          </form> */}
+          </form>
 
-            <div className="text-center mb-40">
+            {/* <div className="text-center mb-40">
               <h2 className="section-title-tiny mb-30 d-inline-flex align-items-center justify-content-center">
                 <span className="icon-ellipse me-2" /> The latest news is on our telegram
               </h2>
@@ -127,7 +127,7 @@ export default function Blog() {
                   </span>
                 </a>
               </div>
-            </div>
+            </div> */}
 
 
 
