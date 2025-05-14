@@ -7,9 +7,9 @@ import { modernMultipage } from "@/data/menu";
 
 export const metadata = {
   title:
-    "Home 8 Main Demo MultiPage || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "Trendsetter Á Multibrand",
   description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "Trendsetter Á Multibrand is a multibrand fashion store bringing together the world’s most loved clothing labels — from H&M to Reserved, Sinsay, and more.",
 };
 export default function Home8MainDemoMultiPage() {
   return (

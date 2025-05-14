@@ -33,7 +33,7 @@ export default function Home8({
                 data-splitting="lines"
               >
                 <h2 className="section-title-inline-1">Trendsetter</h2>
-                is an international startup in the fashion retail industry. We are developing a multi-brand store offering clothing, footwear, and accessories from popular global brands such as H&M, Reserved, Sinsay, House, and others.
+                is an international fashion startup developing a multibrand store offering clothing, footwear, and accessories. Our selection features some of the most popular global brands, including H&M, Reserved, Sinsay, House, and more.
               </div>
               {/* Accordion */}
               <Accordion />
@@ -133,7 +133,7 @@ export default function Home8({
             <div className="row">
               <div className="col-sm-6">
                 <h2 className="section-caption mb-0 mb-xs-10 black">
-                  Our  (Services)
+                  Our Shop (Services)
                 </h2>
               </div>
               <div className="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end">
@@ -200,7 +200,7 @@ export default function Home8({
           <div className="row">
             <div className="col-10 col-sm-9">
               <h3 className="hs-title-5 font-alt overflow-hidden mb-100 mb-md-40">
-                <span className="d-block wow fadeRotateIn"> SHOP </span>
+                <span className="d-block wow fadeRotateIn"> Your Access to Global Fashion </span>
                 {/* <span className="d-block text-end wow fadeRotateIn">
                   {" "}
                   Designe{" "}
@@ -209,13 +209,24 @@ export default function Home8({
             </div>
           </div>
           <div
-              className="section-descr-extralarge wow linesAnimIn"
-              data-wow-offset="0"
-              data-splitting="lines"
-            >
-              Our store is opening soon!
-              Come visit us in Yerevan at Tashir Street Shopping Mall, 6/2 Northern Avenue.
-            </div>
+            className="section-descr-extralarge wow linesAnimIn mt-5 mt-md-6"
+            data-wow-offset="0"
+            data-splitting="lines"
+          >
+            <p>
+              
+              Trendsetter Á Multibrand is a multibrand fashion store bringing together the world’s most loved clothing labels — from H&M to Reserved, Sinsay, and more.
+            </p>
+            <p>
+              We curate stylish, affordable, and ready-to-wear pieces that fit your everyday life.
+              Exclusively available on Wildberries since 2023 — and now expanding offline in Armenia.
+            </p>
+            <p>
+              Global fashion, local access.
+              Trendsetter makes it easy to wear what you love.
+            </p>
+          </div>
+
             <div className="col-12 mt-5 mt-md-6">
               <YandexMap />
             </div>

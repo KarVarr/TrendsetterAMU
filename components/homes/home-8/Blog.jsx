@@ -86,7 +86,7 @@ export default function Blog() {
                   data-btn-animate="y"
                 >
                   <span className="btn-animate-y">
-                    <span className="btn-animate-y-1">Subscribe Now</span>
+                    <span className="btn-animate-y-1">Subscribe For Updates</span>
                     <span className="btn-animate-y-2" aria-hidden="true">
                       Subscribe Now
                     </span>

@@ -56,10 +56,10 @@ export const faqDataMain = [
 export const faqs3 = [
   {
     question: "Our Story",
-    answer: `Since 2023, we have been successfully selling on the Wildberries platform and hold exclusive supply agreements. In 2025, we are expanding offline by opening a retail store in the Republic of Armenia.`,
+    answer: `Since 2023, we’ve been successfully selling on Wildberries, with exclusive supply partnerships. In 2025, we’re stepping into offline retail with the opening of our first store in Armenia.`,
   },
   {
     question: "Our Mission",
-    answer: `is to make stylish and high-quality clothing accessible to everyone. We aim to dress the entire country where we operate — affordably, fashionably, and with attention to customer needs. We are a flexible startup with ambitious plans, currently building a core team to drive growth and scale the brand in the region.`,
+    answer: `To make stylish, high-quality clothing accessible to everyone. Trendsetter is a flexible and ambitious brand, currently building a strong team and actively expanding across the region. We believe fashion should be simple, accessible, and inspiring — every single day.`,
   },
 ];
