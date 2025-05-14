@@ -1,9 +1,36 @@
 "use client";
 import { blogs8 } from "@/data/blogs";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 export default function Blog() {
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState("");
+
+  const handleSubscribe = async (e) => {
+    e.preventDefault();
+    setStatus("⏳ Отправка...");
+
+    try {
+      const res = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await res.json();
+      if (res.ok) {
+        setStatus("✅ Подписка успешно оформлена!");
+        setEmail("");
+      } else {
+        setStatus("❌ Ошибка: " + data.error);
+      }
+    } catch (err) {
+      console.error(err);
+      setStatus("❌ Сетевая ошибка");
+    }
+  };
+
   return (
     <>
       {/* <div className="row">
@@ -59,11 +86,7 @@ export default function Blog() {
       <div className="row mt-100 mt-sm-60 wow fadeInUp">
         <div className="col-lg-8 offset-lg-2">
           
-          <form
-            onSubmit={(e) => e.preventDefault()}
-            id="mailchimp"
-            className="form newsletter-modern"
-          >
+        <form onSubmit={handleSubscribe} className="form newsletter-modern">
             <div className="d-md-flex justify-content-between mb-40">
               <label htmlFor="newsletter-email" className="visually-hidden">
                 Your email
@@ -77,6 +100,8 @@ export default function Blog() {
                 pattern=".{5,100}"
                 required
                 aria-required="true"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <div className="d-md-flex align-items-end">
                 <button
@@ -99,12 +124,9 @@ export default function Blog() {
               to the <a href="#">Terms &amp; Conditions</a> and{" "}
               <a href="#">Privacy Policy</a>.
             </div>
-            <div
-              id="subscribe-result"
-              role="region"
-              aria-live="polite"
-              aria-atomic="true"
-            />
+            <div id="subscribe-result" className="mt-3" aria-live="polite">
+              {status}
+            </div>
           </form>
 
             {/* <div className="text-center mb-40">

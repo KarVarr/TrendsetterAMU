@@ -96,11 +96,8 @@ export default function ModernAboutPage() {
                   data-wow-offset="0"
                   data-splitting="lines"
                 >
-                  <h2 className="section-title-inline-1">Our Story</h2>
-                  Jane Garsia Studio is an independent full-service studio
-                  creating beautiful digital experiences and products. We are an
-                  award winning group specializing in branding, design and
-                  engineering. Our mission is to make work meaningful.
+                  <h2 className="section-title-inline-1">Trendsetter </h2>
+                  is an international fashion startup developing a multibrand store offering clothing, footwear, and accessories. Our selection features some of the most popular global brands, including H&M, Reserved, Sinsay, House, and more.
                 </div>
 
                 {/* <!-- Accordion --> */}

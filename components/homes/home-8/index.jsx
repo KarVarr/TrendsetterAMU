@@ -530,9 +530,9 @@ export default function Home8({
               <div className="col-sm-6">
                 <h2 className="section-caption mb-0 mb-xs-10 black">Contact</h2>
               </div>
-              <div className="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end">
+              {/* <div className="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end"> */}
                 {/* Change the email address in the href attribute */}
-                <a
+                {/* <a
                   href="mailto:ibthemes21@gmail.com"
                   className="link-hover-anim align-middle"
                   data-link-animate="y"
@@ -555,7 +555,7 @@ export default function Home8({
                     ></i>
                   </span>
                 </a>
-              </div>
+              </div> */}
             </div>
             <hr
               className={` ${dark ? "white opacity-1" : "black"}  mt-3 mb-0`}
@@ -566,7 +566,7 @@ export default function Home8({
               <h3 className="hs-title-5 font-alt overflow-hidden mb-100 mb-md-40">
                 <span className="d-block wow fadeRotateIn"> Let’s </span>
                 <span className="d-block text-end wow fadeRotateIn">
-                  Talk
+                Get in Touch
                 </span>
               </h3>
             </div>

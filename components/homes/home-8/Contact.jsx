@@ -222,20 +222,22 @@ export default function Contact() {
       <div className="col-md-4 mb-sm-60">
         <div className="section-descr black">
           <p>
-            We’re open to talk to good people. Just say hello and we’ll start a
-            productive cooperation.
+          We’re always excited to hear from new customers and potential partners.
+          Have a question, feedback, or a partnership inquiry? Just fill out the form below, and a member of our team will get back to you as soon as possible
           </p>
           <p>
-            Call us:
+          Prefer to reach us directly?
+            <br />
             <a href="tel:+18376528800" className="text-link">
-              +1 837 652 8800
+            Phone: +1 837 652 8800
             </a>
             <br />
-            Say hi:
+            
             <a href="mailto:info@trendsetterwb.com" className="text-link">
-              info@trendsetterwb.com
+            Email: info@trendsetterwb.com
             </a>
           </p>
+          <p>Follow us on social media to stay updated on our latest news, collections, and exclusive offers.</p>
           <div>
               {/* Instagram */}
               <a

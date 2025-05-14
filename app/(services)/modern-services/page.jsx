@@ -103,16 +103,18 @@ export default function ModernServicesPage() {
                       data-wow-offset="0"
                       data-splitting="lines"
                     >
-                      <h2 className="section-title-inline-1">Our Values</h2>
-                      Скоро открытие нашего магазина 
-                      Приходите к нам
-                      г. Ереван, ТЦ Ташир стрит, Северный проспект 6/2.
-
-                      As an award-winning group of passionate professionals, we
-                      excel in the realms of branding, design, and engineering.
-                      Our team is driven by a shared mission to make work
-                      meaningful, striving to infuse each project with purpose,
-                      creativity, and innovation.
+                      {/* <h2 className="section-title-inline-1">Our Values</h2> */}
+                      <p>
+                        Trendsetter Á Multibrand is a multibrand fashion store bringing together the world’s most loved clothing labels — from H&M to Reserved, Sinsay, and more.
+                      </p>
+                      <p>
+                        We curate stylish, affordable, and ready-to-wear pieces that fit your everyday life.
+                        Exclusively available on Wildberries since 2023 — and now expanding offline in Armenia.
+                      </p>
+                      <p>
+                        Global fashion, local access.
+                        Trendsetter makes it easy to wear what you love.
+                      </p>
                     </div>
                   </div>
 
@@ -153,9 +155,7 @@ export default function ModernServicesPage() {
                     <div className="row">
                       <div className="col-sm-6 col-md-7 text-center text-sm-start mb-xs-20">
                         <p className="section-descr mb-0 black">
-                          Напишите нам если у Вас остались вопросы! 
-                          We use the power of design to solve complex problems
-                          and cultivate business solutions!
+                        Write to us if you have any questions!
                         </p>
                       </div>
                       <div className="col-sm-6 col-md-5 text-center text-sm-end local-scroll">
