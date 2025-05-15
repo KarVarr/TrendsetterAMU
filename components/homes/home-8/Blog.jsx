@@ -1,15 +1,17 @@
 "use client";
 import { blogs8 } from "@/data/blogs";
+import { Toast, ToastContainer } from "react-bootstrap";
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 export default function Blog() {
   const [email, setEmail] = useState("");
-  const [status, setStatus] = useState("");
+  const [toastMessage, setToastMessage] = useState("");
+  const [showToast, setShowToast] = useState(false);
+
 
   const handleSubscribe = async (e) => {
     e.preventDefault();
-    setStatus("⏳ Отправка...");
 
     try {
       const res = await fetch("/api/subscribe", {
@@ -17,17 +19,20 @@ export default function Blog() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
       });
-
+  
       const data = await res.json();
       if (res.ok) {
-        setStatus("✅ Подписка успешно оформлена!");
+        setToastMessage("✅ Вы успешно подписались на обновления!");
         setEmail("");
       } else {
-        setStatus("❌ Ошибка: " + data.error);
+        setToastMessage("❌ Ошибка, подписка не оформлена: " + (data.error || "неизвестная ошибка"));
       }
     } catch (err) {
       console.error(err);
-      setStatus("❌ Сетевая ошибка");
+      setToastMessage("❌ Сетевая ошибка при подписке");
+    } finally {
+      setShowToast(true);
+      setTimeout(() => setShowToast(false), 1500); // показывать 1.5 секунды
     }
   };
 
@@ -124,9 +129,21 @@ export default function Blog() {
               to the <a href="#">Terms &amp; Conditions</a> and{" "}
               <a href="#">Privacy Policy</a>.
             </div>
-            <div id="subscribe-result" className="mt-3" aria-live="polite">
-              {status}
-            </div>
+            {/* Toast уведомление */}
+              <ToastContainer
+                className="p-3 position-fixed top-50 start-50 translate-middle"
+                style={{ zIndex: 1060 }}
+              >
+                <Toast
+                  show={showToast}
+                  bg={toastMessage.startsWith("✅") ? "success" : "danger"}
+                  onClose={() => setShowToast(false)}
+                  delay={1500}
+                  autohide
+                >
+                  <Toast.Body className="text-white text-center fw-bold">{toastMessage}</Toast.Body>
+                </Toast>
+              </ToastContainer>
           </form>
 
             {/* <div className="text-center mb-40">

@@ -68,7 +68,7 @@ export default function ModernContactPage() {
                         LET’S{" "}
                       </span>
                       <span className="d-block text-end wow fadeRotateIn">
-                        get in touch!
+                        GET IN TOUCH!
                       </span>
                     </h1>
                   </div>

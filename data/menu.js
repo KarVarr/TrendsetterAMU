@@ -53,8 +53,8 @@ export const modernMultipage = [
   { id: 2, href: "/modern-about", text: "About", className: "active" },
   { id: 3, href: "/modern-services", text: "Shop" },
   { id: 4, href: "/modern-portfolio", text: "AMU" },
-  { id: 5, href: "/modern-blog", text: "Blog" },
-  { id: 6, href: "/modern-contact", text: "Contacts" },
+  // { id: 5, href: "/modern-blog", text: "Blog" },
+  { id: 5, href: "/modern-contact", text: "Contacts" },
 ];
 export const modernMultipageDark = [
   { id: 1, href: "/modern-multi-page-dark", text: "Home" },

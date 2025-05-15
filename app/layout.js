@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "swiper/css";
 import "../public/assets/css/styles.css";
 import "jarallax/dist/jarallax.min.css";
