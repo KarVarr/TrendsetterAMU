@@ -11,11 +11,12 @@ export default function Marquee() {
           <div aria-hidden="true">M&S</div>
           <div aria-hidden="true">SINSAY</div>
           <div aria-hidden="true">RESERVED</div>
+          <div aria-hidden="true">& more</div>
           <div aria-hidden="true">H&M</div>
           <div aria-hidden="true">M&S</div>
           <div aria-hidden="true">SINSAY</div>
           <div aria-hidden="true">RESERVED</div>
-          <div aria-hidden="true">H&M</div>
+          <div aria-hidden="true">& more</div>
         </div>
       </div>
       {/* End Marquee Text Line */}

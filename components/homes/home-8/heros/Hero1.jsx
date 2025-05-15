@@ -6,7 +6,41 @@ export default function Hero1() {
       {/* Home Section Content */}
       <div className="home-content pb-sm-60 text-start position-relative">
         <h1 className="hs-title-5 font-alt overflow-hidden mb-30 mb-sm-20">
-          <span className="d-block text-center wow fadeRotateIn">
+          <span className="d-block text-center wow fadeRotateIn"
+          style={{ color: "#ae2e28" }}
+          >
+            
+            {/* <Image
+              className="hs-image-2 wow fadeInRight"
+              data-wow-delay="0.8s"
+              data-wow-offset={0}
+              src="/assets/images/demo-modern/hs-image-2.jpg"
+              width={208}
+              height={208}
+              alt="Image Description"
+            />{" "} */}
+            TRENDSETTER
+          </span>
+          <span
+            className="d-block text-left wow fadeRotateIn"
+            data-wow-delay="0.2s"
+            data-wow-offset={0}
+            style={{ color: "#192ED5",
+              // marginLeft: "250px", 
+             }}
+          >
+            Á 
+          </span>
+          <span
+            className="d-block text-center wow fadeRotateIn"
+            data-wow-delay="0.4s"
+            data-wow-offset={0}
+            style={{ color: "#ae2e28" }}
+          >
+            {/* <span style={{ color: "#192ED5" }}>Á</span> */}
+            <span style={{ color: "#192ED5" }}>M</span>
+            <span style={{ color: "#192ED5" }}>U</span>
+            LTIBRAND{" "}
             <Image
               className="hs-image-2 wow fadeInRight"
               data-wow-delay="0.8s"
@@ -16,23 +50,7 @@ export default function Hero1() {
               height={208}
               alt="Image Description"
             />{" "}
-            Trendsetter
-          </span>
-          <span
-            className="d-block wow fadeRotateIn"
-            data-wow-delay="0.2s"
-            data-wow-offset={0}
-            style={{ color: "blue" }}
-          >
-            A 
-          </span>
-          <span
-            className="d-block text-center wow fadeRotateIn"
-            data-wow-delay="0.4s"
-            data-wow-offset={0}
-          >
-            multibrand{" "}
-            <Image
+            {/* <Image
               className="hs-image-3 wow fadeInLeft"
               data-wow-delay="0.8s"
               data-wow-offset={0}
@@ -41,10 +59,10 @@ export default function Hero1() {
               width={362}
               height={208}
               style={{ height: "fit-content", width: "fit-content" }}
-            />
+            /> */}
           </span>
         </h1>
-        <h2
+        {/* <h2
           className="hs-title-6 font-alt text-center mb-sm-20 wow fadeInUp"
           data-wow-delay="0.6s"
           data-wow-offset={0}
@@ -55,15 +73,15 @@ export default function Hero1() {
           We are a full-service creative studio creating beautiful digital
           experiences and products. Our mission is to make work process
           meaningful.
-        </p>
+        </p> */}
 
-        <div
+        {/* <div
           className="hs-line d-none d-sm-block wow fadeIn parallax-mousemove"
           data-offset={60}
           data-wow-delay="0.8s"
         >
           {" "}
-        </div>
+        </div> */}
       </div>
       {/* End Home Section Content */}
       {/* Scroll Down */}
