@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import { Toast, ToastContainer } from "react-bootstrap"; 
+import PrivacyModal from "@/components/policy/PrivacyModal";
+
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -182,8 +184,7 @@ export default function Contact() {
                 <div className="form-tip">
                   <i className="icon-info size-16" />
                   All the fields are required. By sending the form you agree to the{" "}
-                  <a href="#">Terms &amp; Conditions</a> and{" "}
-                  <a href="#">Privacy Policy</a>.
+                  <PrivacyModal />
                 </div>
               </div>
             </div>

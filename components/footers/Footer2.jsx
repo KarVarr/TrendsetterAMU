@@ -1,6 +1,7 @@
 "use client";
 import { socialLinks } from "@/data/footer";
-import React from "react";
+import React, { useState } from "react";
+import PrivacyModal from "@/components/policy/PrivacyModal";
 
 export default function Footer2() {
   const scrollToTop = (event) => {
@@ -11,13 +12,17 @@ export default function Footer2() {
     });
   };
 
+  
   return (
     <div className="container">
       <div className="page-section">
         <div className="row">
           {/* Copyright */}
           <div className="col-lg-3 text-center text-lg-start mb-md-50">
-            © Trendsetter {new Date().getFullYear()}.
+            © {new Date().getFullYear()} Trendsetter 
+            <div className="small" style={{ fontSize: '0.5rem' }}>
+               All rights reserved
+            </div>
           </div>
           {/* End Copyright */}
           {/* Social Links */}
@@ -59,8 +64,8 @@ export default function Footer2() {
       <div className="footer-text text-center mt-n10 pb-50">
         Made with love for great people.
         <div className="small">
-          Read <a href="#">Terms &amp; Conditions</a> and{" "}
-          <a href="#">Privacy Policy</a>.
+         {/* Модальное окно политики */}
+         <PrivacyModal /> 
         </div>
       </div>
       {/* End Footer Text */}

@@ -4,6 +4,8 @@ import { Toast, ToastContainer } from "react-bootstrap";
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import PrivacyModal from "@/components/policy/PrivacyModal";
+
 export default function Blog() {
   const [email, setEmail] = useState("");
   const [toastMessage, setToastMessage] = useState("");
@@ -126,8 +128,8 @@ export default function Blog() {
             </div>
             <div className="form-tip">
               <i className="icon-info size-16" /> By sending the form you agree
-              to the <a href="#">Terms &amp; Conditions</a> and{" "}
-              <a href="#">Privacy Policy</a>.
+              to the {" "}
+              <PrivacyModal /> 
             </div>
             {/* Toast уведомление */}
               <ToastContainer
