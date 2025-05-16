@@ -6,13 +6,13 @@ import ParallaxContainer from "@/components/common/ParallaxContainer";
 
 import { modernMultipage } from "@/data/menu";
 // import dynamic from "next/dynamic";
-import YandexMap from "@/components/maps/YandexMap";
+import YandexMapWrapper from "@/components/maps/YandexMapWrapper";
+// import YandexMap from "@/components/maps/YandexMap";
 
 import Image from "next/image";
 import Link from "next/link";
 const onePage = false;
 const dark = false;
-
 
 export const metadata = {
   title:
@@ -139,7 +139,7 @@ export default function ModernServicesPage() {
                 <div className="row mb-100 mb-md-60">
                   {/* здесь выводим карту */}
                   <div className="col-12">
-                    <YandexMap />
+                    <YandexMapWrapper />
                   </div>
                 </div>
 

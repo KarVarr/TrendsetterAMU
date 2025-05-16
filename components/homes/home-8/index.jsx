@@ -165,7 +165,7 @@ export default function Home8({
                   </>
                 ) : (
                   <>
-                    <Link
+                    {/* <Link
                       href={`/modern-services${dark ? "-dark" : ""}`}
                       className="link-hover-anim align-middle"
                       data-link-animate="y"
@@ -187,7 +187,7 @@ export default function Home8({
                           aria-hidden="true"
                         ></i>
                       </span>
-                    </Link>
+                    </Link> */}
                   </>
                 )}
               </div>
@@ -227,8 +227,28 @@ export default function Home8({
             </p>
           </div>
 
-            <div className="col-12 mt-5 mt-md-6">
+            {/* <div className="col-12 mt-5 mt-md-6">
               <YandexMap />
+            </div> */}
+            <div className="row justify-content-center mt-5 mt-md-6">
+              <div className="col-auto text-center">
+                <Link
+                  href={`/modern-services${dark ? "-dark" : ""}`}
+                  className="btn btn-mod btn-white btn-circle btn-ellipse"
+                  data-btn-animate="ellipse"
+                >
+                  <span className="btn-ellipse-inner">
+                    <span className="btn-ellipse-unhovered">
+                      To the Shop{" "}
+                      <i className="icon-arrow-right2 size-14" aria-hidden="true"></i>
+                    </span>
+                    <span className="btn-ellipse-hovered" aria-hidden="true">
+                      To the Shop{" "}
+                      <i className="icon-arrow-right2 size-14" aria-hidden="true"></i>
+                    </span>
+                  </span>
+                </Link>
+              </div>
             </div>
 
           {/* End Services Grid */}
