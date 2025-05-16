@@ -6,7 +6,8 @@
 
 html, body {
   background-color: #ffffff;
-  color: rgb(255, 255, 255); /* Чтобы текст был читаемым */
+  color: rgb(255, 255, 255);
+  overflow-x: hidden; /* Чтобы текст был читаемым */
 }
 
 body {
