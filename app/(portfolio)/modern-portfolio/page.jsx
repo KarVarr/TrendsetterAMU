@@ -12,6 +12,7 @@ import { Russo_One } from 'next/font/google';
 const russoOne = Russo_One({  weight: '400',  subsets: ['latin'],});
 import { Dela_Gothic_One, Great_Vibes } from 'next/font/google';
 import ContentBlock from "@/components/portfolio/contentBlock";
+import styles from './modern-portfolio.module.css';
 
 
 const delaGothicOne = Dela_Gothic_One({ subsets: ['latin'], weight: '400' });
@@ -330,118 +331,124 @@ export default function ModernPortfolioPage() {
                   
                 >
                   <div
-                    className={`position-relative bg-white shadow ${russoOne.className}`}
+                    className="position-relative bg-white shadow"
                     style={{
-                      width: "100vw",
-                      maxWidth: "800px",
-                      padding: "4rem",
-                      boxSizing: "border-box",
-                      textAlign: "left",
+                      width: '85%',
+                      maxWidth: '800px',
+                      display: 'flex',         
+                      flexDirection: 'column', 
+                      justifyContent: 'center', 
+                      padding: '4rem',          // отступы слева/справа и сверху/снизу
+                      boxSizing: 'border-box',
+                      textAlign: 'left'
                     }}
                   >
-                    <div>
-                      <p
-                        className="fw-bold"
-                        style={{
-                          fontSize: "1.8rem",
-                          color: "#192ed5", 
-                          marginBottom: "2rem",
-                          lineHeight: "1.4",
-                        }}
-                      >
-                        Well. One more thing.
-                      </p>
-                      <p
-                        className="fw-bold"
-                        style={{
-                          fontSize: "1.8rem",
-                          color: "#192ed5",
-                          lineHeight: "1.4",
-                        }}
-                      >
-                        We’re ready to launch our own <br /> Clothing Brand.
-                      </p>
-                    </div>
+                    <p
+                      className="fw-bold"
+                      style={{
+                        margin: 0,              
+                        marginBottom: '2rem',  
+                        fontSize: '1.8rem',
+                        color: '#192ed5',
+                        lineHeight: 1.4,
+                      }}
+                    >
+                      Well. One more thing.
+                    </p>
+                    <p
+                      className="fw-bold"
+                      style={{
+                        margin: 0,
+                        fontSize: '1.8rem',
+                        color: '#192ed5',
+                        lineHeight: 1.4,
+                      }}
+                    >
+                      We’re ready to launch our own <br /> Clothing Brand.
+                    </p>
                   </div>
                 </div>
 
                 {/* пятый блок */}
 
                 <div
-                  className="position-relative text-white"
-                  style={{
-                    backgroundImage: "url('/assets/images/portfolio/port1.jpg')",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center right",
-                    backgroundRepeat: "no-repeat",
-                    height: "90vh",
-                    padding: "4rem",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "flex-start",
-                  }}
                   id="amu-brand"
+                  className={styles.amuBrand}
                 >
+                  {/* 1) Верхний левый блок */}
                   <div
-                    className="position-relative"
+                    className={styles.topLeft}
+                  >
+                    {/* маленький логотип в белой коробке */}
+                    <div
+                      className={styles.logoBox}
+                    >
+                      ÁMU<sup style={{ position: "absolute",
+                        top: "2.2em",      
+                        right: "0.75em",   
+                        fontSize: "0.3em",  
+                        lineHeight: 1, }}>™</sup>
+                    </div>
+
+                    {/* синяя полоса */}
+                    <div
+                      className={styles.stripe}
+                    />
+                    <div
                     style={{
-                      display: "flex",
-                      flexDirection: "row",
-                      alignItems: "center",
-                      gap: "4rem",
-                      color: "#192ed5", 
+                      position: "absolute",
+                      bottom: "-30rem",   
+                      left: "7.5rem",
+                      writingMode: "vertical-rl",
+                      transform: "rotate(180deg)",
+                      color: "#fff",
+                      fontSize: "3rem",
+                      fontWeight: 300,
+                      marginBottom: "1rem", 
+                      whiteSpace: "nowrap",
+                      lineHeight: 1,
                     }}
                   >
-                    
-                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                      <div
-                        style={{
-                          writingMode: "vertical-rl",
-                          transform: "rotate(180deg)",
-                          fontSize: "1.2rem",
-                          fontWeight: "bold",
-                        }}
-                      >
-                        ÁMU™
-                      </div>
-                      <div
-                        style={{
-                          width: "12px",
-                          height: "180px",
-                          backgroundColor: "#192ed5",
-                          marginTop: "1rem",
-                        }}
-                      />
-                    </div>
-
-                    <div>
-                      <h1
-                        style={{
-                          fontSize: "6rem",
-                          margin: 0,
-                          color: "#192ed5",
-                          fontWeight: 700,
-                          letterSpacing: "2px",
-                        }}
-                      >
-                        ÁMU<span style={{ fontSize: "1.5rem", verticalAlign: "super" }}>™</span>
-                      </h1>
-                    </div>
+                    ÁMU
+                    <sup style={{ fontSize: "0.6rem", verticalAlign: "super" }}>™</sup>
+                  </div>
                   </div>
 
-                  <div
-                    className="position-absolute"
+                  {/* 2) Центр: большой заголовок */}
+                  <h1
+                  className={styles.centerTitle}
+                >
+                  ÁM
+                  <span
                     style={{
-                      bottom: "30px",
-                      right: "40px",
-                      fontSize: "0.75rem",
-                      color: "#fff",
-                      opacity: 0.7,
+                      position: "relative",
+                      display: "inline-block",
+                      lineHeight: 1,
                     }}
+                  >
+                    U
+                    <sup
+                      style={{
+                        position: "absolute",
+                        top: "0.27em",      
+                        right: "-0.75em",   
+                        fontSize: "0.35em",  
+                        lineHeight: 1,
+                      }}
+                    >
+                      ™
+                    </sup>
+                  </span>
+                </h1>
+
+                  {/* 3) Нижний правый слоган */}
+                  <div
+                    className={styles.bottomRight}
                   >
                     BECAUSE IT’S AMU!
                   </div>
                 </div>
+
 
               {/* шестой блок */}
 
