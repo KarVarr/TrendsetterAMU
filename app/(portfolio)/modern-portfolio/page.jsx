@@ -259,11 +259,11 @@ export default function ModernPortfolioPage() {
                   className="position-relative"
                   style={{
                     backgroundColor: "#fdfbf6",
-                    padding: "4rem 2rem",
+                    // padding: "1rem",
                   }}
                 >
                   <div
-                    className="container-fluid"
+                    // className="container-fluid"
                     style={{
                       display: "grid",
                       gridTemplateColumns: "repeat(6, 1fr)",
@@ -527,7 +527,7 @@ export default function ModernPortfolioPage() {
                     }}
                   >
                     <h1
-                      className={delaGothicOne.className}
+                      className={russoOne.className}
                       style={{
                         fontSize: "7vw",
                         fontWeight: 400,
@@ -539,7 +539,7 @@ export default function ModernPortfolioPage() {
                     >
                       LET’S WORK
                       <span
-                        className={greatVibes.className}
+                        className={russoOne.className}
                         style={{
                           position: "absolute",
                           left: "50%",
