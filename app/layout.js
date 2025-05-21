@@ -5,6 +5,8 @@ import "swiper/css";
 import "../public/assets/css/styles.css";
 import "jarallax/dist/jarallax.min.css";
 import "swiper/css/effect-fade";
+import CookieBanner from '../components/cookie/cookieBanner.jsx';
+
 
 import "photoswipe/dist/photoswipe.css";
 import { usePathname } from "next/navigation";
@@ -70,7 +72,10 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body className="appear-animate body">{children}</body>
+      <body className="appear-animate body">
+          {children}
+          <CookieBanner />
+        </body>
     </html>
   );
 }

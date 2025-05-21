@@ -25,16 +25,14 @@ export default function Marquee() {
         <div className="marquee-track marquee-animation-2a float-end">
           <div>Unique Design</div>
           <div>Premium Support</div>
-          <div aria-hidden="true">Unique Design</div>
-          <div aria-hidden="true">Premium Support</div>
-          <div aria-hidden="true">Unique Design</div>
-          <div aria-hidden="true">Premium Support</div>
-          <div aria-hidden="true">Unique Design</div>
-          <div aria-hidden="true">Premium Support</div>
-          <div aria-hidden="true">Unique Design</div>
-          <div aria-hidden="true">Premium Support</div>
-          <div aria-hidden="true">Unique Design</div>
-          <div aria-hidden="true">Premium Support</div>
+          <div aria-hidden="true">Lasting comfort</div>
+          <div aria-hidden="true">Signature touch</div>
+          <div aria-hidden="true">Elevated experience</div>
+          <div aria-hidden="true">Authentic materials</div>
+          <div aria-hidden="true">Intelligent design</div>
+          <div aria-hidden="true">Exceptional value</div>
+          <div aria-hidden="true">Unmatched precision</div>
+          <div aria-hidden="true">Everyday luxury</div>
         </div>
       </div>
       {/* End Marquee Text Line */}

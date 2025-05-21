@@ -13,6 +13,7 @@ const russoOne = Russo_One({  weight: '400',  subsets: ['latin'],});
 import { Dela_Gothic_One, Great_Vibes } from 'next/font/google';
 import ContentBlock from "@/components/portfolio/contentBlock";
 import styles from './modern-portfolio.module.css';
+import gridStyles from './grid.module.css'
 
 
 const delaGothicOne = Dela_Gothic_One({ subsets: ['latin'], weight: '400' });
@@ -131,7 +132,7 @@ export default function ModernPortfolioPage() {
              <div
                   className="position-relative"
                   style={{
-                    backgroundImage: "url('/assets/images/portfolio/port1.jpg')", 
+                    backgroundImage: "url('/assets/images/portfolio/amu1.jpg')", 
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
@@ -259,58 +260,51 @@ export default function ModernPortfolioPage() {
                   className="position-relative"
                   style={{
                     backgroundColor: "#fdfbf6",
-                    // padding: "1rem",
                   }}
                 >
                   <div
-                    // className="container-fluid"
-                    style={{
-                      display: "grid",
-                      gridTemplateColumns: "repeat(6, 1fr)",
-                      gridAutoRows: "150px",
-                      gap: "10px",
-                    }}
+                    className={gridStyles.gridContainer}
                   >
 
-                    <div style={{ gridColumn: "1 / span 2",  gridRow: "1 / span 2",  position: "relative",  overflow: "hidden",  }} >
-                      <Image  src="/assets/images/portfolio/port1.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
+                    <div className={gridStyles.gridItem} style={{ gridColumn: "1 / span 2",  gridRow: "1 / span 2" }} >
+                      <Image  src="/assets/images/portfolio/grid1.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
                     </div>
-                    <div style={{ gridColumn: "3 / span 2",  gridRow: "1 / span 1",  position: "relative",  overflow: "hidden",  }} >
-                      <Image  src="/assets/images/portfolio/port1.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
+                    <div className={gridStyles.gridItem} style={{ gridColumn: "3 / span 2",  gridRow: "1 / span 2" }} >
+                      <Image  src="/assets/images/portfolio/grid2.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
                     </div>
-                    <div style={{ gridColumn: "5 / span 2",  gridRow: "1 / span 2",  position: "relative",  overflow: "hidden",  }} >
-                      <Image  src="/assets/images/portfolio/port1.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
+                    <div className={gridStyles.gridItem} style={{ gridColumn: "5 / span 2",  gridRow: "1 / span 2" }} >
+                      <Image  src="/assets/images/portfolio/grid3.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
                     </div>
-                    <div style={{ gridColumn: "3 / span 2",  gridRow: "2 / span 1",  position: "relative",  overflow: "hidden",  }} >
+                    {/* <div className={gridStyles.gridItem} style={{ gridColumn: "3 / span 2",  gridRow: "2 / span 1" }} >
                       <Image  src="/assets/images/portfolio/port1.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
+                    </div> */}
+
+                    <div className={gridStyles.gridItem} style={{ gridColumn: "1 / span 1",  gridRow: "3 / span 2" }} >
+                      <Image  src="/assets/images/portfolio/grid4.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
+                    </div>
+                    <div className={gridStyles.gridItem} style={{ gridColumn: "2 / span 1",  gridRow: "3 / span 2" }} >
+                      <Image  src="/assets/images/portfolio/grid5.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
+                    </div>
+                    <div className={gridStyles.gridItem} style={{ gridColumn: "3 / span 2",  gridRow: "3 / span 2" }} >
+                      <Image  src="/assets/images/portfolio/grid6.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
+                    </div>
+                    <div className={gridStyles.gridItem} style={{ gridColumn: "5 / span 2",  gridRow: "3 / span 2" }} >
+                      <Image  src="/assets/images/portfolio/grid7.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
                     </div>
 
-                    <div style={{ gridColumn: "1 / span 1",  gridRow: "3 / span 2",  position: "relative",  overflow: "hidden",  }} >
-                      <Image  src="/assets/images/portfolio/port1.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
+                    <div className={`${gridStyles.gridItem} ${gridStyles.gridMoveTop}`} style={{ gridColumn: "1 / span 2",  gridRow: "5 / span 2" }} >
+                      <Image  src="/assets/images/portfolio/grid8.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
                     </div>
-                    <div style={{ gridColumn: "2 / span 2",  gridRow: "3 / span 2",  position: "relative",  overflow: "hidden",  }} >
-                      <Image  src="/assets/images/portfolio/port1.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
+                    <div className={`${gridStyles.gridItem} ${gridStyles.gridFullWidthMobile}`} style={{ gridColumn: "3 / span 1",  gridRow: "5 / span 2" }} >
+                      <Image  src="/assets/images/portfolio/grid9.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
                     </div>
-                    <div style={{ gridColumn: "4 / span 1",  gridRow: "3 / span 2",  position: "relative",  overflow: "hidden",  }} >
-                      <Image  src="/assets/images/portfolio/port1.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
+                    <div className={`${gridStyles.gridItem} ${gridStyles.girlGridFullWidthMobile}`} style={{ gridColumn: "4 / span 1",  gridRow: "5 / span 2" }} >
+                      <Image  src="/assets/images/portfolio/grid10.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
                     </div>
-                    <div style={{ gridColumn: "5 / span 2",  gridRow: "3 / span 2",  position: "relative",  overflow: "hidden",  }} >
-                      <Image  src="/assets/images/portfolio/port1.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
+                    <div className={`${gridStyles.gridItem} ${gridStyles.gridMoveBottom}`} style={{ gridColumn: "5 / span 2",  gridRow: "5 / span 2" }} >
+                      <Image  src="/assets/images/portfolio/grid11.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
                     </div>
-
-                    <div style={{ gridColumn: "1 / span 2",  gridRow: "5 / span 2",  position: "relative",  overflow: "hidden",  }} >
-                      <Image  src="/assets/images/portfolio/port1.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
-                    </div>
-                    <div style={{ gridColumn: "3 / span 1",  gridRow: "5 / span 2",  position: "relative",  overflow: "hidden",  }} >
-                      <Image  src="/assets/images/portfolio/port1.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
-                    </div>
-                    <div style={{ gridColumn: "4 / span 1",  gridRow: "5 / span 2",  position: "relative",  overflow: "hidden",  }} >
-                      <Image  src="/assets/images/portfolio/port1.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
-                    </div>
-                    <div style={{ gridColumn: "5 / span 2",  gridRow: "5 / span 2",  position: "relative",  overflow: "hidden",  }} >
-                      <Image  src="/assets/images/portfolio/port1.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
-                    </div>
-
+                    
                   </div>
                 </div>
 
@@ -319,7 +313,7 @@ export default function ModernPortfolioPage() {
                 <div
                   className="position-relative"
                   style={{
-                    backgroundImage: "url('/assets/images/portfolio/port1.jpg')", 
+                    backgroundImage: "url('/assets/images/portfolio/amu2.jpg')", 
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
