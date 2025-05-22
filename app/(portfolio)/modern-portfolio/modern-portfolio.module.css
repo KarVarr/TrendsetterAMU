@@ -20,20 +20,27 @@
     gap: 1rem;
   }
   
-  .logoBox {
+  .logoBox { 
     position: absolute;
     top: -4rem;
     left: 1rem;
-    border: 1px solid #192ed5;
+    border-left: 1px solid #192ed5;
+    border-right: 1px solid #192ed5;
+    border-bottom: 1px solid #192ed5;
+    /* Убираем верхнюю границу */
+    border-top: none;
+  
     padding: 1rem 2rem;
     font-size: 5rem;
+    font-weight: 300;
     display: inline-block;
   }
+  
   
   .stripe {
     position: absolute;
     top: 6.38rem;
-    left: 6.3rem;
+    left: 6rem;
     width: 5rem;
     height: 380px;
     background-color: #192ed5;
@@ -49,8 +56,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
-    font-size: 10rem;
-    font-weight: 700;
+    font-size: 13rem;
+    font-weight: 400;
     letter-spacing: 2px;
     white-space: nowrap;
     color: #192ed5;
@@ -64,6 +71,72 @@
     color: #fff;
     opacity: 0.7;
   }
+
+  .headingWrapper {
+    text-align: left;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 100px;
+  }
+
+
+  /* ПЯТЫЙ БЛОК  */
+  .letsWorkContainer {
+    height: 90vh;
+    background-color: #fdfbf6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .letsWorkWrapper {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .letsWorkText {
+    font-size: clamp(2.5rem, 11vw, 17rem);
+    font-weight: 900;
+    color: #192ed5;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: 1.5;
+    position: relative;
+    z-index: 1;
+    font-family: 'Russo One', sans-serif;
+  }
+  
+  /* .letsWorkUnderline {
+    position: absolute;
+    bottom: 23.7%;
+    left: -0.5%;
+    width: 101%;
+    height: 1px;
+    background-color: #192ed5;
+    z-index: 0;
+  } */
+  
+  .letsWorkOverlay {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(2rem, 8vw, 10rem);
+    font-weight: 400;
+    font-family: 'Great Vibes', cursive;
+    color: #000;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 2;
+  }
+  
+
+
+
+
   
   /*── Mobile (max-width: 1100px) ──*/
   @media (max-width: 1100px) {
@@ -99,5 +172,20 @@
       margin-bottom: 2rem;
       
     }
+
+    .headingWrapper {
+      text-align: left;
+      padding-left: 0px;
+    }
+
+    .letsWorkOverlay {
+      top: 56%;
+      font-size: clamp(2rem, 6vw, 10rem);
+    }
+
+    .letsWorkText {
+      font-size: clamp(2.5rem, 9vw, 17rem);
+    }
+
   }
   

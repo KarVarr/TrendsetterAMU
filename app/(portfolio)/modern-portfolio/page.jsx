@@ -6,16 +6,22 @@ import { modernMultipage } from "@/data/menu";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
+
+
+import { Playfair_Display } from 'next/font/google'; //звезда *
 import { Inter } from 'next/font/google';
-const inter = Inter({ subsets: ['latin'] });
 import { Russo_One } from 'next/font/google';
-const russoOne = Russo_One({  weight: '400',  subsets: ['latin'],});
 import { Dela_Gothic_One, Great_Vibes } from 'next/font/google';
+import { Roboto } from 'next/font/google';
+
 import ContentBlock from "@/components/portfolio/contentBlock";
 import styles from './modern-portfolio.module.css';
 import gridStyles from './grid.module.css'
 
-
+const playfairDisplay = Playfair_Display({ subsets: ['latin'], weight: ['400', '700'], });
+const inter = Inter({ subsets: ['latin'] });
+const roboto = Roboto({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700'] });
+const russoOne = Russo_One({  weight: '400',  subsets: ['latin'],});
 const delaGothicOne = Dela_Gothic_One({ subsets: ['latin'], weight: '400' });
 const greatVibes = Great_Vibes({ subsets: ['latin'], weight: '400' });
 
@@ -31,7 +37,7 @@ export const metadata = {
 export default function ModernPortfolioPage() {
   return (
     <>
-      <div className="theme-modern">
+      <div className={`theme-modern`}>
         <div className="page" id="top">
           <nav className="main-nav dark transparent stick-fixed wow-menubar">
             <Header8 links={modernMultipage} />
@@ -41,7 +47,7 @@ export default function ModernPortfolioPage() {
               className="page-section pt-90 pb-90 pb-xs-40 bg-dark-alpha-60 parallax-5 light-content"
               style={{
                 backgroundImage:
-                  "url(/assets/images/demo-modern/section-bg-6.jpg)",
+                  "url(/assets/images/portfolio/nav.jpg)",
               }}
               id="home"
             >
@@ -118,7 +124,7 @@ export default function ModernPortfolioPage() {
             </section>
 
              {/* <Portfolio /> */}
-             <div
+             <div className={`${russoOne.className}`}
               style={{
                 width: "100vw",
                 display: "flex",
@@ -130,7 +136,7 @@ export default function ModernPortfolioPage() {
               <div style={{width: "90vw", maxWidth: "1800px", }}>
                 
              <div
-                  className="position-relative"
+                   className={`${roboto.className} position-relative`}
                   style={{
                     backgroundImage: "url('/assets/images/portfolio/amu1.jpg')", 
                     backgroundSize: "cover",
@@ -146,7 +152,7 @@ export default function ModernPortfolioPage() {
                     className="position-relative bg-white shadow"
                     style={{
                       width: "85%",
-                      maxWidth: "1000px",
+                      maxWidth: "1400px",
                       padding: "4rem",
                       boxSizing: "border-box",
                     }}
@@ -156,7 +162,10 @@ export default function ModernPortfolioPage() {
                       className="position-absolute"
                       style={{ top: "20px", right: "30px" }}
                     >
-                      <span className="small text-uppercase text-primary fw-bold">
+                      <span 
+                        style={{ fontWeight: 300, fontSize: "clamp(0.5rem, 1.8vw, 0.75rem)", letterSpacing: "0.12em", color: "#192ed5" }}
+                        className="text-uppercase"
+                      >
                         SIMPLICITY FOR PEOPLE WHO HAVE A LIFE
                       </span>
                     </div>
@@ -165,18 +174,22 @@ export default function ModernPortfolioPage() {
                       className="position-absolute"
                       style={{ bottom: "20px", left: "30px" }}
                     >
-                      <span className="small text-primary fw-bold">2024/2025</span>
+                      <span 
+                        style={{ fontWeight: 300, fontSize: "clamp(0.5rem, 1.8vw, 0.75rem)", color: "#192ed5" }}
+                      >2024/2025</span>
                     </div>
 
-                    <div style={{ paddingTop: "40px", paddingBottom: "40px" }}>
+                    <div 
+                      className={styles.headingWrapper}
+                      >
                       <h1
-                        className="fw-bold"
-                        style={{ fontSize: "3.5rem", lineHeight: "1.2", marginBottom: 0 }}
+                        
+                        style={{ fontSize: "clamp(3.5rem, 8vw, 7rem)", lineHeight: "1.2", marginBottom: 0, fontWeight: 600,  }}
                       >
                         WHO WE <br /> ARE?
                         <span
-                          className="text-primary ms-2"
-                          style={{ fontSize: "2.5rem", verticalAlign: "top" }}
+                          className={`${playfairDisplay.className} ms-2`}
+                          style={{ fontSize: "clamp(3rem, 12vw, 10rem)", verticalAlign: "top", fontWeight: 700, color: "#192ed5"}}
                         >
                           *
                         </span>
@@ -196,6 +209,8 @@ export default function ModernPortfolioPage() {
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
+                    // fontSize: "clamp(0.8rem, 2.2vw, 2rem)",
+                    lineHeight: "1.6",
                   }}
                   
                 >
@@ -328,7 +343,7 @@ export default function ModernPortfolioPage() {
                     className="position-relative bg-white shadow"
                     style={{
                       width: '85%',
-                      maxWidth: '800px',
+                      maxWidth: '1000px',
                       display: 'flex',         
                       flexDirection: 'column', 
                       justifyContent: 'center', 
@@ -341,8 +356,8 @@ export default function ModernPortfolioPage() {
                       className="fw-bold"
                       style={{
                         margin: 0,              
-                        marginBottom: '2rem',  
-                        fontSize: '1.8rem',
+                        marginBottom: '2.5rem',  
+                        fontSize: 'clamp(1.5rem, 4vw, 3rem)',
                         color: '#192ed5',
                         lineHeight: 1.4,
                       }}
@@ -353,7 +368,7 @@ export default function ModernPortfolioPage() {
                       className="fw-bold"
                       style={{
                         margin: 0,
-                        fontSize: '1.8rem',
+                        fontSize: 'clamp(1.5rem, 4vw, 3rem)',
                         color: '#192ed5',
                         lineHeight: 1.4,
                       }}
@@ -367,21 +382,22 @@ export default function ModernPortfolioPage() {
 
                 <div
                   id="amu-brand"
-                  className={styles.amuBrand}
+                  className={`${roboto.className} ${styles.amuBrand}`}
                 >
                   {/* 1) Верхний левый блок */}
                   <div
                     className={styles.topLeft}
                   >
                     {/* маленький логотип в белой коробке */}
-                    <div
-                      className={styles.logoBox}
-                    >
-                      ÁMU<sup style={{ position: "absolute",
+                    <div className={styles.logoBox}>
+
+                      ÁMU<sup style={{ 
+                        position: "absolute",
                         top: "2.2em",      
                         right: "0.75em",   
                         fontSize: "0.3em",  
-                        lineHeight: 1, }}>™</sup>
+                        lineHeight: 1, 
+                      }}>™</sup>
                     </div>
 
                     {/* синяя полоса */}
@@ -404,7 +420,7 @@ export default function ModernPortfolioPage() {
                     }}
                   >
                     ÁMU
-                    <sup style={{ fontSize: "0.6rem", verticalAlign: "super" }}>™</sup>
+                    <sup style={{ fontSize: "0.6rem", verticalAlign: "super", transform: "rotate(90deg)",  display: "inline-block", }}>™</sup>
                   </div>
                   </div>
 
@@ -424,8 +440,8 @@ export default function ModernPortfolioPage() {
                     <sup
                       style={{
                         position: "absolute",
-                        top: "0.27em",      
-                        right: "-0.75em",   
+                        top: "0.22em",      
+                        right: "-0.85em",   
                         fontSize: "0.35em",  
                         lineHeight: 1,
                       }}
@@ -508,48 +524,16 @@ export default function ModernPortfolioPage() {
 
                   {/* седьмой блок */}
 
-                  <div
-                    id="lets-work"
-                    style={{
-                      height: "90vh",
-                      backgroundColor: "#fdfbf6",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      position: "relative",
-                      overflow: "hidden",
-                    }}
-                  >
-                    <h1
-                      className={russoOne.className}
-                      style={{
-                        fontSize: "7vw",
-                        fontWeight: 400,
-                        color: "#192ed5",
-                        textTransform: "uppercase",
-                        margin: 0,
-                        position: "relative",
-                      }}
-                    >
-                      LET’S WORK
-                      <span
-                        className={russoOne.className}
-                        style={{
-                          position: "absolute",
-                          left: "50%",
-                          top: "50%",
-                          transform: "translate(-50%, -50%)",
-                          fontSize: "2vw",
-                          color: "#000",
-                          whiteSpace: "nowrap",
-                          pointerEvents: "none",
-                        }}
-                      >
-                        Together
-                      </span>
-                    </h1>
-
+                  <div className={styles.letsWorkContainer}>
+                    <div className={styles.letsWorkWrapper}>
+                      <h1 className={styles.letsWorkText}>
+                        LET’S WORK
+                      </h1>
+                      <div className={styles.letsWorkUnderline}></div>
+                      <span className={styles.letsWorkOverlay}>Together</span>
                     </div>
+                  </div>
+    
                 </div>
               </div>
                   
