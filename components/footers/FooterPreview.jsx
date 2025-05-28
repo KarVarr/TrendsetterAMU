@@ -14,6 +14,7 @@ export default function FooterPreview() {
     });
   };
 
+  
   return (
     <div className="container">
       <div className="row pb-120 pb-sm-80 pb-xs-50">

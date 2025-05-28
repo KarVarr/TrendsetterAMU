@@ -8,7 +8,6 @@ import Testimonials from "./Testimonials";
 import Contact from "./Contact";
 import Link from "next/link";
 import Accordion from "./Accordion";
-import YandexMap from "@/components/maps/YandexMap";
 
 export default function Home8({
   onePage = false,
