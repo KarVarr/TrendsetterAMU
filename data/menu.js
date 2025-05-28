@@ -48,15 +48,23 @@ export const slickOnepage = [
   { href: "#contact", text: "Contact" },
 ];
 
-//вот тут меняй названия навигации и ссылки
-export const modernMultipage = [
-  { id: 1, href: "/home", text: "Home" },
-  { id: 2, href: "/about", text: "About", className: "active" },
-  { id: 3, href: "/shop", text: "Shop" },
-  { id: 4, href: "/amu", text: "AMU" },
-  // { id: 5, href: "/blog", text: "Blog" },
-  { id: 5, href: "/contacts", text: "Contacts" },
+
+export const getModernMultipage = (locale) => [
+  { id: 1, href: `/${locale}/home`, text: "Home" },
+  { id: 2, href: `/${locale}/about`, text: "About", className: "active" },
+  { id: 3, href: `/${locale}/shop`, text: "Shop" },
+  { id: 4, href: `/${locale}/amu`, text: "AMU" },
+  { id: 5, href: `/${locale}/contacts`, text: "Contacts" },
 ];
+//вот тут меняй названия навигации и ссылки
+// export const modernMultipage = [
+//   { id: 1, href: "/home", text: "Home" },
+//   { id: 2, href: "/about", text: "About", className: "active" },
+//   { id: 3, href: "/shop", text: "Shop" },
+//   { id: 4, href: "/amu", text: "AMU" },
+//   // { id: 5, href: "/blog", text: "Blog" },
+//   { id: 5, href: "/contacts", text: "Contacts" },
+// ];
 export const modernMultipageDark = [
   { id: 1, href: "/modern-multi-page-dark", text: "Home" },
   { id: 2, href: "/modern-about-dark", text: "About", className: "active" },

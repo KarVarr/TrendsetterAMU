@@ -1,6 +1,9 @@
+'use client';
 import React from "react";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 export default function Hero1() {
+  const t = useTranslations();
   return (
     <div className="container min-height-100vh d-flex align-items-center pt-100 pb-100 pt-sm-120 pb-sm-120 ">
       {/* Home Section Content */}
@@ -20,6 +23,7 @@ export default function Hero1() {
               alt="Image Description"
             />{" "} */}
             TRENDSETTER
+            {t('home.title')}
           </span>
           <span
             className="d-block text-left wow fadeRotateIn"
