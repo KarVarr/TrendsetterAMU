@@ -134,10 +134,10 @@ export default function ModernAboutPage() {
                       </h2>
                       <div className="row">
                         <div className="col-md-6 offset-md-3 col-lg-4 offset-lg-4">
-                          <p className="section-descr black mb-0">
+                          {/* <p className="section-descr black mb-0">
                             We believe that things should be useful yet
                             beautiful.
-                          </p>
+                          </p> */}
                         </div>
                       </div>
                     </div>

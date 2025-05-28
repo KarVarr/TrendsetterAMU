@@ -133,7 +133,7 @@ export default function Home8({
             <div className="row">
               <div className="col-sm-6">
                 <h2 className="section-caption mb-0 mb-xs-10 black">
-                  Our Shop (Services)
+                  Our Shop
                 </h2>
               </div>
               <div className="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end">
@@ -322,7 +322,7 @@ export default function Home8({
             <div className="row">
               <div className="col-sm-6">
                 <h2 className="section-caption mb-0 mb-xs-10 black">
-                  OUR BRAND (Portfolio)
+                  OUR BRAND
                 </h2>
               </div>
               <div className="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end">
@@ -354,7 +354,7 @@ export default function Home8({
                   </>
                 ) : (
                   <>
-                    <Link
+                    {/* <Link
                       href={`/modern-portfolio${dark ? "-dark" : ""}`}
                       className="link-hover-anim align-middle"
                       data-link-animate="y"
@@ -376,7 +376,7 @@ export default function Home8({
                           aria-hidden="true"
                         ></i>
                       </span>
-                    </Link>
+                    </Link> */}
                   </>
                 )}
               </div>

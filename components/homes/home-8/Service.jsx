@@ -13,13 +13,13 @@ export default function Service() {
             {service.title}
           </span>
           <span className="services-4-image parallax-mousemove-follow">
-            <Image
+            {/* <Image
               src={service.imageSrc}
               loading="lazy"
               width={550}
               height={673}
               alt={service.alt}
-            />
+            /> */}
           </span>
         </h3>
       ))}
