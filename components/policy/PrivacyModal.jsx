@@ -19,7 +19,7 @@ export default function PrivacyModal({ linkLabel = "Privacy Policy" }) {
       <Modal show={show} onHide={handleClose} size="lg" centered scrollable>
         <Modal.Header closeButton>
           <Modal.Title>
-            Privacy Policy / Политика конфиденциальности / Գաղտնիության քաղաքականություն
+            Privacy Policy
           </Modal.Title>
         </Modal.Header>
         <Modal.Body style={{ backgroundColor: "#fff", color: "#000", maxHeight: "70vh", overflowY: "auto" }}>
@@ -27,7 +27,7 @@ export default function PrivacyModal({ linkLabel = "Privacy Policy" }) {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-            Close / Закрыть / Փակել
+            Close
           </Button>
         </Modal.Footer>
       </Modal>
