@@ -1,6 +1,6 @@
 {
     "home": {
-      "title": "title en ",
+      "title": "ешеду",
       "description": "This is a demo website"
     },
     "contact": {
@@ -12,8 +12,13 @@
     "amu": {
         "title": "AMU"
     }, 
-    "stores": {
-        "title": "Stores"
+    "shop": {
+        "titleOurStory": "OUR STORY",
+        "titleOutMission": "OUR MISSION",
+        "mainStory": "is an international fashion startup developing a multibrand store offering clothing, footwear, and accessories. Our selection features some of the most popular global brands, including H&M, Reserved, Sinsay, House, and more.",
+        "ourStory": "Since 2023, we’ve been successfully selling on Wildberries, with exclusive supply partnerships. In 2025, we’re stepping into offline retail with the opening of our first store in Armenia.",
+        "ourMission": "To make stylish, high-quality clothing accessible to everyone. Trendsetter is a flexible and ambitious brand, currently building a strong team and actively expanding across the region. We believe fashion should be simple, accessible, and inspiring — every single day.",
+        "establishTitle": "ESTABLISHED IN"
     }
     
   }

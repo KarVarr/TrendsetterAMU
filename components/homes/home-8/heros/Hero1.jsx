@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { useTranslations } from 'next-intl';
+
 export default function Hero1() {
   const t = useTranslations();
   return (
@@ -23,7 +24,7 @@ export default function Hero1() {
               alt="Image Description"
             />{" "} */}
             TRENDSETTER
-            {t('home.title')}
+            
           </span>
           <span
             className="d-block text-left wow fadeRotateIn"

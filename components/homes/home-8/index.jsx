@@ -1,3 +1,4 @@
+'use client';
 import React from "react";
 import Image from "next/image";
 import Service from "./Service";
@@ -8,12 +9,14 @@ import Testimonials from "./Testimonials";
 import Contact from "./Contact";
 import Link from "next/link";
 import Accordion from "./Accordion";
+import { useTranslations } from 'next-intl';
 
 export default function Home8({
   onePage = false,
   dark = false,
   eadge2 = false,
 }) {
+  const t = useTranslations();
   return (
     <>
       <section
@@ -32,7 +35,7 @@ export default function Home8({
                 data-splitting="lines"
               >
                 <h2 className="section-title-inline-1">Trendsetter</h2>
-                is an international fashion startup developing a multibrand store offering clothing, footwear, and accessories. Our selection features some of the most popular global brands, including H&M, Reserved, Sinsay, House, and more.
+                {t('shop.mainStory')}
               </div>
               {/* Accordion */}
               <Accordion />
