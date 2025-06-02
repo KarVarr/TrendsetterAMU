@@ -9,13 +9,17 @@ import Testimonials from "./Testimonials";
 import Contact from "./Contact";
 import Link from "next/link";
 import Accordion from "./Accordion";
+import { useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
+
 
 export default function Home8({
   onePage = false,
   dark = false,
   eadge2 = false,
 }) {
+  const params = useParams();
+  const locale = params.locale;
   const t = useTranslations();
   return (
     <>
@@ -35,7 +39,7 @@ export default function Home8({
                 data-splitting="lines"
               >
                 <h2 className="section-title-inline-1">Trendsetter</h2>
-                {t('shop.mainStory')}
+                {t('about.mainStory')}
               </div>
               {/* Accordion */}
               <Accordion />
@@ -95,10 +99,11 @@ export default function Home8({
                   <div className="position-relative z-index-1">
                     <h2 className="hs-title-5 font-alt overflow-hidden mb-60 mb-sm-40">
                       <span className="d-inline-block wow fadeRotateIn">
-                        Established
+                      {t('about.establishTitle')}
                       </span>
+                      <br />
                       <span className="d-inline-block wow fadeRotateIn">
-                        in 2023
+                      {t('about.establishIn')} 2023
                       </span>
                     </h2>
                     {/* <div className="row">
@@ -135,10 +140,10 @@ export default function Home8({
             <div className="row">
               <div className="col-sm-6">
                 <h2 className="section-caption mb-0 mb-xs-10 black">
-                  Our Shop
+                {t('shop.homeSubtitle')}
                 </h2>
               </div>
-              <div className="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end">
+              {/* <div className="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end">
                 {onePage ? (
                   <>
                     <a
@@ -166,7 +171,7 @@ export default function Home8({
                     </a>
                   </>
                 ) : (
-                  <>
+                  <> */}
                     {/* <Link
                       href={`/modern-services${dark ? "-dark" : ""}`}
                       className="link-hover-anim align-middle"
@@ -190,9 +195,9 @@ export default function Home8({
                         ></i>
                       </span>
                     </Link> */}
-                  </>
-                )}
-              </div>
+                  {/* </> */}
+                {/* )} */}
+              {/* </div> */}
             </div>
             <hr
               className={` ${dark ? "white opacity-1" : "black"}  mt-3 mb-0`}
@@ -201,8 +206,8 @@ export default function Home8({
           {/* Services Grid ???????????????????????????????????????????????????? Shop now*/}
           <div className="row">
             <div className="col-10 col-sm-9">
-              <h3 className="hs-title-5 font-alt overflow-hidden mb-100 mb-md-40">
-                <span className="d-block wow fadeRotateIn"> Your Access to Global Fashion </span>
+              <h3 className="hs-title-4 font-alt overflow-hidden mb-100 mb-md-40">
+                <span className="d-block wow fadeRotateIn"> {t('shop.homeTitle')} </span>
                 {/* <span className="d-block text-end wow fadeRotateIn">
                   {" "}
                   Designe{" "}
@@ -216,16 +221,13 @@ export default function Home8({
             data-splitting="lines"
           >
             <p>
-              
-              Trendsetter Á Multibrand is a multibrand fashion store bringing together the world’s most loved clothing labels — from H&M to Reserved, Sinsay, and more.
+              {t('shop.block1')}  
             </p>
             <p>
-              We curate stylish, affordable, and ready-to-wear pieces that fit your everyday life.
-              Exclusively available on Wildberries since 2023 — and now expanding offline in Armenia.
+            {t('shop.block2')}
             </p>
             <p>
-              Global fashion, local access.
-              Trendsetter makes it easy to wear what you love.
+            {t('shop.block3')}
             </p>
           </div>
 
@@ -235,17 +237,17 @@ export default function Home8({
             <div className="row justify-content-center mt-5 mt-md-6">
               <div className="col-auto text-center">
                 <Link
-                  href={`/modern-services${dark ? "-dark" : ""}`}
+                  href={`/${locale}/shop`}
                   className="btn btn-mod btn-white btn-circle btn-ellipse"
                   data-btn-animate="ellipse"
                 >
                   <span className="btn-ellipse-inner">
                     <span className="btn-ellipse-unhovered">
-                      To the Shop{" "}
+                      {t('shop.homeButtonToTheShop')}{" "}
                       <i className="icon-arrow-right2 size-14" aria-hidden="true"></i>
                     </span>
                     <span className="btn-ellipse-hovered" aria-hidden="true">
-                      To the Shop{" "}
+                      {t('shop.homeButtonToTheShop')}{" "}
                       <i className="icon-arrow-right2 size-14" aria-hidden="true"></i>
                     </span>
                   </span>
@@ -324,10 +326,10 @@ export default function Home8({
             <div className="row">
               <div className="col-sm-6">
                 <h2 className="section-caption mb-0 mb-xs-10 black">
-                  OUR BRAND
+                 {t('amu.homeTitle')}
                 </h2>
               </div>
-              <div className="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end">
+              {/* <div className="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end">
                 {onePage ? (
                   <>
                     <a
@@ -355,7 +357,7 @@ export default function Home8({
                     </a>
                   </>
                 ) : (
-                  <>
+                  <> */}
                     {/* <Link
                       href={`/modern-portfolio${dark ? "-dark" : ""}`}
                       className="link-hover-anim align-middle"
@@ -379,9 +381,9 @@ export default function Home8({
                         ></i>
                       </span>
                     </Link> */}
-                  </>
+                  {/* </>
                 )}
-              </div>
+              </div> */}
             </div>
             <hr
               className={` ${dark ? "white opacity-1" : "black"}  mt-3 mb-0`}
@@ -406,7 +408,7 @@ export default function Home8({
               data-splitting="lines"
             >
               {/* <h2 className="section-title-inline-1">Про Amu</h2> */}
-              At AMU, we specialize in elevated everyday basics—timeless pieces designed to become your wardrobe’s go-to staples. Inspired by industry leaders like H&M, Uniqlo, Zara, and Lululemon, our mission is to deliver essential clothing that blends effortless style with premium quality.
+              {t('amu.homeBlock1')}
             </div>
 
             <div
@@ -414,7 +416,7 @@ export default function Home8({
               data-wow-offset="0"
               data-splitting="lines"
             >
-              We focus on core bestsellers that reflect modern streetwear sensibilities while staying true to minimalism and function. 
+              {t('amu.homeBlock2')}
             </div>
 
             <div
@@ -422,7 +424,7 @@ export default function Home8({
               data-wow-offset="0"
               data-splitting="lines"
             >
-              We focus on core bestsellers that reflect modern streetwear sensibilities while staying true to minimalism and function. 
+              {t('amu.homeBlock3')}
             </div>
 
             <Service />
@@ -432,7 +434,7 @@ export default function Home8({
               data-wow-offset="0"
               data-splitting="lines"
             >
-              All items are produced in plain, solid colors—no prints or graphics—ensuring versatility and timeless appeal. We have detailed size charts that include plus sizes to ensure our clothing is inclusive, well-fitting, and accessible to everyone.
+              {t('amu.homeBlock5')}
             </div>
 
             <div
@@ -440,10 +442,29 @@ export default function Home8({
               data-wow-offset="0"
               data-splitting="lines"
             >
-              At AMU, we believe in pure, uncompromising style—liberating essentials designed to move with you.
+              {t('amu.homeBlock6')}
             </div>
 
-            
+            <div className="row justify-content-center mt-5 mt-md-6">
+              <div className="col-auto text-center">
+                <Link
+                  href={`/${locale}/amu`}
+                  className="btn btn-mod btn-white btn-circle btn-ellipse"
+                  data-btn-animate="ellipse"
+                >
+                  <span className="btn-ellipse-inner">
+                    <span className="btn-ellipse-unhovered">
+                      {t('amu.homeButtonToTheAMU')}{" "}
+                      <i className="icon-arrow-right2 size-14" aria-hidden="true"></i>
+                    </span>
+                    <span className="btn-ellipse-hovered" aria-hidden="true">
+                      {t('amu.homeButtonToTheAMU')}{" "}
+                      <i className="icon-arrow-right2 size-14" aria-hidden="true"></i>
+                    </span>
+                  </span>
+                </Link>
+              </div>
+            </div>
 
           {/* End Portfolio Grid */}
         </div>
@@ -518,9 +539,9 @@ export default function Home8({
                 )}
               </div>
             </div> */}
-            <hr
+            {/* <hr
               className={` ${dark ? "white opacity-1" : "black"}  mt-3 mb-0`}
-            />
+            /> */}
           </div>
           <Blog />
           {/* End Newsletter Form */}
@@ -550,7 +571,7 @@ export default function Home8({
           <div className="mb-100 mb-md-40">
             <div className="row">
               <div className="col-sm-6">
-                <h2 className="section-caption mb-0 mb-xs-10 black">Contact</h2>
+                <h2 className="section-caption mb-0 mb-xs-10 black">{t('contact.homeTitle')}</h2>
               </div>
               {/* <div className="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end"> */}
                 {/* Change the email address in the href attribute */}
@@ -586,9 +607,9 @@ export default function Home8({
           <div className="row">
             <div className="col-11 col-sm-10">
               <h3 className="hs-title-5 font-alt overflow-hidden mb-100 mb-md-40">
-                <span className="d-block wow fadeRotateIn"> Let’s </span>
+                <span className="d-block wow fadeRotateIn"> {t('contact.title1')} </span>
                 <span className="d-block text-end wow fadeRotateIn">
-                Get in Touch
+                {t('contact.title2')}
                 </span>
               </h3>
             </div>

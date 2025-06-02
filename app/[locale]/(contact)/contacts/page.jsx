@@ -1,3 +1,4 @@
+'use client';
 import Footer2 from "@/components/footers/Footer2";
 import Header8 from "@/components/headers/Header8";
 import Contact from "@/components/homes/home-8/Contact";
@@ -10,17 +11,15 @@ import Image from "next/image";
 import Link from "next/link";
 const onePage = false;
 const dark = false;
-// const locale = useLocale();
+import { useParams } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 
 import ParallaxContainer from "@/components/common/ParallaxContainer";
-export const metadata = {
-  title:
-    "Modern Contact || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-  description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-};
-export default function ModernContactPage({ params }) {
-  const { locale } = params;
+
+export default function ModernContactPage() {
+  const params = useParams();
+  const locale = params.locale;
+  const t = useTranslations();
   return (
     <>
       <div className="theme-modern">
@@ -53,14 +52,14 @@ export default function ModernContactPage({ params }) {
                             className="icon-arrow-left2 size-14"
                             aria-hidden="true"
                           ></i>{" "}
-                          Back to home
+                          {t('home.buttonBackToHome')}
                         </span>
                         <span className="btn-animate-y-2" aria-hidden="true">
                           <i
                             className="icon-arrow-left2 size-14"
                             aria-hidden="true"
                           ></i>{" "}
-                          Back to home
+                          {t('home.buttonBackToHome')}
                         </span>
                       </span>
                     </Link>
@@ -68,14 +67,14 @@ export default function ModernContactPage({ params }) {
                   <hr className="white mt-0 mb-0" />
                 </div>
                 <div className="row">
-                  <div className="col-11 col-sm-10">
+                  <div className="col-11 col-sm-10 ">
                     <h1 className="hs-title-5 font-alt overflow-hidden mb-0">
                       <span className="d-block wow fadeRotateIn">
                         {" "}
-                        LET’S{" "}
+                        {t('contact.title1')}{" "}
                       </span>
                       <span className="d-block text-end wow fadeRotateIn">
-                        GET IN TOUCH!
+                      {t('contact.title2')}
                       </span>
                     </h1>
                   </div>

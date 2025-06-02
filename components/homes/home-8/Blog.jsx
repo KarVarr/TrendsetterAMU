@@ -5,13 +5,15 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import PrivacyModal from "@/components/policy/PrivacyModal";
+import { useTranslations } from 'next-intl';
 
 export default function Blog() {
   const [email, setEmail] = useState("");
   const [toastMessage, setToastMessage] = useState("");
   const [showToast, setShowToast] = useState(false);
 
-
+  const t = useTranslations();
+  
   const handleSubscribe = async (e) => {
     e.preventDefault();
 
@@ -99,7 +101,7 @@ export default function Blog() {
                 Your email
               </label>
               <input
-                placeholder="Enter your email"
+                placeholder={t('blog.homeEnterYourEmain')}
                 className="newsletter-field mb-sm-20 me-md-4"
                 id="newsletter-email"
                 name="newsletter-email"
@@ -118,17 +120,16 @@ export default function Blog() {
                   data-btn-animate="y"
                 >
                   <span className="btn-animate-y">
-                    <span className="btn-animate-y-1">Subscribe For Updates</span>
+                    <span className="btn-animate-y-1"> {t('blog.homeButtonSubscribe1')}</span>
                     <span className="btn-animate-y-2" aria-hidden="true">
-                      Subscribe Now
+                    {t('blog.homeButtonSubscribe2')}
                     </span>
                   </span>
                 </button>
               </div>
             </div>
             <div className="form-tip">
-              <i className="icon-info size-16" /> By sending the form you agree
-              to the {" "}
+              <i className="icon-info size-16" /> {t('blog.homePrivicy')} {" "}
               <PrivacyModal /> 
             </div>
             {/* Toast уведомление */}

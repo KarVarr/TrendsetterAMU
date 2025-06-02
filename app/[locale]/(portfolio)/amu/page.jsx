@@ -1,3 +1,5 @@
+'use client';
+
 import Footer2 from "@/components/footers/Footer2";
 import Header8 from "@/components/headers/Header8";
 import Portfolio from "@/components/homes/home-8/Portfolio";
@@ -7,7 +9,9 @@ import HeaderWithLocale from "@/components/headers/HeaderWithLocale";
 
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "next/link"
+import { useParams } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 
 import { useLocale } from "next-intl";
 import { Playfair_Display } from 'next/font/google'; //звезда *
@@ -30,14 +34,11 @@ const greatVibes = Great_Vibes({ subsets: ['latin'], weight: '400' });
 
 const onePage = false;
 const dark = false;
-export const metadata = {
-  title:
-    "Modern Portfolio || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-  description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-};
-export default function ModernPortfolioPage({ params }) {
-  const { locale } = params;
+
+export default function ModernPortfolioPage() {
+  const params = useParams();
+  const locale = params.locale;
+  const t = useTranslations();
   return (
     <>
       <div className={`theme-modern`}>

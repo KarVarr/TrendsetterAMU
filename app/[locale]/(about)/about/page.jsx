@@ -183,6 +183,7 @@
 //   );
 // }
 
+'use client';
 import Footer2 from "@/components/footers/Footer2";
 import Accordion from "@/components/homes/home-8/Accordion";
 import Marquee from "@/components/homes/home-8/Marquee";
@@ -190,17 +191,17 @@ import Testimonials from "@/components/homes/home-8/Testimonials";
 import HeaderWithLocale from "@/components/headers/HeaderWithLocale";
 import Image from "next/image";
 import Link from "next/link";
-
-export const metadata = {
-  title: "Modern About || Resonance",
-  description: "Resonance — One & Multi Page React Nextjs Creative Template",
-};
+import { useTranslations } from 'next-intl';
+import { useParams } from 'next/navigation';
 
 const onePage = false;
 const dark = false;
 
-export default function ModernAboutPage({ params }) {
-  const { locale } = params;
+export default function ModernAboutPage() {
+  const params = useParams();
+  const locale = params.locale;
+
+  const t = useTranslations();
 
   return (
     <div className="theme-modern">
@@ -232,14 +233,14 @@ export default function ModernAboutPage({ params }) {
                           className="icon-arrow-left2 size-14"
                           aria-hidden="true"
                         ></i>{" "}
-                        Back to home
+                        {t('home.buttonBackToHome')}
                       </span>
                       <span className="btn-animate-y-2" aria-hidden="true">
                         <i
                           className="icon-arrow-left2 size-14"
                           aria-hidden="true"
                         ></i>{" "}
-                        Back to home
+                        {t('home.buttonBackToHome')}
                       </span>
                     </span>
                   </Link>
@@ -249,8 +250,8 @@ export default function ModernAboutPage({ params }) {
               <div className="row">
                 <div className="col-9 col-sm-8">
                   <h1 className="hs-title-5 font-alt overflow-hidden mb-0">
-                    <span className="d-block wow fadeRotateIn"> About </span>
-                    <span className="d-block text-end wow fadeRotateIn">Us</span>
+                    <span className="d-block wow fadeRotateIn"> {t('about.title1')} </span>
+                    <span className="d-block text-end wow fadeRotateIn">{t('about.title2')}</span>
                   </h1>
                 </div>
               </div>
@@ -282,7 +283,7 @@ export default function ModernAboutPage({ params }) {
                 data-splitting="lines"
               >
                 <h2 className="section-title-inline-1">Trendsetter </h2>
-                is an international fashion startup developing a multibrand store offering clothing, footwear, and accessories. Our selection features some of the most popular global brands, including H&M, Reserved, Sinsay, House, and more.
+                {t('about.mainStory')}
               </div>
 
               {/* Accordion */}
@@ -295,9 +296,9 @@ export default function ModernAboutPage({ params }) {
                   data-btn-animate="ellipse"
                 >
                   <span className="btn-ellipse-inner">
-                    <span className="btn-ellipse-unhovered">View store</span>
+                    <span className="btn-ellipse-unhovered">{t('about.buttonViewStore')}</span>
                     <span className="btn-ellipse-hovered" aria-hidden="true">
-                      View store
+                    {t('about.buttonViewStore')}
                     </span>
                   </span>
                 </Link>
@@ -308,10 +309,11 @@ export default function ModernAboutPage({ params }) {
                   <div className="position-relative z-index-1">
                     <h2 className="hs-title-5 font-alt overflow-hidden mb-60 mb-sm-40">
                       <span className="d-inline-block wow fadeRotateIn">
-                        Established
+                      {t('about.establishTitle')} 
                       </span>
+                      <br />
                       <span className="d-inline-block wow fadeRotateIn">
-                        in 2023
+                      {t('about.establishIn')} 2023
                       </span>
                     </h2>
                     <div className="row">

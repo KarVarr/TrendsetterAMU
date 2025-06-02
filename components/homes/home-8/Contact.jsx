@@ -3,12 +3,13 @@
 import React, { useState, useEffect } from "react";
 import { Toast, ToastContainer } from "react-bootstrap"; 
 import PrivacyModal from "@/components/policy/PrivacyModal";
-
+import { useTranslations } from 'next-intl';
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [toastMessage, setToastMessage] = useState("");
   const [showToast, setShowToast] = useState(false);
+  const t = useTranslations();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -47,22 +48,21 @@ export default function Contact() {
         <div className="col-md-4 mb-sm-60">
           <div className="section-descr black">
             <p>
-            We’re always excited to hear from new customers and potential partners.
-            Have a question, feedback, or a partnership inquiry? Just fill out the form below, and a member of our team will get back to you as soon as possible
+            {t('contact.block1')}
             </p>
             <p>
-            Prefer to reach us directly?
+            {t('contact.block2Title')}
               <br />
               <a href="tel:+18376528800" className="text-link">
-              Phone: +1 837 652 8800
+              {t('contact.block2Phone')} +1 837 652 8800
               </a>
               <br />
               
               <a href="mailto:info@trendsetterwb.com" className="text-link">
-              Email: info@trendsetterwb.com
+              {t('contact.block2Email')}
               </a>
             </p>
-            <p>Follow us on social media to stay updated on our latest news, collections, and exclusive offers.</p>
+            <p>{t('contact.block2Follow')}</p>
             <div>
                 {/* Instagram */}
                 <a
@@ -129,7 +129,7 @@ export default function Contact() {
                   name="name"
                   id="name"
                   className="input-lg input-circle form-control"
-                  placeholder="Name"
+                  placeholder={t('contact.formName')}
                   pattern=".{3,100}"
                   required
                   value={form.name}
@@ -142,7 +142,7 @@ export default function Contact() {
                   name="email"
                   id="email"
                   className="input-lg input-circle form-control"
-                  placeholder="Email"
+                  placeholder={t('contact.formEmail')}
                   pattern=".{5,100}"
                   required
                   value={form.email}
@@ -157,7 +157,7 @@ export default function Contact() {
                 id="message"
                 className="input-lg input-circle form-control"
                 style={{ height: 130 }}
-                placeholder="Message"
+                placeholder={t('contact.formMessage')}
                 required
                 value={form.message}
                 onChange={handleChange}
@@ -173,9 +173,9 @@ export default function Contact() {
                   id="submit_btn"
                 >
                   <span className="btn-ellipse-inner">
-                    <span className="btn-ellipse-unhovered">Send Message</span>
+                    <span className="btn-ellipse-unhovered">{t('contact.formButtonSend')}</span>
                     <span className="btn-ellipse-hovered" aria-hidden="true">
-                      Send Message
+                    {t('contact.formButtonSend')}
                     </span>
                   </span>
                 </button>
@@ -183,7 +183,7 @@ export default function Contact() {
               <div className="col-xs-8 col-lg-6 d-flex align-items-center">
                 <div className="form-tip">
                   <i className="icon-info size-16" />
-                  All the fields are required. By sending the form you agree to the{" "}
+                  {t('contact.formPrivicy')}{" "}
                   <PrivacyModal />
                 </div>
               </div>

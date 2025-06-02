@@ -1,3 +1,4 @@
+'use client';
 import Footer2 from "@/components/footers/Footer2";
 import Header8 from "@/components/headers/Header8";
 
@@ -13,17 +14,17 @@ import YandexMapWrapper from "@/components/maps/YandexMapWrapper";
 // import { useLocale } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
+import { useParams } from 'next/navigation';
+import { useTranslations } from 'next-intl';
+
+
 const onePage = false;
 const dark = false;
-// const locale = useLocale();
-export const metadata = {
-  title:
-    "Modern Services || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-  description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-};
-export default function ModernServicesPage({ params }) {
-  const { locale } = params;
+
+export default function ModernServicesPage() {
+  const params = useParams();
+  const locale = params.locale;
+  const t = useTranslations();
   return (
     <>
       <div className="theme-modern">
@@ -55,14 +56,14 @@ export default function ModernServicesPage({ params }) {
                             className="icon-arrow-left2 size-14"
                             aria-hidden="true"
                           ></i>{" "}
-                          Back to home
+                          {t('home.buttonBackToHome')}
                         </span>
                         <span className="btn-animate-y-2" aria-hidden="true">
                           <i
                             className="icon-arrow-left2 size-14"
                             aria-hidden="true"
                           ></i>{" "}
-                          Back to home
+                          {t('home.buttonBackToHome')}
                         </span>
                       </span>
                     </Link>
@@ -72,9 +73,9 @@ export default function ModernServicesPage({ params }) {
                 <div className="row">
                   <div className="col-9 col-sm-8">
                     <h1 className="hs-title-5 font-alt overflow-hidden mb-0">
-                      <span className="d-block wow fadeRotateIn"> Our </span>
+                      <span className="d-block wow fadeRotateIn"> {t('shop.title1')} </span>
                       <span className="d-block text-end wow fadeRotateIn">
-                        Shop
+                      {t('shop.title2')}
                       </span>
                     </h1>
                   </div>
@@ -109,15 +110,13 @@ export default function ModernServicesPage({ params }) {
                     >
                       {/* <h2 className="section-title-inline-1">Our Values</h2> */}
                       <p>
-                        Trendsetter Á Multibrand is a multibrand fashion store bringing together the world’s most loved clothing labels — from H&M to Reserved, Sinsay, and more.
+                      {t('shop.block1')}
                       </p>
                       <p>
-                        We curate stylish, affordable, and ready-to-wear pieces that fit your everyday life.
-                        Exclusively available on Wildberries since 2023 — and now expanding offline in Armenia.
+                      {t('shop.block2')}
                       </p>
                       <p>
-                        Global fashion, local access.
-                        Trendsetter makes it easy to wear what you love.
+                      {t('shop.block3')}
                       </p>
                     </div>
                   </div>
@@ -159,24 +158,24 @@ export default function ModernServicesPage({ params }) {
                     <div className="row">
                       <div className="col-sm-6 col-md-7 text-center text-sm-start mb-xs-20">
                         <p className="section-descr mb-0 black">
-                        Write to us if you have any questions!
+                        {t('shop.textForProposal')}
                         </p>
                       </div>
                       <div className="col-sm-6 col-md-5 text-center text-sm-end local-scroll">
                         <Link
-                          href={`/modern-contact${dark ? "-dark" : ""}`}
+                          href={`/${locale}/contacts`}
                           className="btn btn-mod btn-border btn-medium btn-circle"
                           data-btn-animate="y"
                         >
                           <span className="btn-animate-y">
                             <span className="btn-animate-y-1">
-                              Get a proposal
+                            {t('shop.buttonForProposal')}
                             </span>
                             <span
                               className="btn-animate-y-2"
                               aria-hidden="true"
                             >
-                              Get a proposal
+                             {t('shop.buttonForProposal')}
                             </span>
                           </span>
                         </Link>

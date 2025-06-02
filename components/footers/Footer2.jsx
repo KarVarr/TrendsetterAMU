@@ -2,8 +2,11 @@
 import { socialLinks } from "@/data/footer";
 import React, { useState } from "react";
 import PrivacyModal from "@/components/policy/PrivacyModal";
+import { useTranslations } from 'next-intl';
 
 export default function Footer2() {
+  const t = useTranslations();
+
   const scrollToTop = (event) => {
     event.preventDefault();
     window.scrollTo({
@@ -12,7 +15,6 @@ export default function Footer2() {
     });
   };
 
-  
   return (
     <div className="container">
       <div className="page-section">
@@ -21,7 +23,7 @@ export default function Footer2() {
           <div className="col-lg-3 text-center text-lg-start mb-md-50">
             © {new Date().getFullYear()} Trendsetter 
             <div className="small" style={{ fontSize: '0.5rem' }}>
-               All rights reserved
+            {t('footer.rights')}
             </div>
           </div>
           {/* End Copyright */}
@@ -52,7 +54,7 @@ export default function Footer2() {
             onClick={scrollToTop}
           >
             <a href="#top" className="fw-top-link">
-              <span className="fw-top-link-underline">Back to top</span>
+              <span className="fw-top-link-underline">{t('footer.buttonBackToTop')}</span>
               <span className="icon ms-1">
                 <i className="icon-arrow-up1 size-22" />
               </span>
@@ -62,7 +64,7 @@ export default function Footer2() {
       </div>
       {/* Footer Text */}
       <div className="footer-text text-center mt-n10 pb-50">
-        Made with love for great people.
+        {/* Made with love for great people. */}
         <div className="small">
          {/* Модальное окно политики */}
          <PrivacyModal /> 

@@ -127,43 +127,53 @@ export const services3 = [
 ];
 
 export const services4 = [
-  {
-    title: "Jeans",
-    imageSrc: "/assets/images/demo-modern/services/1.jpg",
-    alt: "Image Description",
-    align: "text-end",
-  },
-  {
-    title: "T-shirts",
-    imageSrc: "/assets/images/demo-modern/services/2.jpg",
-    alt: "Image Description",
-    align: "text-center",
-  },
-  {
-    title: "Hoodies",
-    imageSrc: "/assets/images/demo-modern/services/3.jpg",
-    alt: "Image Description",
-    align: "text-start",
-  },
-  {
-    title: "Joggers",
-    imageSrc: "/assets/images/demo-modern/services/4.jpg",
-    alt: "Image Description",
-    align: "text-start",
-  },
-  {
-    title: "Sweatshirts",
-    imageSrc: "/assets/images/demo-modern/services/5.jpg",
-    alt: "Image Description",
-    align: "text-center",
-  },
-  {
-    title: "Underwear",
-    imageSrc: "/assets/images/demo-modern/services/6.jpg",
-    alt: "Image Description",
-    align: "text-end",
-  },
+  { key: "jeans", align: "text-end" },
+  { key: "tshirts", align: "text-center" },
+  { key: "hoodies", align: "text-start" },
+  { key: "joggers", align: "text-start" },
+  { key: "sweatshirts", align: "text-center" },
+  { key: "underwear", align: "text-end" },
 ];
+
+
+// export const services4 = [
+//   {
+//     title: "Jeans",
+//     imageSrc: "/assets/images/demo-modern/services/1.jpg",
+//     alt: "Image Description",
+//     align: "text-end",
+//   },
+//   {
+//     title: "T-shirts",
+//     imageSrc: "/assets/images/demo-modern/services/2.jpg",
+//     alt: "Image Description",
+//     align: "text-center",
+//   },
+//   {
+//     title: "Hoodies",
+//     imageSrc: "/assets/images/demo-modern/services/3.jpg",
+//     alt: "Image Description",
+//     align: "text-start",
+//   },
+//   {
+//     title: "Joggers",
+//     imageSrc: "/assets/images/demo-modern/services/4.jpg",
+//     alt: "Image Description",
+//     align: "text-start",
+//   },
+//   {
+//     title: "Sweatshirts",
+//     imageSrc: "/assets/images/demo-modern/services/5.jpg",
+//     alt: "Image Description",
+//     align: "text-center",
+//   },
+//   {
+//     title: "Underwear",
+//     imageSrc: "/assets/images/demo-modern/services/6.jpg",
+//     alt: "Image Description",
+//     align: "text-end",
+//   },
+// ];
 
 export const services5 = [
   {
