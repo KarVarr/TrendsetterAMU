@@ -38,6 +38,7 @@ export default function ModernPortfolioPage() {
   const params = useParams();
   const locale = params.locale;
   const t = useTranslations();
+  
   return (
     <>
       <div className={`theme-modern`}>

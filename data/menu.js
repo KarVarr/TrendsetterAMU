@@ -51,7 +51,7 @@ export const slickOnepage = [
 
 export const getModernMultipage = (locale) => [
   { id: 1, href: `/${locale}/home`, text: "Home" },
-  { id: 2, href: `/${locale}/about`, text: "About", className: "active" },
+  { id: 2, href: `/${locale}/about`, text: "About"},
   { id: 3, href: `/${locale}/shop`, text: "Shop" },
   { id: 4, href: `/${locale}/amu`, text: "AMU" },
   { id: 5, href: `/${locale}/contacts`, text: "Contacts" },

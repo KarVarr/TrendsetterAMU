@@ -1,7 +1,7 @@
 const i18nConfig = {
   locales: ['en', 'ru', 'am'],
   defaultLocale: 'en',
-  localePrefix: 'always'
+  localePrefix: 'as-needed'
 };
 
 module.exports = i18nConfig;

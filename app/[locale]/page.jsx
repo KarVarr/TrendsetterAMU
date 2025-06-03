@@ -12,6 +12,7 @@ export const metadata = {
   description:
     "Trendsetter Á Multibrand is a multibrand fashion store bringing together the world’s most loved clothing labels — from H&M to Reserved, Sinsay, and more.",
 };
+
 export default function Home8MainDemoMultiPage() {
   return (
     <>
