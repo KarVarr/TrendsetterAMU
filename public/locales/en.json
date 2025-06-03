@@ -59,7 +59,44 @@
     "homeBlock5": "All items come in solid colors, free from prints or patterns — versatile pieces designed to stay relevant season after season. We provide detailed size guides, including plus-size options, to ensure a great fit and inclusive sizing for everyone.",
     "homeBlock6": "At AMU, we believe in clean, uncompromising style — in wardrobe essentials that move with you and fit every moment of your life.",
     "homeButtonToTheAMU": "More",
-    "title": "AMU"
+    "title": "AMU",
+    "title1": "Our",
+    "title2": "Brand",
+    "block1TopLeftText": "SIMPLICITY FOR PEOPLE WHO HAVE A LIFE",
+    "block1MiddleText1": "WHO WE",
+    "block1MiddleText2": "ARE?",
+    "block2Project": "PROJECT LOCATION ONLINE: ",
+    "block2Wildberries": "WILDBERRIES",
+    "block2Number1Platform": "(#1 online platform in CIS, #9 globally)",
+    "block2Ranked": "Ranked in the Top 100 Sellers. Over 550k units sold to date.",
+    "block2OurBrandProtfolio": "Our Brand Portfolio",
+    "block2HMaKey": "H&M – A key brand in our portfolio",
+    "block2MSaKay": "Marks & Spencer – Coming soon to our offerings",
+    "block2ProjectLocationOffline": "PROJECT LOCATION OFFLINE (coming soon)",
+    "block2TashirMall": "TASHIR STREET MALL",
+    "block2PartsOfTashir": "Part of the Tashir Group of Companies, generating $1 billion in revenue",
+    "block2Extensive": "Extensive expertise in commercial real estate",
+    "block2Owner": "Owner of the 4 largest shopping malls in Armenia",
+    "block2RetailChain": "Retail Chain Opening",
+    "block2SheduledFor2025": "Scheduled for 2025",
+    "block2FirstStore": "First store opening June 2025",
+    "block2TheStoreWillOperate": "The store will operate as a discounter, offering high-quality clothing and footwear",
+    "block2Aimed": "Aimed at providing affordable prices for the entire family",
+    "block2WhySoBlue": "WHY SO BLUE?",
+    "block3Well": "Well. One more thing.",
+    "block3WeAreReady": "We’re ready to launch our own",
+    "block3ClothingBrand": "Clothing Brand.",
+    "block4BecauseItsAMU": "BECAUSE IT’S AMU!",
+    "block5AMUFocuses": "AMU focuses on basic bestsellers. Inspired by the brands such as H&M, Uniqlo, Zara and Lululemon, we are committed to delivering essential yet stylish clothing that combines uncompromising quality with streetwear trends. Our current product needs include:",
+    "block5Tshirts": "T-shirts",
+    "block5Sweatshirts": "Sweatshirts",
+    "block5Hoodies": "Hoodies",
+    "block5Joggers": "Joggers",
+    "block5Jeans": "Jeans",
+    "block5Underwear": "Underwear",
+    "block5WeRequireAll": "We require all items to be in plain colors, without additional prints, and to include comprehensive size charts that cover plus sizes. We aim to represent pure, uncompromising style, blending essential, liberating clothing with modern streetwear trends.",
+    "block6LetsWork": "LET’S WORK",
+    "block6Together": "Together"
   }, 
 
   "products": {
@@ -103,7 +140,17 @@
   "policy": {
     "privacyPolicy": "Privacy Policy",
     "close": "Close"
+  },
+
+  "cookie": {
+    "banner": "This website uses cookies to improve functionality and personalize your experience. By continuing to use the site, you agree to the processing of your data."
+  },
+
+  "pageNotFound": {
+    "title": "The page you were looking for could not be found.",
+    "buttonBackToHome": "Back To Home Page"
   }
+
   
 }
   

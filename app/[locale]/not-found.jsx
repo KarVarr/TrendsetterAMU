@@ -1,14 +1,13 @@
+'use client';
 import Footer2 from "@/components/footers/Footer2";
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-export const metadata = {
-  title:
-    "Page Not Found || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-  description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-};
+import { useTranslations } from 'next-intl';
+
 export default function MainAboutPage1() {
+  const t = useTranslations();
+  
   return (
     <>
       <div className="theme-main">
@@ -86,7 +85,7 @@ export default function MainAboutPage1() {
                             data-wow-delay=".2s"
                           >
                             <h2 className="section-descr mb-20">
-                              The page you were looking for could not be found.
+                              {t('pageNotFound.title')}
                             </h2>
                           </div>
                           <div
@@ -98,7 +97,7 @@ export default function MainAboutPage1() {
                               className="btn btn-mod btn-w btn-round btn-medium btn-hover-anim"
                             >
                               <i className="mi-arrow-left size-24 align-center" />
-                              <span>Back To Home Page</span>
+                              <span>{t('pageNotFound.buttonBackToHome')}</span>
                             </Link>
                           </div>
                         </div>

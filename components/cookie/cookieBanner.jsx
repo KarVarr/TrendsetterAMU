@@ -1,10 +1,12 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 import Cookies from 'js-cookie';
 
 export default function CookieBanner() {
   const [show, setShow] = useState(false);
+  const t = useTranslations();
 
   useEffect(() => {
     const consent = Cookies.get('cookieConsent');
@@ -35,7 +37,7 @@ export default function CookieBanner() {
       zIndex: 10000,
     }}>
       <p style={{ margin: '0 0 15px', fontSize: '14px', lineHeight: '1.4' }}>
-        Этот сайт использует cookie для улучшения работы и персонализации. Продолжая использование сайта, вы соглашаетесь на обработку данных.
+        {t('cookie.banner')}
       </p>
       <button
         onClick={acceptCookies}

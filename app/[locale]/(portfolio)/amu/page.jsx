@@ -13,7 +13,6 @@ import Link from "next/link"
 import { useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 
-import { useLocale } from "next-intl";
 import { Playfair_Display } from 'next/font/google'; //звезда *
 import { Inter } from 'next/font/google';
 import { Russo_One } from 'next/font/google';
@@ -23,14 +22,14 @@ import { Roboto } from 'next/font/google';
 import ContentBlock from "@/components/portfolio/contentBlock";
 import styles from './modern-portfolio.module.css';
 import gridStyles from './grid.module.css'
-// const locale = useLocale();
+
+
 const playfairDisplay = Playfair_Display({ subsets: ['latin'], weight: ['400', '700'], });
 const inter = Inter({ subsets: ['latin'] });
 const roboto = Roboto({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700'] });
 const russoOne = Russo_One({  weight: '400',  subsets: ['latin'],});
 const delaGothicOne = Dela_Gothic_One({ subsets: ['latin'], weight: '400' });
 const greatVibes = Great_Vibes({ subsets: ['latin'], weight: '400' });
-
 
 const onePage = false;
 const dark = false;
@@ -70,14 +69,14 @@ export default function ModernPortfolioPage() {
                             className="icon-arrow-left2 size-14"
                             aria-hidden="true"
                           ></i>{" "}
-                          Back to home
+                          {t('home.buttonBackToHome')}
                         </span>
                         <span className="btn-animate-y-2" aria-hidden="true">
                           <i
                             className="icon-arrow-left2 size-14"
                             aria-hidden="true"
                           ></i>{" "}
-                          Back to home
+                          {t('home.buttonBackToHome')} 
                         </span>
                       </span>
                     </Link>
@@ -89,10 +88,10 @@ export default function ModernPortfolioPage() {
                     <h1 className="hs-title-5 font-alt overflow-hidden mb-0">
                       <span className="d-block wow fadeRotateIn">
                         {" "}
-                        Our Brand{" "}
+                        {t('amu.title1')} {" "}
                       </span>
                       <span className="d-block text-end wow fadeRotateIn">
-                        AMU
+                      {t('amu.title2')}
                       </span>
                     </h1>
                   </div>
@@ -171,7 +170,7 @@ export default function ModernPortfolioPage() {
                         style={{ fontWeight: 300, fontSize: "clamp(0.5rem, 1.8vw, 0.75rem)", letterSpacing: "0.12em", color: "#192ed5" }}
                         className="text-uppercase"
                       >
-                        SIMPLICITY FOR PEOPLE WHO HAVE A LIFE
+                        {t('amu.block1TopLeftText')}
                       </span>
                     </div>
 
@@ -191,7 +190,7 @@ export default function ModernPortfolioPage() {
                         
                         style={{ fontSize: "clamp(3.5rem, 8vw, 7rem)", lineHeight: "1.2", marginBottom: 0, fontWeight: 600,  }}
                       >
-                        WHO WE <br /> ARE?
+                        {t('amu.block1MiddleText1')} <br /> {t('amu.block1MiddleText2')}
                         <span
                           className={`${playfairDisplay.className} ms-2`}
                           style={{ fontSize: "clamp(3rem, 12vw, 10rem)", verticalAlign: "top", fontWeight: 700, color: "#192ed5"}}
@@ -223,7 +222,7 @@ export default function ModernPortfolioPage() {
                   <div style={{ maxWidth: "960px" }}>
                     
                     <p className="small fw-bold text-uppercase mb-1">
-                      PROJECT LOCATION ONLINE:{" "}
+                      {t('amu.block2Project')}{" "}
                       <a
                         href="https://www.wildberries.ru/brands/h-and-m"
                         target="_blank"
@@ -233,43 +232,43 @@ export default function ModernPortfolioPage() {
                         https://www.wildberries.ru/brands/h-and-m
                       </a>
                     </p>
-                    <h2 className="fw-bold display-6">WILDBERRIES</h2>
+                    <h2 className="fw-bold display-6">{t('amu.block2Wildberries')}</h2>
                     <p className="mb-4 fw-semibold fst-italic">
-                      (#1 online platform in CIS, #9 globally)
+                      {t('amu.block2Number1Platform')}
                     </p>
                     <p className="mb-4">
-                      Ranked in the Top 100 Sellers. Over 550k units sold to date.
+                      {t('amu.block2Ranked')}
                     </p>
 
-                    <p className="fw-semibold mb-1">Our Brand Portfolio</p>
+                    <p className="fw-semibold mb-1">{t('amu.block2OurBrandProtfolio')}</p>
                     <ul>
-                      <li>H&M – A key brand in our portfolio</li>
-                      <li>Marks & Spencer – Coming soon to our offerings</li>
+                      <li>{t('amu.block2HMaKey')}</li>
+                      <li>{t('amu.block2MSaKay')}</li>
                     </ul>
 
                     <p className="small fw-bold text-uppercase mt-5 mb-1">
-                      PROJECT LOCATION OFFLINE (coming soon)
+                    {t('amu.block2ProjectLocationOffline')}
                     </p>
-                    <h2 className="fw-bold display-6">TASHIR STREET MALL</h2>
+                    <h2 className="fw-bold display-6">{t('amu.block2TashirMall')}</h2>
                     <p className="mb-3">
-                      Part of the Tashir Group of Companies, generating <strong>$1 billion</strong> in revenue
+                    {t('amu.block2PartsOfTashir')}
                     </p>
                     <ul>
-                      <li>Extensive expertise in commercial real estate</li>
-                      <li>Owner of the 4 largest shopping malls in Armenia</li>
+                      <li>{t('amu.block2Extensive')}</li>
+                      <li>{t('amu.block2Owner')}</li>
                     </ul>
 
-                    <p className="fw-semibold mt-5 mb-1">Retail Chain Opening</p>
+                    <p className="fw-semibold mt-5 mb-1">{t('amu.block2RetailChain')}</p>
                     <ul>
-                      <li>Scheduled for 2025</li>
-                      <li>First store opening April–May 2025</li>
-                      <li>The store will operate as a discounter, offering high-quality clothing and footwear</li>
-                      <li>Aimed at providing affordable prices for the entire family</li>
+                      <li>{t('amu.block2SheduledFor2025')}</li>
+                      <li>{t('amu.block2FirstStore')}</li>
+                      <li>{t('amu.block2TheStoreWillOperate')}</li>
+                      <li>{t('amu.block2Aimed')}</li>
                     </ul>
                   </div>
 
                   <div className="position-absolute" style={{ bottom: "20px", right: "30px" }}>
-                    <span className="small text-white-50">WHY SO BLUE?</span>
+                    <span className="small text-white-50">{t('amu.block2WhySoBlue')}</span>
                   </div>
                 </div>
 
@@ -365,7 +364,7 @@ export default function ModernPortfolioPage() {
                         lineHeight: 1.4,
                       }}
                     >
-                      Well. One more thing.
+                      {t('amu.block3Well')}
                     </p>
                     <p
                       className="fw-bold"
@@ -376,7 +375,7 @@ export default function ModernPortfolioPage() {
                         lineHeight: 1.4,
                       }}
                     >
-                      We’re ready to launch our own <br /> Clothing Brand.
+                      {t('amu.block3WeAreReady')} <br /> {t('amu.block3ClothingBrand')}
                     </p>
                   </div>
                 </div>
@@ -458,7 +457,7 @@ export default function ModernPortfolioPage() {
                   <div
                     className={styles.bottomRight}
                   >
-                    BECAUSE IT’S AMU!
+                    {t('amu.block4BecauseItsAMU')}
                   </div>
                 </div>
 
@@ -487,10 +486,7 @@ export default function ModernPortfolioPage() {
                         marginBottom: "2rem",
                       }}
                     >
-                      AMU focuses on basic bestsellers. Inspired by the brands such as H&M,
-                      Uniqlo, Zara and Lululemon, we are committed to delivering essential yet
-                      stylish clothing that combines uncompromising quality with streetwear
-                      trends. Our current product needs include:
+                      {t('amu.block5AMUFocuses')}
                     </p>
 
                     <p
@@ -501,12 +497,12 @@ export default function ModernPortfolioPage() {
                         lineHeight: "2",
                       }}
                     >
-                      T-shirts <br />
-                      Sweatshirts <br />
-                      Hoodies <br />
-                      Joggers <br />
-                      Jeans <br />
-                      Underwear
+                      {t('amu.block5Tshirts')} <br />
+                      {t('amu.block5Sweatshirts')} <br />
+                      {t('amu.block5Hoodies')} <br />
+                      {t('amu.block5Joggers')} <br />
+                      {t('amu.block5Jeans')} <br />
+                      {t('amu.block5Underwear')}
                     </p>
 
                     <p
@@ -517,10 +513,7 @@ export default function ModernPortfolioPage() {
                         marginTop: "2rem",
                       }}
                     >
-                      We require all items to be in plain colors, without additional prints,
-                      and to include comprehensive size charts that cover plus sizes. We aim to
-                      represent pure, uncompromising style, blending essential, liberating
-                      clothing with modern streetwear trends.
+                      {t('amu.block5WeRequireAll')}
                     </p>
                   </div>
                 </div>
@@ -530,10 +523,10 @@ export default function ModernPortfolioPage() {
                   <div className={styles.letsWorkContainer}>
                     <div className={styles.letsWorkWrapper}>
                       <h1 className={styles.letsWorkText}>
-                        LET’S WORK
+                      {t('amu.block6LetsWork')}
                       </h1>
                       <div className={styles.letsWorkUnderline}></div>
-                      <span className={styles.letsWorkOverlay}>Together</span>
+                      <span className={styles.letsWorkOverlay}>{t('amu.block6Together')}</span>
                     </div>
                   </div>
     
