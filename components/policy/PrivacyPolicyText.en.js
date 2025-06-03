@@ -134,7 +134,7 @@ export default function PrivacyPolicyText() {
       personal data not provided for by the law or this policy.</p>
 
       <p>2.11. The Site may contain links to other sites that are not managed by us. If the User<br/>
-      clicks on a third-party link, the User is redirected to that third party's website. The<br/>
+      clicks on a third-party link, the User is redirected to that third party&apos;s website. The<br/>
       Company does not control and is not responsible for the privacy policies or practices of<br/>
       the content of third-party websites or services.</p>
 
