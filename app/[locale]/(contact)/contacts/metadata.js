@@ -2,15 +2,15 @@ export function generateMetadata({ params }) {
     const { locale } = params;
   
     const titles = {
-      en: "Modern Contact || Resonance",
-      ru: "Контакты || Resonance",
-      am: "Կապ մեզ հետ || Resonance",
+      en: "Contacts",
+      ru: "Контакты",
+      am: "Կապ մեզ հետ",
     };
   
     const descriptions = {
-      en: "Resonance — One & Multi Page React Next.js Creative Template",
-      ru: "Resonance — креативный шаблон на Next.js",
-      am: "Resonance — React Next.js-ի բազմաէջանոց շաբլոն",
+      en: "",
+      ru: "",
+      am: "",
     };
   
     return {

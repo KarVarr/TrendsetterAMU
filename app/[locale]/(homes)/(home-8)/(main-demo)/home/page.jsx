@@ -8,9 +8,9 @@ import HeaderWithLocale from "@/components/headers/HeaderWithLocale";
 
 export const metadata = {
   title:
-    "Home 8 Main Demo MultiPage || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "Trendsetter ",
   description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+    "Á Multibrand",
 };
 export default function Home8MainDemoMultiPage() {
   return (

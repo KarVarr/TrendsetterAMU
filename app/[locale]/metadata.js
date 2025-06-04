@@ -2,15 +2,15 @@ export function generateMetadata({ params }) {
     const { locale } = params;
   
     const titles = {
-      en: "Page Not Found || Resonance — One & Multi Page React Next.js Creative Template",
-      ru: "Страница не найдена || Resonance — многостраничный шаблон на Next.js",
-      am: "Էջը չի գտնվել || Resonance — React Next.js-ի բազմաէջանոց շաբլոն"
+      en: "Page Not Found",
+      ru: "Страница не найдена",
+      am: "Էջը չի գտնվել"
     };
   
     const descriptions = {
-      en: "Resonance — One & Multi Page React Next.js Creative Template",
-      ru: "Resonance — многостраничный шаблон на Next.js",
-      am: "Resonance — React Next.js-ի բազմաէջանոց շաբլոն"
+      en: "404",
+      ru: "404",
+      am: "404"
     };
   
     return {

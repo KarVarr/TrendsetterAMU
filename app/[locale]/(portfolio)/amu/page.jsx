@@ -287,40 +287,40 @@ export default function ModernPortfolioPage() {
                   >
 
                     <div className={gridStyles.gridItem} style={{ gridColumn: "1 / span 2",  gridRow: "1 / span 2" }} >
-                      <Image  src="/assets/images/portfolio/grid1.webp"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
+                      <Image  src="/assets/images/portfolio/grid1.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
                     </div>
                     <div className={gridStyles.gridItem} style={{ gridColumn: "3 / span 2",  gridRow: "1 / span 2" }} >
-                      <Image  src="/assets/images/portfolio/grid2.webp"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
+                      <Image  src="/assets/images/portfolio/grid2.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
                     </div>
                     <div className={gridStyles.gridItem} style={{ gridColumn: "5 / span 2",  gridRow: "1 / span 2" }} >
-                      <Image  src="/assets/images/portfolio/grid3.webp"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
+                      <Image  src="/assets/images/portfolio/grid3.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
                     </div>
 
 
                     <div className={gridStyles.gridItem} style={{ gridColumn: "1 / span 1",  gridRow: "3 / span 2" }} >
-                      <Image  src="/assets/images/portfolio/grid4.webp"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
+                      <Image  src="/assets/images/portfolio/grid4.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
                     </div>
                     <div className={gridStyles.gridItem} style={{ gridColumn: "2 / span 1",  gridRow: "3 / span 2" }} >
-                      <Image  src="/assets/images/portfolio/grid5.webp"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
+                      <Image  src="/assets/images/portfolio/grid5.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
                     </div>
                     <div className={gridStyles.gridItem} style={{ gridColumn: "3 / span 2",  gridRow: "3 / span 2" }} >
-                      <Image  src="/assets/images/portfolio/grid6.webp"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
+                      <Image  src="/assets/images/portfolio/grid6.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
                     </div>
                     <div className={gridStyles.gridItem} style={{ gridColumn: "5 / span 2",  gridRow: "3 / span 2" }} >
-                      <Image  src="/assets/images/portfolio/grid7.webp"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
+                      <Image  src="/assets/images/portfolio/grid7.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
                     </div>
 
                     <div className={`${gridStyles.gridItem} ${gridStyles.gridMoveTop}`} style={{ gridColumn: "1 / span 2",  gridRow: "5 / span 2" }} >
-                      <Image  src="/assets/images/portfolio/grid8.webp"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
+                      <Image  src="/assets/images/portfolio/grid8.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
                     </div>
                     <div className={`${gridStyles.gridItem} ${gridStyles.gridFullWidthMobile}`} style={{ gridColumn: "3 / span 1",  gridRow: "5 / span 2" }} >
-                      <Image  src="/assets/images/portfolio/grid9.webp"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
+                      <Image  src="/assets/images/portfolio/grid9.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
                     </div>
                     <div className={`${gridStyles.gridItem} ${gridStyles.girlGridFullWidthMobile}`} style={{ gridColumn: "4 / span 1",  gridRow: "5 / span 2" }} >
-                      <Image  src="/assets/images/portfolio/grid10.webp"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
+                      <Image  src="/assets/images/portfolio/grid10.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
                     </div>
                     <div className={`${gridStyles.gridItem} ${gridStyles.gridMoveBottom}`} style={{ gridColumn: "5 / span 2",  gridRow: "5 / span 2" }} >
-                      <Image  src="/assets/images/portfolio/grid11.webp"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
+                      <Image  src="/assets/images/portfolio/grid11.jpg"  alt="Grid Image"  fill  style={{ objectFit: "cover" }}  />
                     </div>
                     
                   </div>

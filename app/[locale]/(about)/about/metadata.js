@@ -2,15 +2,15 @@ export function generateMetadata({ params }) {
     const { locale } = params;
   
     const titles = {
-      en: "Modern About || Resonance",
-      ru: "О Нас || Resonance",
-      am: "Մեր մասին || Resonance",
+      en: "About",
+      ru: "О Нас",
+      am: "Մեր մասին",
     };
   
     const descriptions = {
-      en: "Resonance — One & Multi Page React Nextjs Creative Template",
-      ru: "Resonance — креативный шаблон на Next.js",
-      am: "Resonance — կրիատիվ շաբլոն React Next.js-ի համար",
+      en: "Trendsetter Á Multibrand is a multibrand fashion store",
+      ru: "Trendsetter Á Multibrand - мультибрендовый fashion-ритейл",
+      am: "Trendsetter Á Multibrand-ը բազմաբրենդային fashion խանութ է",
     };
   
     return {
