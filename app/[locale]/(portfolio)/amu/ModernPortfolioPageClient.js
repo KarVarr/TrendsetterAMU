@@ -14,9 +14,9 @@ import { useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 
 import { Playfair_Display } from 'next/font/google'; //звезда *
-import { Inter } from 'next/font/google';
+// import { Inter } from 'next/font/google';
 import { Russo_One } from 'next/font/google';
-import { Dela_Gothic_One, Great_Vibes } from 'next/font/google';
+// import { Dela_Gothic_One, Great_Vibes } from 'next/font/google';
 import { Roboto } from 'next/font/google';
 
 // import ContentBlock from "@/components/portfolio/contentBlock";
