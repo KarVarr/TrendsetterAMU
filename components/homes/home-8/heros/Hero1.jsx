@@ -50,7 +50,7 @@ export default function Hero1() {
               className="hs-image-2 wow fadeInRight"
               data-wow-delay="0.8s"
               data-wow-offset={0}
-              src="/assets/images/demo-modern/hs-image-2.jpg"
+              src="/assets/images/demo-modern/smile.png"
               width={208}
               height={208}
               alt="Image Description"

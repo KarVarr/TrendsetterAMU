@@ -134,11 +134,16 @@ export default function ModernServicesPage() {
                 <hr
                   className={` ${
                     dark ? "white opacity-1" : "black"
-                  }  mt-0 mb-80`}
+                  }  mt-0 mb-0`}
                 />
+                  <p>
+                    {t('shop.block4')}
+                  </p>
+                  <p>
+                    {t('shop.block5')}
+                  </p>
+                  {/* <br /> */}
                 {/* <Service /> Вот тут надо карту добавить */}
-
-
                 <div className="row mb-100 mb-md-60">
                   {/* здесь выводим карту */}
                   <div className="col-12">

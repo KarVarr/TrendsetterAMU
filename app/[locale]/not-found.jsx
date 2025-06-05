@@ -51,9 +51,9 @@ export default function MainAboutPage1() {
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      {/* <a href="#">
                         <i className="mi-call align-center" /> 0307-567-890 
-                      </a>
+                      </a> */}
                     </li>
                   </ul>
                 </div>

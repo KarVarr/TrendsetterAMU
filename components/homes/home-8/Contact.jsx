@@ -53,10 +53,10 @@ export default function Contact() {
             <p>
             {t('contact.block2Title')}
               <br />
-              <a href="tel:+18376528800" className="text-link">
+              {/* <a href="tel:+18376528800" className="text-link">
               {t('contact.block2Phone')} +1 837 652 8800
-              </a>
-              <br />
+              </a> */}
+              {/* <br /> */}
               
               <a href="mailto:info@trendsetterwb.com" className="text-link">
               {t('contact.block2Email')}
