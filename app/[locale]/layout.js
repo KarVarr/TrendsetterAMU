@@ -181,7 +181,7 @@ export default async function RootLayout({ children, params }) {
 
   return (
     <html lang={locale} className="no-mobile no-touch">
-      {/* <head>
+      <head>
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
           rel="stylesheet"
@@ -202,7 +202,7 @@ export default async function RootLayout({ children, params }) {
           href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
           rel="stylesheet"
         />
-      </head> */}
+      </head>
       <body className="appear-animate body">
         <IntlProviderWrapper locale={locale}>
           <ClientEffects />

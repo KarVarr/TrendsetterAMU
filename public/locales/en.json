@@ -151,6 +151,12 @@
   "pageNotFound": {
     "title": "The page you were looking for could not be found.",
     "buttonBackToHome": "Back To Home Page"
+  },
+
+  "massageSend": {
+    "setToastMessageDONE": "✅ Message sent successfully!",
+    "setToastMessageERROR": "❌ Error, message not sent: ",
+    "setToastMessageNetERROR": "❌ Network error"
   }
 
   

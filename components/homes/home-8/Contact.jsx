@@ -18,27 +18,29 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
+  
       const data = await res.json();
+  
       if (res.ok) {
-        setToastMessage("✅ Сообщение успешно отправлено!");
+        setToastMessage(t('massageSend.setToastMessageDONE'));
         setForm({ name: "", email: "", message: "" });
       } else {
         console.error("Ошибка от API:", data.error);
-        setToastMessage("❌ Ошибка, сообщение не отправлено: " + data.error);
+        setToastMessage(`${t('massageSend.setToastMessageERROR')}${data.error}`);
       }
     } catch (err) {
       console.error("Сетевая ошибка:", err);
-      setToastMessage("❌ Сетевая ошибка");
+      setToastMessage(t('massageSend.setToastMessageNetERROR'));
     } finally {
       setShowToast(true);
-      setTimeout(() => setShowToast(false), 1500); // 1.5 секунды, можно поменять
+      setTimeout(() => setShowToast(false), 1500); // 1.5 секунды
     }
   };
 

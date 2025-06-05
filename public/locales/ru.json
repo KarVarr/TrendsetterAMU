@@ -152,6 +152,12 @@
   "pageNotFound": {
     "title": "Страница, которую вы ищете, не найдена.",
     "buttonBackToHome": "Вернуться на главную"
+  },
+
+  "massageSend": {
+    "setToastMessageDONE": "✅ Сообщение успешно отправлено!",
+    "setToastMessageERROR": "❌ Ошибка, сообщение не отправлено: ",
+    "setToastMessageNetERROR": "❌ Сетевая ошибка"
   }
 
   

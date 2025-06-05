@@ -151,6 +151,12 @@
   "pageNotFound": {
     "title": "Էջը, որը փնտրում եք, չի գտնվել։",
     "buttonBackToHome": "Վերադառնալ գլխավոր էջ"
+  },
+
+  "massageSend": {
+    "setToastMessageDONE": "✅ Հաղորդագրությունը հաջողությամբ ուղարկվեց։",
+    "setToastMessageERROR": "❌ Սխալ՝ հաղորդագրությունը չուղարկվեց․ ",
+    "setToastMessageNetERROR": "❌ Ցանցային սխալ"
   }
 
 }
