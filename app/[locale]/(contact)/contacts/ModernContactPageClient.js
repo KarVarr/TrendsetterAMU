@@ -1,15 +1,15 @@
 'use client';
 import Footer2 from "@/components/footers/Footer2";
-import Header8 from "@/components/headers/Header8";
+// import Header8 from "@/components/headers/Header8";
 import Contact from "@/components/homes/home-8/Contact";
 
 // import { modernMultipage } from "@/data/menu";
 import HeaderWithLocale from "@/components/headers/HeaderWithLocale";
 // import { useLocale } from "next-intl";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
-const onePage = false;
+// const onePage = false;
 const dark = false;
 import { useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';

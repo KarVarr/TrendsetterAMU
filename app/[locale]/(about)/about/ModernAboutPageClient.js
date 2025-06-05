@@ -9,7 +9,7 @@ import Link from "next/link";
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 
-const onePage = false;
+// const onePage = false;
 const dark = false;
 
 export default function ModernAboutPageClient() {

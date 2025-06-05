@@ -1,7 +1,7 @@
 'use client';
 import Footer2 from "@/components/footers/Footer2";
-import Header8 from "@/components/headers/Header8";
-import Service from "@/components/homes/home-8/Service";
+// import Header8 from "@/components/headers/Header8";
+// import Service from "@/components/homes/home-8/Service";
 import ParallaxContainer from "@/components/common/ParallaxContainer";
 import HeaderWithLocale from "@/components/headers/HeaderWithLocale";
 import YandexMapWrapper from "@/components/maps/YandexMapWrapper";
@@ -10,7 +10,7 @@ import Link from "next/link";
 import { useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 
-const onePage = false;
+// const onePage = false;
 const dark = false;
 
 export default function ModernServicesPageClient() {
