@@ -116,7 +116,7 @@ export default function Home8({
                   </div>
                   <div className="section-image-behind">
                     <Image
-                      src="/assets/images/demo-modern/section-image-2.jpg"
+                      src="/assets/images/demo-modern/shoes.jpg"
                       loading="lazy"
                       width={820}
                       height={1270}

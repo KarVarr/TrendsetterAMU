@@ -14,19 +14,19 @@ export default function Hero1() {
           style={{ color: "#ae2e28" }}
           >
             
-            {/* <Image
-              className="hs-image-2 wow fadeInRight"
+            <Image
+              className="hs-image-5 wow fadeInRight"
               data-wow-delay="0.8s"
               data-wow-offset={0}
-              src="/assets/images/demo-modern/hs-image-2.jpg"
-              width={208}
-              height={208}
+              src="/assets/images/demo-modern/logo-white.svg"
+              width={1200}
+              height={1200}
               alt="Image Description"
-            />{" "} */}
-            TRENDSETTER
+            />{" "}
+            {/* TRENDSETTER */}
             
           </span>
-          <span
+          {/* <span
             className="d-block text-left wow fadeRotateIn"
             data-wow-delay="0.2s"
             data-wow-offset={0}
@@ -35,15 +35,15 @@ export default function Hero1() {
              }}
           >
             Á 
-          </span>
-          <span
+          </span> */}
+          {/* <span
             className="d-block text-center wow fadeRotateIn"
             data-wow-delay="0.4s"
             data-wow-offset={0}
             style={{ color: "#ae2e28" }}
-          >
+          > */}
             {/* <span style={{ color: "#192ED5" }}>Á</span> */}
-            <span style={{ color: "#192ED5" }}>M</span>
+            {/* <span style={{ color: "#192ED5" }}>M</span>
             <span style={{ color: "#192ED5" }}>U</span>
             LTIBRAND{" "}
             <Image
@@ -54,7 +54,7 @@ export default function Hero1() {
               width={208}
               height={208}
               alt="Image Description"
-            />{" "}
+            />{" "} */}
             {/* <Image
               className="hs-image-3 wow fadeInLeft"
               data-wow-delay="0.8s"
@@ -65,7 +65,7 @@ export default function Hero1() {
               height={208}
               style={{ height: "fit-content", width: "fit-content" }}
             /> */}
-          </span>
+          {/* </span> */}
         </h1>
         {/* <h2
           className="hs-title-6 font-alt text-center mb-sm-20 wow fadeInUp"
@@ -80,13 +80,13 @@ export default function Hero1() {
           meaningful.
         </p> */}
 
-        {/* <div
+        <div
           className="hs-line d-none d-sm-block wow fadeIn parallax-mousemove"
           data-offset={100}
           data-wow-delay="0.8s"
         >
-          {" "} */}
-        {/* </div> */}
+          {" "}
+        </div>
       </div>
       {/* End Home Section Content */}
       {/* Scroll Down */}

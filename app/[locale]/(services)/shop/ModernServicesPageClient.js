@@ -112,7 +112,7 @@ export default function ModernServicesPageClient() {
 
                   <div className="col-lg-4 wow fadeInUp" data-offset="0">
                     <Image
-                      src="/assets/images/demo-modern/section-image-3.jpg"
+                      src="/assets/images/demo-modern/caps.jpg"
                       alt="Image Description"
                       width={502}
                       height={548}

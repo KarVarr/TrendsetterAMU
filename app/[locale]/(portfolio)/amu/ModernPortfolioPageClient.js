@@ -89,10 +89,10 @@ export default function ModernPortfolioPageClient() {
                     <h1 className="hs-title-5 font-alt overflow-hidden mb-0">
                       <span className="d-block wow fadeRotateIn">
                         {" "}
-                        {t('amu.title')}
+                        {t('amu.title')} {" "}
                       </span>
                       {/* <span className="d-block text-end wow fadeRotateIn">
-                      {t('amu.title2')} {" "}
+                      {t('amu.title2')}
                       </span> */}
                     </h1>
                   </div>
