@@ -82,11 +82,11 @@ export default function Hero1() {
 
         {/* <div
           className="hs-line d-none d-sm-block wow fadeIn parallax-mousemove"
-          data-offset={60}
+          data-offset={100}
           data-wow-delay="0.8s"
         >
-          {" "}
-        </div> */}
+          {" "} */}
+        {/* </div> */}
       </div>
       {/* End Home Section Content */}
       {/* Scroll Down */}

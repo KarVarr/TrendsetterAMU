@@ -38,7 +38,7 @@ export default function Home8({
                 className="section-descr-extralarge mb-100 mb-md-60 wow linesAnimIn"
                 data-splitting="lines"
               >
-                <h2 className="section-title-inline-1">Trendsetter</h2>
+                {/* <h2 className="section-title-inline-1">Trendsetter</h2> */}
                 {t('about.mainStory')}
               </div>
               {/* Accordion */}
@@ -223,6 +223,23 @@ export default function Home8({
             <p>
               {t('shop.block1')}  
             </p>
+
+            <div style={{ textAlign: 'center', margin: '60px 0' }}>
+              <Image
+                src="/assets/images/portfolio/grid8.jpg"
+                loading="lazy"
+                width={800}
+                height={500}
+                alt="Image Description"
+                style={{
+                  borderRadius: '20px',
+                  objectFit: 'cover',
+                  maxWidth: '100%',
+                  height: 'auto',
+                }}
+              />
+            </div>
+
             <p>
             {t('shop.block2')}
             </p>
@@ -230,6 +247,7 @@ export default function Home8({
             {t('shop.block3')}
             </p>
           </div>
+          
 
             {/* <div className="col-12 mt-5 mt-md-6">
               <YandexMap />

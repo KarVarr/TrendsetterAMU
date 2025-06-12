@@ -559,9 +559,9 @@ export async function generateMetadata({ params }) {
   };
 
   const descriptions = {
-    en: "descriptions descriptions descriptions descriptions descriptions",
-    ru: "",
-    am: "Resonance — React Next.js-ի բազմաէջանոց շաբլոն",
+    en: "AMU is a brand of essential clothing for men, women, and children, combining minimalism, high quality, and comfort. The collection includes T-shirts, hoodies, joggers, sweatshirts, jeans, shirts, dresses, and underwear.",
+    ru: "AMU это бренд базовой одежды для мужчин, женщин и детей: объединяющий минимализм, высокое качество и комфорт. В коллекции — футболки, худи, джоггеры, свитшоты, джинсы, рубашки, платья и нижнее бельё.",
+    am: "AMU-ն բազային հագուստի բրենդ է տղամարդկանց, կանանց և երեխաների համար, որը միավորում է մինիմալիզմը, բարձր որակը և հարմարավետությունը։ Հավաքածուի մեջ ներառված են շապիկներ, հուդիներ, ջոգերներ, սվիտշոթներ, ջինսեր, վերնաշապիկներ, զգեստներ և ներքնազգեստ։",
   };
 
   return {

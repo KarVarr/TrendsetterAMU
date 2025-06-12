@@ -71,11 +71,11 @@ export default function ModernContactPageClient() {
                     <h1 className="hs-title-5 font-alt overflow-hidden mb-0">
                       <span className="d-block wow fadeRotateIn">
                         {" "}
-                        {t('contact.title1')}{" "}
+                        {t('contact.title3')}
                       </span>
-                      <span className="d-block text-end wow fadeRotateIn">
-                      {t('contact.title2')}
-                      </span>
+                      {/* <span className="d-block text-end wow fadeRotateIn">
+                      {t('contact.title2')}{" "}
+                      </span> */}
                     </h1>
                   </div>
                 </div>

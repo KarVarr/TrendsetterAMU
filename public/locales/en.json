@@ -17,9 +17,10 @@
   "about": {
       "title1": "About",
       "title2": "Us",
+      "title3": "About Us",
       "titleOurStory": "OUR STORY",
       "titleOutMission": "OUR MISSION",
-      "mainStory": "is an international fashion startup developing a multibrand store offering clothing, footwear, and accessories. Our selection features some of the most popular global brands, including H&M, Reserved, Sinsay, House, and more.",
+      "mainStory": "TRENDSETTER is an international fashion startup developing a multibrand store offering clothing, footwear, and accessories. Our selection features some of the most popular global brands, including H&M, Reserved, Sinsay, House, and more.",
       "ourStory": "Since 2023, we’ve been successfully selling on Wildberries, with exclusive supply partnerships. In 2025, we’re stepping into offline retail with the opening of our first store in Armenia.",
       "ourMission": "To make stylish, high-quality clothing accessible to everyone. Trendsetter is a flexible and ambitious brand, currently building a strong team and actively expanding across the region. We believe fashion should be simple, accessible, and inspiring — every single day.",
       "establishTitle": "ESTABLISHED",
@@ -43,13 +44,14 @@
     "homeButtonToTheShop": "To the shop",
     "title1": "Our",
     "title2": "Shop",
+    "title3": "Our Shop",
     "block1": "Trendsetter Á Multibrand is a multibrand fashion store bringing together the world’s most loved clothing labels — from H&M to Reserved, Sinsay, and more.",
-    "block2": "We curate stylish, affordable, and ready-to-wear pieces that fit your everyday life. clusively available on Wildberries since 2023 — and now expanding offline in Armenia.",
+    "block2": "We curate stylish, affordable, and ready-to-wear pieces that fit your everyday life. Clusively available on Wildberries since 2023 — and now expanding offline in Armenia.",
     "block3": "Global fashion, local access. Trendsetter makes it easy to wear what you love.",
     "block4": "We are located at:",
     "block5": "Underground Street on North Avenue Working hours 10:00-22:00 Tel. 012 202 202 North avenue 6/2, Yerevan, Armenia 0001",
     "textForProposal": "Write to us if you have any questions!",
-    "buttonForProposal": "Get a proposal"
+    "buttonForProposal": "Send message"
   },
 
   "amu": {
@@ -103,7 +105,7 @@
 
   "products": {
     "jeans": "Jeans",
-    "tshirts": "T-shirts",
+    "t-shirts": "T-shirts",
     "hoodies": "Hoodies",
     "joggers": "Joggers",
     "sweatshirts": "Sweatshirts",
@@ -122,6 +124,7 @@
     "homeTitle": "Contacts",
     "title1": "LET’S",
     "title2": "GET IN TOUCH!",
+    "title3": "Contacts",
     "formName": "Name",
     "formEmail": "Email",
     "formMessage": "Message",

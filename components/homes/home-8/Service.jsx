@@ -29,6 +29,7 @@
 // }
 
 'use client';
+import Image from "next/image";
 import { services4 } from "@/data/services";
 import { useTranslations } from "next-intl";
 
@@ -43,8 +44,17 @@ export default function Service() {
           className={`services-4-item ${service.align} parallax-mousemove-scene wow fadeInUp`}
         >
           <span className="services-4-title hs-title-5 font-alt overflow-hidden">
-            {t(service.key)}
+          {t(service.key)}
           </span>
+          <span className="services-4-image parallax-mousemove-follow">
+            <Image
+              src={service.imageSrc}
+              loading="lazy"
+              width={550}
+              height={673}
+              alt={service.alt}
+            />
+         </span>
         </h3>
       ))}
     </div>

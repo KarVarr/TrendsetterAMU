@@ -215,9 +215,9 @@ export async function generateMetadata({ params }) {
   };
 
   const descriptions = {
-    en: "Shop page description",
-    ru: "Описание страницы магазина",
-    am: "Խանութի էջի նկարագրություն",
+    en: "Huge selection of clothing from H&M, Reserved, Sinsay, House, and more — off-price multi-brand store for the whole family.",
+    ru: "Огромный выбор одежды от H&M, Reserved, Sinsay, House и других брендов — оффпрайс мультибрендовый магазин для всей семьи.",
+    am: "Մեծ տեսականի՝ H&M, Reserved, Sinsay, House և այլ բրենդների հագուստից՝ օֆփրայս բազմաբրենդ խանութ՝ ամբողջ ընտանիքի համար։",
   };
 
   return {

@@ -65,8 +65,8 @@ export default function ModernAboutPageClient() {
               <div className="row">
                 <div className="col-9 col-sm-8">
                   <h1 className="hs-title-5 font-alt overflow-hidden mb-0">
-                    <span className="d-block wow fadeRotateIn"> {t('about.title1')} </span>
-                    <span className="d-block text-end wow fadeRotateIn">{t('about.title2')}</span>
+                    <span className="d-block wow fadeRotateIn"> {t('about.title3')} </span>
+                    {/* <span className="d-block text-end wow fadeRotateIn">{t('about.title2')}</span> */}
                   </h1>
                 </div>
               </div>
@@ -97,7 +97,7 @@ export default function ModernAboutPageClient() {
                 data-wow-offset="0"
                 data-splitting="lines"
               >
-                <h2 className="section-title-inline-1">Trendsetter </h2>
+                {/* <h2 className="section-title-inline-1">Trendsetter </h2> */}
                 {t('about.mainStory')}
               </div>
 

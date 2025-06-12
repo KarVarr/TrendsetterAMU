@@ -65,10 +65,10 @@ export default function ModernServicesPageClient() {
                 <div className="row">
                   <div className="col-9 col-sm-8">
                     <h1 className="hs-title-5 font-alt overflow-hidden mb-0">
-                      <span className="d-block wow fadeRotateIn"> {t('shop.title1')} </span>
-                      <span className="d-block text-end wow fadeRotateIn">
+                      <span className="d-block wow fadeRotateIn">{t('shop.title2')}</span>
+                      {/* <span className="d-block text-end wow fadeRotateIn">
                       {t('shop.title2')}
-                      </span>
+                      </span> */}
                     </h1>
                   </div>
                 </div>
@@ -116,6 +116,9 @@ export default function ModernServicesPageClient() {
                       alt="Image Description"
                       width={502}
                       height={548}
+                      style={{
+                        borderRadius: '20px',
+                      }}
                     />
                   </div>
                 </div>
@@ -125,10 +128,10 @@ export default function ModernServicesPageClient() {
                     dark ? "white opacity-1" : "black"
                   }  mt-0 mb-0`}
                 />
-                  <p>
+                  <p style={{ marginTop: "30px", textTransform: "uppercase", color: "#000", fontSize: "20px", lineHeight: "1.6", fontWeight: "400" }}>
                     {t('shop.block4')}
                   </p>
-                  <p>
+                  <p style={{ color: "#000", fontSize: "20px", lineHeight: "1.6", fontWeight: "normal" }}>
                     {t('shop.block5')}
                   </p>
 
@@ -146,9 +149,9 @@ export default function ModernServicesPageClient() {
                       }  mt-0 mb-20`}
                     />
 
-                    <div className="row">
+                    {/* <div className="row">
                       <div className="col-sm-6 col-md-7 text-center text-sm-start mb-xs-20">
-                        <p className="section-descr mb-0 black">
+                        <p style={{textTransform: "uppercase", color: "#000", fontSize: "20px", lineHeight: "1.6", fontWeight: "400" }}>
                         {t('shop.textForProposal')}
                         </p>
                       </div>
@@ -171,7 +174,39 @@ export default function ModernServicesPageClient() {
                           </span>
                         </Link>
                       </div>
+                    </div> */}
+
+                    <div className="d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap">
+                      <p
+                        style={{
+                          textTransform: "uppercase",
+                          color: "#000",
+                          fontSize: "20px",
+                          lineHeight: "1.6",
+                          fontWeight: "400",
+                          marginBottom: 0,
+                        }}
+                        className="mb-xs-20 text-center text-sm-start"
+                      >
+                        {t('shop.textForProposal')}
+                      </p>
+
+                      <Link
+                        href={`/${locale}/contacts`}
+                        className="btn btn-mod btn-border btn-medium btn-circle"
+                        data-btn-animate="y"
+                      >
+                        <span className="btn-animate-y">
+                          <span className="btn-animate-y-1">
+                            {t('shop.buttonForProposal')}
+                          </span>
+                          <span className="btn-animate-y-2" aria-hidden="true">
+                            {t('shop.buttonForProposal')}
+                          </span>
+                        </span>
+                      </Link>
                     </div>
+
                   </div>
                 </div>
               </div>
