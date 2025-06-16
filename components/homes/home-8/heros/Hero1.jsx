@@ -84,7 +84,14 @@ export default function Hero1() {
           className="hs-line d-none d-sm-block wow fadeIn parallax-mousemove"
           data-offset={100}
           data-wow-delay="0.8s"
+          style={{ width: '500px', height: '500px', position: 'absolute' }}
         >
+          <Image
+            src="/assets/images/demo-modern/smile.png"
+            width={200}
+            height={200}
+            alt="Custom Moving Element"
+          />
           {" "}
         </div>
       </div>

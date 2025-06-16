@@ -37,7 +37,7 @@ export default function Service() {
   const t = useTranslations("products");
 
   return (
-    <div className="mb-100 mb-md-40">
+    <div className="services-4-wrapper">
       {services4.map((service, index) => (
         <h3
           key={index}
@@ -53,6 +53,10 @@ export default function Service() {
               width={550}
               height={673}
               alt={service.alt}
+              style={{
+                borderRadius: '20px',
+                
+              }}
             />
          </span>
         </h3>

@@ -138,38 +138,38 @@ export const services3 = [
 
 export const services4 = [
   {
-    key: "jeans",
-    imageSrc: "/assets/images/demo-modern/services/1.jpg",
+    key: "joggers",
+    imageSrc: "/assets/images/demo-modern/services/joggers.jpg",
+    alt: "Image Description",
+    align: "text-start",
+  },
+  {
+    key: "hoodies",
+    imageSrc: "/assets/images/demo-modern/services/hoodies.jpg",
     alt: "Image Description",
     align: "text-center",
   },
   {
-    key: "t-shirts",
-    imageSrc: "/assets/images/demo-modern/services/2.jpg",
+    key: "sweatshirts",
+    imageSrc: "/assets/images/demo-modern/services/sweatshirts.jpg",
     alt: "Image Description",
     align: "text-start",
   },
   {
-    key: "sweatshirts",
-    imageSrc: "/assets/images/demo-modern/services/5.jpg",
+    key: "t-shirts",
+    imageSrc: "/assets/images/demo-modern/services/tshirts.jpg",
     alt: "Image Description",
     align: "text-end",
+  },
+  {
+    key: "jeans",
+    imageSrc: "/assets/images/demo-modern/services/jeans.jpg",
+    alt: "Image Description",
+    align: "text-center",
   },
   {
     key: "underwear",
-    imageSrc: "/assets/images/demo-modern/services/6.jpg",
-    alt: "Image Description",
-    align: "text-start",
-  },
-  {
-    key: "joggers",
-    imageSrc: "/assets/images/demo-modern/services/4.jpg",
-    alt: "Image Description",
-    align: "text-end",
-  },
-  {
-    key: "hoodies",
-    imageSrc: "/assets/images/demo-modern/services/3.jpg",
+    imageSrc: "/assets/images/demo-modern/services/underwear.jpg",
     alt: "Image Description",
     align: "text-center",
   },

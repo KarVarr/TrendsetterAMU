@@ -570,7 +570,7 @@ video {
   will-change: transform;
 }
 .parallax-mousemove-follow {
-  -moz-transition: none !important;
+  transition: none !important;
 }
 @media not all and (min-resolution: 0.001dpcm) {
   .parallax-mousemove,
@@ -1149,14 +1149,14 @@ hr.thick {
 }
 .hs-line {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  bottom: -100%;
+  right: -10%;
   width: 3%;
   height: 160%;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
   pointer-events: none;
 }
-.hs-line:before {
+/* .hs-line:before {
   content: "";
   position: absolute;
   top: 0;
@@ -1165,7 +1165,7 @@ hr.thick {
   height: 100%;
   background: #fff;
   transform: translate(-50%, -50%) rotate(30deg);
-}
+} */
 .hs-icon {
   display: inline-block;
   width: 50px;
@@ -6167,8 +6167,11 @@ img.services-image {
    ============================== */
 
 .services-4-item {
-  position: relative;
-  margin-bottom: 0;
+  position: relative; /* если убрать, то картинки будут под словами */
+  /* margin-bottom: 0; */
+  text-align: left; /* или center */
+  margin-bottom: 10px; /* уменьшить расстояние между словами */
+  line-height: 1.1;
 }
 .services-4-title {
   position: relative;
@@ -6195,14 +6198,16 @@ img.services-image {
   width: 21.9619vw;
   max-width: 300px;
   pointer-events: none;
+  z-index: 1000;
 }
 .services-4-image img {
   opacity: 0;
   clip-path: polygon(-5% -5%, 25% 0, 0 105%, 0% 105%);
   transition: clip-path 0.7s var(--ease-out-short);
+  z-index: 1000;
 }
 .services-4-item:hover {
-  z-index: 1;
+  z-index: 1000;
 }
 .services-4-title:hover {
   transform: translate(0.2em, 0);
@@ -6210,6 +6215,10 @@ img.services-image {
 .services-4-title:hover + .services-4-image img {
   opacity: 1;
   clip-path: polygon(-5% -5%, 105% -5%, 105% 105%, 0 105%);
+}
+.services-4-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /* ==============================
