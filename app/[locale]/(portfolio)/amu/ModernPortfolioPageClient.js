@@ -8,7 +8,7 @@ import ParallaxContainer from "@/components/common/ParallaxContainer";
 import HeaderWithLocale from "@/components/headers/HeaderWithLocale";
 
 // import dynamic from "next/dynamic";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link"
 import { useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
@@ -22,19 +22,19 @@ import { Russo_One } from 'next/font/google';
 import { Roboto } from 'next/font/google';
 
 // import ContentBlock from "@/components/portfolio/contentBlock";
-import styles from './modern-portfolio.module.css';
-import gridStyles from './grid.module.css'
+// import styles from './modern-portfolio.module.css';
+// import gridStyles from './grid.module.css'
 
 
-const playfairDisplay = Playfair_Display({ subsets: ['latin'], weight: ['400', '700'], });
+// const playfairDisplay = Playfair_Display({ subsets: ['latin'], weight: ['400', '700'], });
 // const inter = Inter({ subsets: ['latin'] });
-const roboto = Roboto({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700'] });
-const russoOne = Russo_One({  weight: '400',  subsets: ['latin'],});
+// const roboto = Roboto({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700'] });
+// const russoOne = Russo_One({  weight: '400',  subsets: ['latin'],});
 // const delaGothicOne = Dela_Gothic_One({ subsets: ['latin'], weight: '400' });
 // const greatVibes = Great_Vibes({ subsets: ['latin'], weight: '400' });
 
 // const onePage = false;
-const dark = false;
+// const dark = false;
 
 export default function ModernPortfolioPageClient() {
   const params = useParams();

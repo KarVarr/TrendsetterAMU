@@ -7,7 +7,7 @@ import Contact from "@/components/homes/home-8/Contact";
 import HeaderWithLocale from "@/components/headers/HeaderWithLocale";
 // import { useLocale } from "next-intl";
 // import dynamic from "next/dynamic";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 // const onePage = false;
 const dark = false;
