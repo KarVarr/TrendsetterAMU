@@ -2,11 +2,12 @@
 import { socialLinks } from "@/data/footer";
 import React, { useState } from "react";
 import PrivacyModal from "@/components/policy/PrivacyModal";
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
+import Link from 'next/link';
 
 export default function Footer2() {
   const t = useTranslations();
-
+  const locale = useLocale();
   const scrollToTop = (event) => {
     event.preventDefault();
     window.scrollTo({
@@ -25,6 +26,7 @@ export default function Footer2() {
             <div className="small" style={{ fontSize: '0.5rem' }}>
             {t('footer.rights')}
             </div>
+
           </div>
           {/* End Copyright */}
           {/* Social Links */}
@@ -63,11 +65,68 @@ export default function Footer2() {
         </div>
       </div>
       {/* Footer Text */}
-      <div className="footer-text text-center mt-n10 pb-50">
-        {/* Made with love for great people. */}
+      <div className="footer-text mt-n10 pb-50"
+          style={{
+            position: "relative",
+            display: "flex",
+            flexDirection: 'column',
+            alignItems: "center",
+            justifyContent: "space-between",
+            gap: "20px"
+          }}>
+        <div >
+        <Link
+          href={`/${locale}/gift-card`}
+          className="link-hover-anim align-middle"
+          data-btn-animate="y"
+        >
+          <span className="btn-animate-y">
+            {/* Первая часть текста (анимируется вверх при ховере) */}
+            <span className="btn-animate-y-1 d-inline-flex align-items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="me-2"
+                aria-hidden="true"
+              >
+                <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
+                <line x1="1" y1="10" x2="23" y2="10" />
+              </svg>
+              {t("footer.giftCard")}
+            </span>
+
+            {/* Вторая часть (всплывает при ховере) */}
+            <span className="btn-animate-y-2 d-inline-flex align-items-center" aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="me-2"
+              >
+                <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
+                <line x1="1" y1="10" x2="23" y2="10" />
+              </svg>
+              {t("footer.giftCard")}
+            </span>
+          </span>
+        </Link>
+
+        </div>
         <div className="small">
-         {/* Модальное окно политики */}
-         <PrivacyModal /> 
+          <PrivacyModal />
         </div>
       </div>
       {/* End Footer Text */}

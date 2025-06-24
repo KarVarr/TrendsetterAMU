@@ -138,6 +138,7 @@
   },
   
   "footer": {
+    "giftCard": "Подарочная карта",
     "buttonBackToTop": "Наверх",
     "rights": "Все права защищены",
     "privacyPolicy": "Политика конфиденциальности"
@@ -161,7 +162,12 @@
     "setToastMessageDONE": "✅ Сообщение успешно отправлено!",
     "setToastMessageERROR": "❌ Ошибка, сообщение не отправлено: ",
     "setToastMessageNetERROR": "❌ Сетевая ошибка"
+  },
+
+  "gift": {
+    "title": "Подарочная карта",
+    "description": "Скоро в продаже!"
   }
 
-
+  
 }

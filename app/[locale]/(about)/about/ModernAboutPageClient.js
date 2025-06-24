@@ -79,12 +79,13 @@ export default function ModernAboutPageClient() {
             >
               <div className="full-wrapper text-end">
                 <span className="scroll-down-2">
-                  <Image
+                  {/* <Image
                     width="50"
                     height="73"
                     src="/assets/images/demo-modern/arrow-down-1-white.svg"
                     alt="Scroll Down"
-                  />
+                  /> */}
+                  <i className="icon-arrow-down1 size-22 scroll-icon-down" aria-hidden="true" />
                 </span>
               </div>
             </div>

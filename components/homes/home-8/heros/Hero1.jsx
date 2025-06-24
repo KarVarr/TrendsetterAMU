@@ -103,12 +103,13 @@ export default function Hero1() {
       >
         <div className="full-wrapper text-end">
           <a href="#about" className="scroll-down-2">
-            <Image
+            {/* <Image
               src="/assets/images/demo-modern/arrow-down.svg"
               alt="Scroll Down"
               width={51}
               height={132}
-            />
+            /> */}
+            <i className="icon-arrow-down1 size-22 scroll-icon-down" aria-hidden="true" />
           </a>
         </div>
       </div>

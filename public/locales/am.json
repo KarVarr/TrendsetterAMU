@@ -137,6 +137,7 @@
   },
 
   "footer": {
+    "giftCard": "Նվեր քարտ",
     "buttonBackToTop": "Վերադառնալ վերև",
     "rights": "Բոլոր իրավունքները պաշտպանված են",
     "privacyPolicy": "Գաղտնիության քաղաքականություն"
@@ -160,6 +161,12 @@
     "setToastMessageDONE": "✅ Հաղորդագրությունը հաջողությամբ ուղարկվեց։",
     "setToastMessageERROR": "❌ Սխալ՝ հաղորդագրությունը չուղարկվեց․ ",
     "setToastMessageNetERROR": "❌ Ցանցային սխալ"
+  },
+
+  "gift": {
+    "title": "Նվերի քարտ",
+    "description": "Շուտով հասանելի կլինի։"
   }
+
 
 }

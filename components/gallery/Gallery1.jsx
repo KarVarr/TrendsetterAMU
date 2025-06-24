@@ -3,7 +3,7 @@ import { photoItems } from "@/data/gallery";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import Image from "next/image";
 export default function Gallery1({
-  itemsLength = 12,
+  itemsLength = 16,
   parantClass = "col-md-3",
 }) {
   return (
@@ -17,8 +17,8 @@ export default function Gallery1({
               <Item
                 original={elm.src}
                 thumbnail={elm.src}
-                width={1350}
-                height={865}
+                width={900}
+                height={1200}
               >
                 {({ ref, open }) => (
                   <div
@@ -30,8 +30,8 @@ export default function Gallery1({
                         ref={ref}
                         onClick={open}
                         src={elm.src}
-                        width={719}
-                        height={461}
+                        width={900}
+                        height={1200}
                         alt="Image Description"
                       />
                     </a>

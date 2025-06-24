@@ -62,7 +62,7 @@ export default function Testimonials() {
                 <div className="owl-buttons">
                   <div className="owl-prev snbp8" role="button" tabIndex="0">
                     <span className="visually-hidden">Previous Slide</span>
-                    <svg
+                    {/* <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="18px"
                       height="13px"
@@ -74,11 +74,12 @@ export default function Testimonials() {
                         fillRule="evenodd"
                         d="M17.995,6.998 L3.591,6.998 C5.630,8.221 7.000,10.447 7.000,12.998 L6.000,12.998 C6.000,9.684 3.313,6.998 -0.001,6.998 L-0.015,6.998 L-0.015,5.998 L-0.001,5.998 C3.313,5.998 6.000,3.312 6.000,-0.002 L7.000,-0.002 C7.000,2.549 5.630,4.775 3.591,5.998 L17.995,5.998 L17.995,6.998 Z"
                       ></path>
-                    </svg>
+                    </svg> */}
+                    <i className="icon-arrow-left1 size-22" />
                   </div>
                   <div className="owl-next snbn8" role="button" tabIndex="0">
                     <span className="visually-hidden">Next Slide</span>
-                    <svg
+                    {/* <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="18px"
                       height="13px"
@@ -90,7 +91,8 @@ export default function Testimonials() {
                         fillRule="evenodd"
                         d="M18.000,6.998 C14.687,6.998 12.000,9.684 12.000,12.998 L11.000,12.998 C11.000,10.447 12.370,8.221 14.409,6.998 L0.005,6.998 L0.005,5.998 L14.409,5.998 C12.370,4.775 11.000,2.549 11.000,-0.002 L12.000,-0.002 C12.000,3.312 14.687,5.998 18.000,5.998 L18.015,5.998 L18.015,6.998 L18.000,6.998 Z"
                       ></path>
-                    </svg>
+                    </svg> */}
+                    <i className="icon-arrow-right1 size-22" />
                   </div>
                 </div>
               </div>

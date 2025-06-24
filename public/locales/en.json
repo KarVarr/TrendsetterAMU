@@ -138,6 +138,7 @@
   },
 
   "footer": {
+    "giftCard": "Gift Card",
     "buttonBackToTop": "Back to top",
     "rights": "All rights reserved"
   },
@@ -160,6 +161,11 @@
     "setToastMessageDONE": "✅ Message sent successfully!",
     "setToastMessageERROR": "❌ Error, message not sent: ",
     "setToastMessageNetERROR": "❌ Network error"
+  },
+
+  "gift": {
+    "title": "Gift Card",
+    "description": "Comming soon!"
   }
 
   
