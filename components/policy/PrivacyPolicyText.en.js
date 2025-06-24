@@ -28,7 +28,7 @@ export default function PrivacyPolicyText() {
       
       <li>Company: “TRENDSETTER” CJSC (36/4 Y. Koghbatsi, Yerevan, RA).</li>
       
-      <li>Website: Official website of the Company: www. ----------.am</li>
+      <li>Website: Official website of the Company: https://www.trendsetteramultibrand.com</li>
       
       <li>Country: Armenia</li>
       
