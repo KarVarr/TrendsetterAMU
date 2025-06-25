@@ -54,7 +54,7 @@ export default function ModernPortfolioPageClient() {
               className="page-section pt-90 pb-90 pb-xs-40 bg-dark-alpha-60 parallax-5 light-content"
               style={{
                 backgroundImage:
-                  "url(/assets/images/portfolio/nav.jpg)",
+                  "url(/assets/images/portfolio/navAmu.jpg)",
               }}
               id="home"
             >
@@ -126,7 +126,7 @@ export default function ModernPortfolioPageClient() {
                   <div className="col-lg-8 offset-lg-2">
                     <h1 className="hs-title-1 mb-0">
                       <span className="wow charsAnimIn" data-splitting="chars">
-                        <AnimatedText text="Explore the beauty of life with art photography." />
+                        <AnimatedText text={t('amu.animationTitle')} />
                       </span>
                     </h1>
                   </div>

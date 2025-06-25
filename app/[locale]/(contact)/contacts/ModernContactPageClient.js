@@ -34,7 +34,7 @@ export default function ModernContactPageClient() {
               className="page-section pt-90 pb-90 pb-xs-40 bg-dark-alpha-60 parallax-5 light-content"
               style={{
                 backgroundImage:
-                  "url(/assets/images/demo-modern/section-bg-3.jpg)",
+                  "url(/assets/images/demo-modern/navContacts.jpg)",
               }}
               id="home"
             >

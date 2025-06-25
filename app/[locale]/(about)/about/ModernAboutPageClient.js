@@ -30,7 +30,7 @@ export default function ModernAboutPageClient() {
             className="page-section pt-90 pb-90 pb-xs-40 bg-dark-alpha-60 parallax-5 light-content"
             style={{
               backgroundImage:
-                "url(/assets/images/demo-modern/section-bg-2.jpg)",
+                "url(/assets/images/demo-modern/navAbout.jpg)",
             }}
             id="home"
           >

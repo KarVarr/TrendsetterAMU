@@ -23,7 +23,7 @@ export default function GiftCardPageClient() {
         <main id="main">
           <ParallaxContainer
             className="page-section pt-90 pb-90 pb-xs-40 bg-dark-alpha-60 parallax-5 light-content"
-            style={{ backgroundImage: "url(/assets/images/demo-modern/section-bg-3.jpg)" }}
+            style={{ backgroundImage: "url(/assets/images/demo-modern/navGiftCard.jpg)" }}
             id="home"
           >
             <div className="container position-relative">
@@ -56,7 +56,101 @@ export default function GiftCardPageClient() {
 
           <section className="page-section" id="gift-card-info">
             <div className="container">
-              <p className="lead text-center">{t('gift.description')}</p>
+              {/* Title */}
+             
+              
+              {/* Terms and Conditions */}
+              <div className="section">
+                <h2>{t('gift.programTitle')}</h2>
+                <p>{t('gift.programDescription')}</p>
+              </div>
+
+              {/* General Terms */}
+              <div className="section">
+                <h2>{t('gift.generalTitle')}</h2>
+                <h4>{t('gift.generalTerms')}</h4>
+                <p>{t('gift.generalTermsDescription')}</p>
+
+                {/* Participation and Registration */}
+                <h4>{t('gift.registrationTitle')}</h4>
+                <p>{t('gift.registrationDescription')}</p>
+
+                {/* Points Earning and Usage */}
+                <h4>{t('gift.pointsTitle')}</h4>
+                <p>{t('gift.pointsDescription')}</p>
+
+                {/* Suspension or Termination of Participation */}
+                <h4>{t('gift.suspensionTitle')}</h4>
+                <ul>
+                  <li>{t('gift.suspensionPoint1')}</li>
+                  <li>{t('gift.suspensionPoint2')}</li>
+                </ul>
+              </div>
+
+              <div className="section">
+                {/* Title */}
+                <h2>{t('gift.giftCardsTitle')}</h2>
+                {/* Gift Cards Description */}
+                <p>{t('gift.giftCardsDescription')}</p>
+              </div>
+
+              <div className="section">
+                {/* Title */}
+                <h2>{t('gift.returnsAndCompensationsTitle')}</h2>
+
+                {/* Returns and Compensations Description */}
+                <p>{t('gift.returnsAndCompensationsDescription')}</p>
+
+                {/* List of conditions for returns */}
+                <h4>{t('gift.returnConditionsTitle')}</h4>
+                <ul>
+                  <li>{t('gift.returnCondition1')}</li>
+                  <li>{t('gift.returnCondition2')}</li>
+                  <li>{t('gift.returnCondition3')}</li>
+                </ul>
+
+                {/* Bonus Points Policy */}
+                <p>{t('gift.bonusPointsPolicyDescription')}</p>
+              </div>
+
+              <div className="section">
+                {/* Title */}
+                <h2>{t('gift.privacyPolicyTitle')}</h2>
+
+                {/* Privacy Policy Description */}
+                <p>{t('gift.privacyPolicyDescription')}</p>
+
+                {/* Collected Data Categories */}
+                <p>{t('gift.collectedDataDescription')}</p>
+
+                {/* Data Protection */}
+                <p>{t('gift.dataProtectionDescription')}</p>
+
+                {/* Third Party Data Sharing */}
+                <h4>{t('gift.thirdPartySharingTitle')}</h4>
+                <ul>
+                  <li>{t('gift.thirdPartySharingPoint1')}</li>
+                  <li>{t('gift.thirdPartySharingPoint2')}</li>
+                </ul>
+
+                {/* Client Rights */}
+                <p>{t('gift.clientRightsDescription')}</p>
+              </div>
+
+              <div className="section">
+                {/* Title */}
+                <h2>{t('gift.otherTermsTitle')}</h2>
+
+                {/* Other Terms Description */}
+                <p>{t('gift.otherTermsDescription')}</p>
+                <p>{t('gift.liabilityDisclaimerDescription')}</p>
+                <p>{t('gift.serviceDisruptionDescription')}</p>
+                <p>{t('gift.indirectLossesDescription')}</p>
+                <p>{t('gift.changesToTermsDescription')}</p>
+                <p>{t('gift.invalidTermsDescription')}</p>
+              </div>
+
+              {/* Image */}
               <div className="text-center mt-40">
                 <Image
                   src="/assets/images/demo-modern/smile.png"

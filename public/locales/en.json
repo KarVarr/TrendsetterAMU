@@ -55,6 +55,7 @@
   },
 
   "amu": {
+    "animationTitle": "Simplicity for people who have a life",
     "homeTitle": "Our brand",
     "homeBlock1": "At AMU, we specialize in essential everyday wear — timeless pieces that form the foundation of any modern wardrobe.",
     "homeBlock2": "Inspired by global brands like H&M, Uniqlo, Zara, and Lululemon, we aim to create clothing that blends effortless style, quality, and functionality.",
@@ -165,7 +166,42 @@
 
   "gift": {
     "title": "Gift Card",
-    "description": "Comming soon!"
+    "programTitle": "Loyalty Program and Gift Card Terms and Conditions",
+    "programDescription": "These Terms and Conditions (“Terms”) govern participation in the TRENDSETTER Á MULTIBRAND Loyalty Program and the use of Gift Cards. By enrolling in the Loyalty Program or using a Gift Card, you agree to comply with these Terms.",
+    "generalTitle": "Loyalty Program",
+    "generalTerms": "General Provisions",
+    "generalTermsDescription": "The TRENDSETTER Á MULTIBRAND Loyalty Program (the “Program”) is valid in all TRENDSETTER Á MULTIBRAND physical stores and online at trendsetteramultibrand.com. The Program is managed by TRENDSETTER Á MULTIBRAND (the “Organizer”), which reserves the right to unilaterally amend or terminate the Program or these Terms at any time without prior notice. Participation in the Program implies full and unconditional acceptance of these Terms.",
+    "registrationTitle": "Eligibility and Registration",
+    "registrationDescription": "The Program is open to all individual customers aged 18 and above. Customers are automatically enrolled in the Program upon making a purchase (in-store or online) and providing the required personal details: full name, mobile phone number, date of birth, city of residence, and email address.",
+    "pointsTitle": "Earning and Using Bonus Points",
+    "pointsDescription": "Customers earn 5% of each purchase amount in the form of bonus points (1 point = 1 AMD). Bonus points are credited immediately upon completion of a purchase and appear in the customer’s account.",
+    "suspensionTitle": "Membership Suspension or Cancellation",
+    "suspensionPoint1": "The customer violates these Terms (e.g., fraud, manipulation, or abuse of the Program); or",
+    "suspensionPoint2": "The customer remains inactive for 36 consecutive months, meaning no purchases or logins during that time.",
+    "giftCardsTitle": "Gift Cards",
+    "giftCardsDescription": "Gift Cards are available for purchase only in the Organizer’s physical stores and are not available or redeemable online. The minimum purchase value of a Gift Card is 3,000 AMD. Gift Cards are issued as physical plastic cards, available in three different designs with identical functionality. Customers may choose any design. Gift Cards are sold as standalone products and do not generate bonus points. Gift Cards may be used in full or in part to pay for in-store purchases, in combination with cash or card. The minimum payment using a Gift Card is 1 AMD. Gift Cards are valid for 12 months from the date of purchase. Lost or stolen Gift Cards will not be replaced and are considered forfeited.",
+    "returnsAndCompensationsTitle": "Returns and Refunds",
+    "returnsAndCompensationsDescription": "Purchases made using bonus points or Gift Cards are subject to the Organizer’s standard return and exchange policy.",
+    "returnConditionsTitle": "In case of return:",
+    "returnCondition1": "If bonus points were used for the purchase, the corresponding amount will be re-credited to the customer’s loyalty account.",
+    "returnCondition2": "If a Gift Card was used, the refunded amount will be added back to the same Gift Card.",
+    "returnCondition3": "If the purchase was paid by cash or card, the refund will be processed in accordance with applicable Armenian law.",
+    "bonusPointsPolicyDescription": "Bonus points are not awarded for returned purchases, even if the original transaction initially qualified for points.",
+    "privacyPolicyTitle": "Privacy and Data Protection",
+    "privacyPolicyDescription": "The Organizer processes customers’ personal data solely for the purposes of administering the Program, managing customer accounts, providing personalized offers, and enhancing the overall customer experience.",
+    "collectedDataDescription": "The categories of personal data collected may include, but are not limited to: full name, mobile phone number, email address, date of birth, city of residence, purchase history, and participation in promotions or campaigns.",
+    "dataProtectionDescription": "All personal data is processed securely and stored in accordance with applicable data protection laws of the Republic of Armenia. We implement appropriate technical and organizational measures to protect personal information against unauthorized access, loss, misuse, or disclosure.",
+    "thirdPartySharingTitle": "Personal Data Sharing with Third Parties",
+    "thirdPartySharingPoint1": "When required by applicable law, regulation, or legal process.",
+    "thirdPartySharingPoint2": "To trusted service providers acting on our behalf (e.g., SMS or email communication providers), strictly for the purposes of Program operation, and under data processing agreements that ensure confidentiality and compliance.",
+    "clientRightsDescription": "By registering for the Program, the customer expressly consents to the collection, storage, and processing of their personal data for the above-mentioned purposes. Customers have the right to request access to their data, rectify inaccurate information, or withdraw consent at any time by contacting the Organizer through the official communication channels indicated on our website. In case of consent withdrawal, participation in the Program may be suspended or terminated, as the processing of personal data is mandatory for its operation.",
+    "otherTermsTitle": "Miscellaneous",
+    "otherTermsDescription": "The Organizer is not liable for the loss, theft, damage, unauthorized use, or misuse of Gift Cards or bonus points, including where such incidents occur due to the customer’s negligence (e.g., sharing account access or failing to report a lost card).",
+    "liabilityDisclaimerDescription": "The Organizer makes reasonable efforts to ensure the availability and functionality of the Program and related digital services but does not guarantee uninterrupted or error-free operation. The Organizer shall not be held liable for technical failures, system outages, or data loss caused by events beyond its control, including force majeure, internet disruptions, or third-party service failures.",
+    "serviceDisruptionDescription": "The Organizer is not responsible for any indirect, incidental, or consequential losses arising from participation in the Program or use of Gift Cards, including but not limited to loss of data, lost savings, or missed promotional opportunities.",
+    "indirectLossesDescription": "The Organizer reserves the right to amend, suspend, or terminate these Terms, the Program, or the issuance/use of Gift Cards at any time, at its sole discretion. Updated Terms will be published on the official website. Continued participation in the Program after changes are published constitutes acceptance of the updated Terms.",
+    "changesToTermsDescription": "If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall remain in full force and effect.",
+    "invalidTermsDescription": "These Terms are governed by the laws of the Republic of Armenia. Any disputes, claims, or legal proceedings arising out of or relating to the Program, Gift Cards, or these Terms shall be exclusively resolved by the competent courts of the Republic of Armenia, in accordance with Armenian procedural law."
   }
 
   
