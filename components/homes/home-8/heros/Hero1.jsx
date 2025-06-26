@@ -81,7 +81,7 @@ export default function Hero1() {
         </p> */}
 
         <div
-          className="hs-line d-none d-sm-block wow fadeIn parallax-mousemove"
+          className="hs-line d-none d-lg-block wow fadeIn parallax-mousemove"
           data-offset={100}
           data-wow-delay="0.8s"
           style={{ width: '500px', height: '500px', position: 'absolute' }}
