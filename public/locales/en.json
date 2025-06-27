@@ -165,7 +165,7 @@
   },
 
   "gift": {
-    "title": "Gift Card",
+    "title": "LOYALTY PROGRAM AND GIFT CARD",
     "programTitle": "Loyalty Program and Gift Card Terms and Conditions",
     "programDescription": "These Terms and Conditions (“Terms”) govern participation in the TRENDSETTER Á MULTIBRAND Loyalty Program and the use of Gift Cards. By enrolling in the Loyalty Program or using a Gift Card, you agree to comply with these Terms.",
     "generalTitle": "Loyalty Program",
@@ -201,7 +201,8 @@
     "serviceDisruptionDescription": "The Organizer is not responsible for any indirect, incidental, or consequential losses arising from participation in the Program or use of Gift Cards, including but not limited to loss of data, lost savings, or missed promotional opportunities.",
     "indirectLossesDescription": "The Organizer reserves the right to amend, suspend, or terminate these Terms, the Program, or the issuance/use of Gift Cards at any time, at its sole discretion. Updated Terms will be published on the official website. Continued participation in the Program after changes are published constitutes acceptance of the updated Terms.",
     "changesToTermsDescription": "If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall remain in full force and effect.",
-    "invalidTermsDescription": "These Terms are governed by the laws of the Republic of Armenia. Any disputes, claims, or legal proceedings arising out of or relating to the Program, Gift Cards, or these Terms shall be exclusively resolved by the competent courts of the Republic of Armenia, in accordance with Armenian procedural law."
+    "invalidTermsDescription": "These Terms are governed by the laws of the Republic of Armenia. Any disputes, claims, or legal proceedings arising out of or relating to the Program, Gift Cards, or these Terms shall be exclusively resolved by the competent courts of the Republic of Armenia, in accordance with Armenian procedural law.",
+    "homeButton": "To the Home"
   }
 
   

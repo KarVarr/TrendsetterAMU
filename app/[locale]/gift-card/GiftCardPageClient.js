@@ -44,7 +44,7 @@ export default function GiftCardPageClient() {
               </div>
               <div className="row">
                 <div className="col-12 text-center">
-                  <h1 className="hs-title-5 font-alt overflow-hidden mb-0">
+                  <h1 className="hs-title-4 font-alt overflow-hidden mb-0">
                     <span className="d-block wow fadeRotateIn">
                       {t('gift.title')}
                     </span>
@@ -150,15 +150,28 @@ export default function GiftCardPageClient() {
                 <p>{t('gift.invalidTermsDescription')}</p>
               </div>
 
-              {/* Image */}
-              <div className="text-center mt-40">
-                <Image
-                  src="/assets/images/demo-modern/smile.png"
-                  width={250}
-                  height={250}
-                  alt="Gift Card"
-                />
+              {/* Back to home button */}
+              <div className="row justify-content-center mt-5 mt-md-6">
+              <div className="col-auto text-center">
+                <Link
+                  href={`/${locale}/home`}
+                  className="btn btn-mod btn-white btn-circle btn-ellipse"
+                  data-btn-animate="ellipse"
+                >
+                  <span className="btn-ellipse-inner">
+                    <span className="btn-ellipse-unhovered">
+                      {t('gift.homeButton')}{" "}
+                      <i className="icon-arrow-right2 size-14" aria-hidden="true"></i>
+                    </span>
+                    <span className="btn-ellipse-hovered" aria-hidden="true">
+                      {t('gift.homeButton')}{" "}
+                      <i className="icon-arrow-right2 size-14" aria-hidden="true"></i>
+                    </span>
+                  </span>
+                </Link>
               </div>
+            </div>
+              
             </div>
           </section>
         </main>

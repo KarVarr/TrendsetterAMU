@@ -572,13 +572,13 @@ export default function Home8({
       >
         <Marquee />
       </div>
-      <section
+      {/* <section
         className={`page-section pt-0 pb-0  ${
           dark ? "bg-dark-1 light-content" : ""
         } `}
       >
         <Testimonials />
-      </section>
+      </section> */}
       <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""

@@ -154,9 +154,9 @@ export default function ModernAboutPageClient() {
             <Marquee />
           </div>
 
-          <section className={`page-section pt-0 ${dark ? "bg-dark-1 light-content" : ""}`}>
+          {/* <section className={`page-section pt-0 ${dark ? "bg-dark-1 light-content" : ""}`}>
             <Testimonials />
-          </section>
+          </section> */}
         </main>
 
         <footer className="footer-1 bg-dark-1 light-content">
