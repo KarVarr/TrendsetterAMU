@@ -5,7 +5,7 @@ import Service from "./Service";
 import Portfolio from "./Portfolio";
 import Blog from "./Blog";
 import Marquee from "./Marquee";
-import Testimonials from "./Testimonials";
+// import Testimonials from "./Testimonials";
 import Contact from "./Contact";
 import Link from "next/link";
 import Accordion from "./Accordion";

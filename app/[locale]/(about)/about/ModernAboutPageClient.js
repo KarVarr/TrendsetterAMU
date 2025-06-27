@@ -2,7 +2,7 @@
 import Footer2 from "@/components/footers/Footer2";
 import Accordion from "@/components/homes/home-8/Accordion";
 import Marquee from "@/components/homes/home-8/Marquee";
-import Testimonials from "@/components/homes/home-8/Testimonials";
+// import Testimonials from "@/components/homes/home-8/Testimonials";
 import HeaderWithLocale from "@/components/headers/HeaderWithLocale";
 import Image from "next/image";
 import Link from "next/link";
