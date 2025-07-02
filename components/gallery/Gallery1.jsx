@@ -33,6 +33,9 @@ export default function Gallery1({
                         width={900}
                         height={1200}
                         alt="Image Description"
+                        style={{
+                          borderRadius: '20px',
+                        }}
                       />
                     </a>
                   </div>

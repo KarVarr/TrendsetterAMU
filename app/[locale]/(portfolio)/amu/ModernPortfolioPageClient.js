@@ -138,7 +138,7 @@ export default function ModernPortfolioPageClient() {
               <>
                 {/* Section */}
                 <section className="page-section pt-0">
-                  <Gallery1 itemsLength={16} parantClass="col-lg-8 offset-lg-2" />
+                  <Gallery1 itemsLength={4} parantClass="col-lg-8 offset-lg-2" />
                 </section>
                 {/* End Section */}
                 {/* Divider */}

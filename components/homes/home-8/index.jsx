@@ -116,11 +116,14 @@ export default function Home8({
                   </div>
                   <div className="section-image-behind">
                     <Image
-                      src="/assets/images/demo-modern/shoes.jpg"
+                      src="/assets/images/demo-modern/shopMain.jpg"
                       loading="lazy"
                       width={820}
                       height={1270}
                       alt="Image Description"
+                      style={{
+                        borderRadius: '20px',
+                      }}
                     />
                   </div>
                 </div>

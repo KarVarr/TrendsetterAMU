@@ -107,7 +107,7 @@ export default function ModernAboutPageClient() {
 
               <div className="local-scroll text-center">
                 <Link
-                  href={`/${locale}/modern-services`}
+                  href={`/${locale}/shop`}
                   className="btn btn-mod btn-ellipse"
                   data-btn-animate="ellipse"
                 >
@@ -143,6 +143,9 @@ export default function ModernAboutPageClient() {
                       width="820"
                       height="1270"
                       alt="Image Description"
+                      style={{
+                        borderRadius: '20px',
+                      }}
                     />
                   </div>
                 </div>
