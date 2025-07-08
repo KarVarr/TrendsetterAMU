@@ -2,7 +2,7 @@
   "nav": {
       "home": "Home",
       "about": "About",
-      "shop": "Shop",
+      "shop": "Store",
       "amu": "AMU",
       "contacts": "Contacts",
       "letsTalk": "Let's talk"
@@ -25,7 +25,7 @@
       "ourMission": "To make stylish, high-quality clothing accessible to everyone. Trendsetter is a flexible and ambitious brand, currently building a strong team and actively expanding across the region. We believe fashion should be simple, accessible, and inspiring — every single day.",
       "establishTitle": "ESTABLISHED",
       "establishIn": " IN",
-      "buttonViewStore": "View shop",
+      "buttonViewStore": "View store",
       "faq": [
         {
           "question": "Our Story",
@@ -40,11 +40,11 @@
 
   "shop": {
     "homeTitle": "Your Access to Global Fashion",
-    "homeSubtitle": "Our Shop",
-    "homeButtonToTheShop": "To the shop",
+    "homeSubtitle": "Our Store",
+    "homeButtonToTheShop": "To the store",
     "title1": "Our",
-    "title2": "Shop",
-    "title3": "Our Shop",
+    "title2": "Store",
+    "title3": "Our Store",
     "block1": "Trendsetter Á Multibrand is a multibrand fashion store bringing together the world’s most loved clothing labels — from H&M to Reserved, Sinsay, and more.",
     "block2": "We curate stylish, affordable, and ready-to-wear pieces that fit your everyday life. Clusively available on Wildberries since 2023 — and now expanding offline in Armenia.",
     "block3": "Global fashion, local access. Trendsetter makes it easy to wear what you love.",
