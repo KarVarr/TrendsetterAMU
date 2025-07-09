@@ -88,7 +88,7 @@ export default function ModernPortfolioPageClient() {
                 </div>
                 <div className="row">
                   <div className="col-9 col-sm-8">
-                    <h1 className="hs-title-5 font-alt overflow-hidden mb-0">
+                    <h1 className="hs-title-5 font-alt overflow-hidden mb-0" style={{ paddingTop: '15px' }}>
                       <span className="d-block wow fadeRotateIn">
                         {" "}
                         {t('amu.title')} {" "}

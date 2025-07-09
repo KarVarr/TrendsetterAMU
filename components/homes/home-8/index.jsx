@@ -412,8 +412,8 @@ export default function Home8({
           </div>
           <div className="row">
             <div className="col-10 col-sm-9">
-              <h3 className="hs-title-5 font-alt overflow-hidden mb-100 mb-md-40">
-                <span className="d-block wow fadeRotateIn"> AMU </span>
+              <h3 className="hs-title-5 font-alt overflow-hidden mb-100 mb-md-40" style={{ paddingTop: '10px' }}>
+                <span className="d-block wow fadeRotateIn"> ÁMU </span>
                 {/* <span className="d-block text-end wow fadeRotateIn">
                   {" "}
                   Designe{" "}

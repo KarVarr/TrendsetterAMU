@@ -3,9 +3,9 @@
       "home": "Home",
       "about": "About",
       "shop": "Store",
-      "amu": "AMU",
+      "amu": "ÁMU",
       "contacts": "Contacts",
-      "letsTalk": "Let's talk"
+      "letsTalk": "CONTACT US"
   },
 
   "home": {
@@ -20,8 +20,8 @@
       "title3": "About Us",
       "titleOurStory": "OUR STORY",
       "titleOutMission": "OUR MISSION",
-      "mainStory": "TRENDSETTER is an international fashion startup developing a multibrand store offering clothing, footwear, and accessories. Our selection features some of the most popular global brands, including H&M, Reserved, Sinsay, House, and more.",
-      "ourStory": "Since 2023, we’ve been successfully selling on Wildberries, with exclusive supply partnerships. In 2025, we’re stepping into offline retail with the opening of our first store in Armenia.",
+      "mainStory": "TRENDSETTER is an international fashion startup developing a multibrand store offering clothing, footwear, and accessories. Our selection features some of the most popular global brands, including H&M, Reserved, Sinsay, House, and others.",
+      "ourStory": "Since 2023, we’ve been successfully selling on Wildberries, with exclusive supply partnerships. In 2025, we’re stepping into offline retail with the opening of our first store in Yerevan, Armenia.",
       "ourMission": "To make stylish, high-quality clothing accessible to everyone. Trendsetter is a flexible and ambitious brand, currently building a strong team and actively expanding across the region. We believe fashion should be simple, accessible, and inspiring — every single day.",
       "establishTitle": "ESTABLISHED",
       "establishIn": " IN",
@@ -45,11 +45,11 @@
     "title1": "Our",
     "title2": "Store",
     "title3": "Our Store",
-    "block1": "Trendsetter Á Multibrand is a multibrand fashion store bringing together the world’s most loved clothing labels — from H&M to Reserved, Sinsay, and more.",
-    "block2": "We curate stylish, affordable, and ready-to-wear pieces that fit your everyday life. Clusively available on Wildberries since 2023 — and now expanding offline in Armenia.",
+    "block1": "Trendsetter Á Multibrand is a multibrand fashion store bringing together the world’s most loved clothing brands, such as H&M, Reserved, Sinsay and others.",
+    "block2": "We curate stylish, affordable, and ready-to-wear range that fit your everyday life. Clusively available on Wildberries since 2023 — and now expanding offline in Armenia.",
     "block3": "Global fashion, local access. Trendsetter makes it easy to wear what you love.",
     "block4": "We are located at:",
-    "block5": "Underground Street on North Avenue Working hours 10:00-22:00 Tel. 012 202 202 North avenue 6/2, Yerevan, Armenia 0001",
+    "block5": "Underground Street on North Avenue Working hours 10:00-22:00 Tel. 012 202 202 North avenue 6/2, Yerevan, Armenia 0001.",
     "textForProposal": "Write to us if you have any questions!",
     "buttonForProposal": "Send message"
   },
@@ -57,14 +57,14 @@
   "amu": {
     "animationTitle": "Simplicity for people who have a life",
     "homeTitle": "Our brand",
-    "homeBlock1": "At AMU, we specialize in essential everyday wear — timeless pieces that form the foundation of any modern wardrobe.",
+    "homeBlock1": "At ÁMU, we specialize in essential everyday wear — timeless pieces that form the foundation of any modern wardrobe.",
     "homeBlock2": "Inspired by global brands like H&M, Uniqlo, Zara, and Lululemon, we aim to create clothing that blends effortless style, quality, and functionality.",
     "homeBlock3": "We focus on well-crafted basics that reflect current streetwear trends while staying true to minimalism and practicality.",
     "homeBlock4": "Our current collection includes:",
     "homeBlock5": "All items come in solid colors, free from prints or patterns — versatile pieces designed to stay relevant season after season. We provide detailed size guides, including plus-size options, to ensure a great fit and inclusive sizing for everyone.",
-    "homeBlock6": "At AMU, we believe in clean, uncompromising style — in wardrobe essentials that move with you and fit every moment of your life.",
+    "homeBlock6": "At ÁMU, we believe in clean, uncompromising style — in wardrobe essentials that move with you and fit every moment of your life.",
     "homeButtonToTheAMU": "More",
-    "title": "AMU",
+    "title": "ÁMU",
     "title1": "Our",
     "title2": "Brand",
     "block1TopLeftText": "SIMPLICITY FOR PEOPLE WHO HAVE A LIFE",
@@ -91,8 +91,8 @@
     "block3Well": "Well. One more thing.",
     "block3WeAreReady": "We’re ready to launch our own",
     "block3ClothingBrand": "Clothing Brand.",
-    "block4BecauseItsAMU": "BECAUSE IT’S AMU!",
-    "block5AMUFocuses": "AMU focuses on basic bestsellers. Inspired by the brands such as H&M, Uniqlo, Zara and Lululemon, we are committed to delivering essential yet stylish clothing that combines uncompromising quality with streetwear trends. Our current product needs include:",
+    "block4BecauseItsAMU": "BECAUSE IT’S ÁMU!",
+    "block5AMUFocuses": "ÁMU focuses on basic bestsellers. Inspired by the brands such as H&M, Uniqlo, Zara and Lululemon, we are committed to delivering essential yet stylish clothing that combines uncompromising quality with streetwear trends. Our current product needs include:",
     "block5Tshirts": "T-shirts",
     "block5Sweatshirts": "Sweatshirts",
     "block5Hoodies": "Hoodies",
@@ -116,7 +116,7 @@
 
   "blog": {
     "homeEnterYourEmain": "Enter your email",
-    "homeButtonSubscribe1": "Subscribe For Updates",
+    "homeButtonSubscribe1": "Subscribe Now",
     "homeButtonSubscribe2": "Subscribe Now",
     "homePrivicy": " By sending the form you agree to the"
   },
