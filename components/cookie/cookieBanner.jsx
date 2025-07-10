@@ -56,7 +56,7 @@ export default function CookieBanner() {
         onMouseEnter={e => e.currentTarget.style.background = 'linear-gradient(90deg, #ae2e28 0%, #192ed5 100%)'}
         onMouseLeave={e => e.currentTarget.style.background = 'linear-gradient(90deg, #192ed5 0%, #ae2e28 100%)'}
       >
-        Принять
+        {t('cookie.button')}
       </button>
     </div>
   );

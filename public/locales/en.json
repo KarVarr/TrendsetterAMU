@@ -150,7 +150,8 @@
   },
 
   "cookie": {
-    "banner": "This website uses cookies to improve functionality and personalize your experience. By continuing to use the site, you agree to the processing of your data."
+    "banner": "This website uses cookies to improve functionality and personalize your experience. By continuing to use the site, you agree to the processing of your data.",
+    "button": "Ok"
   },
 
   "pageNotFound": {
