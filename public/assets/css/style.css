@@ -3105,6 +3105,7 @@ a.bg-video-button-pause {
   width: 160%;
   height: 520%;
   background: var(--color-dark-1);
+  background: var(--color-AMUblue-1);
   border-radius: 100%;
 }
 .edge-top-figure-2 {
@@ -4548,7 +4549,8 @@ a.logo:hover {
   background-color: var(--color-gray-light-2);
 }
 .bg-dark-1 {
-  background-color: var(--color-dark-1) !important;
+  /* background-color: var(--color-dark-1) !important; */
+  background-color: var(--color-AMUblue-1) !important;
 }
 .bg-dark-2 {
   background-color: var(--color-dark-2) !important;
