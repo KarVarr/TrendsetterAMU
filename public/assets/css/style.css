@@ -175,7 +175,7 @@ Primary use: Multipurpose Template
   --section-padding-y: 120px;
   --menu-bar-height: 85px;
   --menu-bar-height-scrolled: 65px;
-  --color-AMUblue-1: #192ED5;
+  --color-AMUblue-1: #0F1C80;
   --color-dark-1: #010101;
   --color-dark-2: #171717;
   --color-dark-3: #272727;
@@ -3947,7 +3947,8 @@ a.logo:hover {
   top: 100%;
   left: 0;
   padding: 0;
-  background: rgba(35, 35, 35, 0.9927);
+  /* background: rgba(35, 35, 35, 0.9927); */
+  background: var(--color-AMUblue-1);
   border-radius: 0 0 3px 3px;
 }
 .light-content .mn-sub {
@@ -4104,7 +4105,8 @@ a.logo:hover {
   width: 100%;
   float: none;
   overflow-x: hidden;
-  background: rgba(18, 18, 18, 0.995);
+  background: var(--color-AMUblue-1);
+  /* background: rgba(18, 18, 18, 0.995); */
 }
 .mobile-on .desktop-nav > ul {
   overflow-y: auto;
