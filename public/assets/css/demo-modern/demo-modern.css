@@ -23,7 +23,8 @@
   --font-alt: "Clash Grotesk", sans-serif;
   --container-width: 1420px;
   --section-padding-y: 180px;
-  --color-dark-1: #010101;
+  /* --color-dark-1: #010101; */
+  --color-dark-1: #222222;
   --color-gray-light-1: #f5f5f5;
   --color-gray-light-2: #f7f7f7;
   --border-radius-default: 20px;

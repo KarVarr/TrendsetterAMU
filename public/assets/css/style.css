@@ -177,6 +177,7 @@ Primary use: Multipurpose Template
   --menu-bar-height: 85px;
   --menu-bar-height-scrolled: 65px;
   --color-AMUblue-1: #112092;
+  --color-darkText-1: #1a1a1a;
   --color-dark-1: #010101;
   --color-dark-2: #171717;
   --color-dark-3: #272727;
@@ -4327,7 +4328,8 @@ a.logo:hover {
   display: none;
 }
 .main-nav.dark {
-  background-color: rgba(10, 10, 10, 0.905);
+  /* background-color: rgba(10, 10, 10, 0.905); */
+  background-color: var(--color-AMUblue-1);
   box-shadow: none;
 
   -webkit-box-shadow: none;
