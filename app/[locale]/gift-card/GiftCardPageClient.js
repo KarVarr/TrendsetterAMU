@@ -79,8 +79,14 @@ export default function GiftCardPageClient() {
                 <h4>{t('gift.pointsTitle')}</h4>
                 <p>{t('gift.pointsDescription')}</p>
 
+                {/* Restrictions on the Use of Bonus Points */}
+                <h4>{t('gift.restrictions')}</h4>
+                <p>{t('gift.restrictionsDescription')}</p>
+                
+
                 {/* Suspension or Termination of Participation */}
                 <h4>{t('gift.suspensionTitle')}</h4>
+                <p>{t('gift.suspensionDescription')}</p>
                 <ul>
                   <li>{t('gift.suspensionPoint1')}</li>
                   <li>{t('gift.suspensionPoint2')}</li>
