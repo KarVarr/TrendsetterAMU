@@ -6,8 +6,8 @@ export default function PrivacyPolicyText() {
     {/* <h1>🇷🇺 Политика конфиденциальности и условия использования</h1> */}
     
       <p>This Privacy Policy describes the policies and procedures adopted by<br/>
-      “TRENDSETTER” CJSC regarding the collection, use and disclosure of information<br/>
-      about clients when using the services and website offered by “TRENDSETTER” CJSC,<br/>
+      "INLALALAND" CJSC regarding the collection, use and disclosure of information<br/>
+      about clients when using the services and website offered by "INLALALAND" CJSC,<br/>
       defining the client’s rights to the confidentiality of information and the legal norms for the<br/>
       protection of these rights.</p>
 
@@ -26,7 +26,7 @@ export default function PrivacyPolicyText() {
       to use the Company’s Services, including the company or other legal entity, on whose<br/>
       behalf the individual acts for the purpose of using the Services.</li>
       
-      <li>Company: “TRENDSETTER” CJSC (36/4 Y. Koghbatsi, Yerevan, RA).</li>
+      <li>Company: "INLALALAND" CJSC (36/4 Y. Koghbatsi, Yerevan, RA, 0002).</li>
       
       <li>Website: Official website of the Company: https://www.trendsetteramultibrand.com</li>
       
