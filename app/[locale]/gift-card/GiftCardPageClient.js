@@ -57,7 +57,9 @@ export default function GiftCardPageClient() {
           <section className="page-section" id="gift-card-info">
             <div className="container">
               {/* Title */}
-             
+              <div className="section">
+                <h2>{t('gift.companyTitle')}</h2>
+              </div>
               
               {/* Terms and Conditions */}
               <div className="section">
