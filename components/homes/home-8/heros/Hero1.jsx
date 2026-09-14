@@ -18,10 +18,10 @@ export default function Hero1() {
               className="hs-image-5 wow fadeInRight"
               data-wow-delay="0.8s"
               data-wow-offset={0}
-              src="/assets/images/demo-modern/logo-white.svg"
-              width={1200}
-              height={1200}
-              alt="Image Description"
+              src="/assets/images/logo-trendsetter.svg"
+              width={1134}
+              height={84}
+              alt="Trendsetter"
             />{" "}
             {/* TRENDSETTER */}
             
@@ -84,7 +84,7 @@ export default function Hero1() {
           className="hs-line d-none d-lg-block wow fadeIn parallax-mousemove"
           data-offset={100}
           data-wow-delay="0.8s"
-          style={{ width: '500px', height: '500px', position: 'absolute' }}
+          style={{ width: '500px', height: '500px', position: 'absolute', bottom: 'auto', top: '100%', right: '-10%' }}
         >
           <Image
             src="/assets/images/demo-modern/smile.png"
@@ -118,7 +118,7 @@ export default function Hero1() {
       <div className="hs-social left wow fadeInUp" data-wow-offset={0}>
           {/* Instagram */}
           <a
-            href="https://www.instagram.com/trendsetter.a.multibrand/"
+            href="https://www.instagram.com/trendsetter_armenia/"
             className="hs-social-link"
             target="_blank"
             rel="noopener noreferrer"
@@ -134,7 +134,7 @@ export default function Hero1() {
 
           {/* Telegram */}
           <a
-            href="https://t.me/trendsetteramultibrand"
+            href="https://t.me/trendsetterarmenia"
             className="hs-social-link"
             target="_blank"
             rel="noopener noreferrer"

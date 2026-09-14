@@ -68,7 +68,7 @@ export default function Contact() {
             <div>
                 {/* Instagram */}
                 <a
-                  href="https://www.instagram.com/trendsetter.a.multibrand/"
+                  href="https://www.instagram.com/trendsetter_armenia/"
                   className="hs-social-link d-inline-flex me-1"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -84,7 +84,7 @@ export default function Contact() {
 
                 {/* Telegram */}
                 <a
-                  href="https://t.me/trendsetteramultibrand"
+                  href="https://t.me/trendsetterarmenia"
                   className="hs-social-link d-inline-flex me-1"
                   target="_blank"
                   rel="noopener noreferrer"

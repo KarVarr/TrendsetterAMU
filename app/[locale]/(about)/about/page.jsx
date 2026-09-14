@@ -364,9 +364,9 @@ export async function generateMetadata({ params }) {
   };
 
   const descriptions = {
-    en: "Trendsetter Á Multibrand is a multibrand fashion store",
-    ru: "Trendsetter Á Multibrand - мультибрендовый fashion-ритейл",
-    am: "Trendsetter Á Multibrand-ը բազմաբրենդային fashion խանութ է",
+    en: "Trendsetter is a multibrand fashion store",
+    ru: "Trendsetter - мультибрендовый fashion-ритейл",
+    am: "Trendsetter-ը բազմաբրենդային fashion խանութ է",
   };
 
   return {

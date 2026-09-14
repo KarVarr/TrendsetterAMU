@@ -39,17 +39,17 @@ export default function Header8({ links }) {
       <div className="nav-logo-wrap local-scroll">
         <a href="#top" className="logo">
           <Image
-            src="/assets/images/demo-modern/logo-dark.svg"
-            alt="Your Company Logo"
-            width={84}
-            height={33}
+            src="/assets/images/logo-trendsetter.svg"
+            alt="Trendsetter"
+            width={176}
+            height={13}
             className="light-mode-logo"
           />
           <Image
-            src="/assets/images/demo-modern/logo-white.svg"
-            alt="Your Company Logo"
-            width={84}
-            height={33}
+            src="/assets/images/logo-trendsetter.svg"
+            alt="Trendsetter"
+            width={176}
+            height={13}
             className="dark-mode-logo"
           />
         </a>

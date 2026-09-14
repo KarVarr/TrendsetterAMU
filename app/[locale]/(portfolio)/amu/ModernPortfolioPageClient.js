@@ -8,7 +8,7 @@ import ParallaxContainer from "@/components/common/ParallaxContainer";
 import HeaderWithLocale from "@/components/headers/HeaderWithLocale";
 
 // import dynamic from "next/dynamic";
-// import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link"
 import { useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
@@ -90,8 +90,13 @@ export default function ModernPortfolioPageClient() {
                   <div className="col-9 col-sm-8">
                     <h1 className="hs-title-5 font-alt overflow-hidden mb-0" style={{ paddingTop: '15px' }}>
                       <span className="d-block wow fadeRotateIn">
-                        {" "}
-                        {t('amu.title')} {" "}
+                        <Image
+                          src="/assets/images/logo-amunce.svg"
+                          alt="AMUNCE"
+                          width={631}
+                          height={89}
+                          style={{ width: 'auto', height: '0.75em', maxWidth: '100%' }}
+                        />
                       </span>
                       
                       {/* <span className="d-block text-end wow fadeRotateIn">

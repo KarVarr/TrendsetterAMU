@@ -8,9 +8,9 @@ import HeaderWithLocale from "@/components/headers/HeaderWithLocale";
 
 export const metadata = {
   title:
-    "Trendsetter ",
+    "Trendsetter",
   description:
-    "Á Multibrand",
+    "Trendsetter is a multibrand fashion store bringing together the world's most loved clothing labels — from H&M to Reserved, Sinsay, and more.",
 };
 export default function Home8MainDemoMultiPage() {
   return (

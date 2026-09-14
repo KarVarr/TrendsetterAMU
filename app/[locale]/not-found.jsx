@@ -21,17 +21,17 @@ export default function MainAboutPage1() {
                 <div className="nav-logo-wrap local-scroll">
                   <Link href={`/`} className="logo">
                     <Image
-                      src="/assets/images/demo-modern/logo-dark.svg"
-                      alt="Your Company Logo"
-                      width={105}
-                      height={34}
+                      src="/assets/images/logo-trendsetter.svg"
+                      alt="Trendsetter"
+                      width={203}
+                      height={15}
                       className="logo-white"
                     />
                     <Image
-                      src="/assets/images/demo-modern/logo-dark.svg"
-                      alt="Your Company Logo"
-                      width={105}
-                      height={34}
+                      src="/assets/images/logo-trendsetter.svg"
+                      alt="Trendsetter"
+                      width={203}
+                      height={15}
                       className="logo-dark"
                     />
                   </Link>

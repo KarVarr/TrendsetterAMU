@@ -155,7 +155,7 @@ export default function Blog() {
               </h2>
               <div>
                 <a
-                  href="https://t.me/trendsetteramultibrand"
+                  href="https://t.me/trendsetterarmenia"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-mod btn-border btn-medium btn-circle text-nowrap"

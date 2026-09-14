@@ -11,11 +11,21 @@ export default function Marquee() {
           <div aria-hidden="true">M&S</div>
           <div aria-hidden="true">SINSAY</div>
           <div aria-hidden="true">RESERVED</div>
+          <div aria-hidden="true">Champion</div>
+          <div aria-hidden="true">Lyle&Scott</div>
+          <div aria-hidden="true">ASOS</div>
+          <div aria-hidden="true">DKNY</div>
+          <div aria-hidden="true">Moroshka</div>
           <div aria-hidden="true">& more</div>
           <div aria-hidden="true">H&M</div>
           <div aria-hidden="true">M&S</div>
           <div aria-hidden="true">SINSAY</div>
           <div aria-hidden="true">RESERVED</div>
+          <div aria-hidden="true">Champion</div>
+          <div aria-hidden="true">Lyle&Scott</div>
+          <div aria-hidden="true">ASOS</div>
+          <div aria-hidden="true">DKNY</div>
+          <div aria-hidden="true">Moroshka</div>
           <div aria-hidden="true">& more</div>
         </div>
       </div>

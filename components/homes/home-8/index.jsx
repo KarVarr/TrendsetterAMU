@@ -413,7 +413,15 @@ export default function Home8({
           <div className="row">
             <div className="col-10 col-sm-9">
               <h3 className="hs-title-5 font-alt overflow-hidden mb-100 mb-md-40" style={{ paddingTop: '10px' }}>
-                <span className="d-block wow fadeRotateIn"> ÁMU </span>
+                <span className="d-block wow fadeRotateIn">
+                  <Image
+                    src="/assets/images/logo-amunce-dark.svg"
+                    alt="AMUNCE"
+                    width={631}
+                    height={89}
+                    style={{ width: 'auto', height: '0.75em', maxWidth: '100%' }}
+                  />
+                </span>
                 {/* <span className="d-block text-end wow fadeRotateIn">
                   {" "}
                   Designe{" "}

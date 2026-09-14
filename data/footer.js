@@ -13,11 +13,11 @@ export const footerLinks2 = [
 
 export const socialLinks = [
   {
-    href: "https://instagram.com/trendsetter.a.multibrand/",
+    href: "https://www.instagram.com/trendsetter_armenia/",
     text: "Instagram",
   },
   {
-    href: "https://t.me/trendsetteramultibrand",
+    href: "https://t.me/trendsetterarmenia",
     text: "Telegram",
   },
   {
