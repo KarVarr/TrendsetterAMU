@@ -1,0 +1,80 @@
+name: Build and publish Docker image
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+env:
+  IMAGE_NAME: ghcr.io/karvarr/trendsetteramu
+  VDS_HOST: 5.35.122.23
+  VDS_USER: karen
+  CONTAINER_NAME: trendsetter-web
+  HOST_PORT: 8090
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          build-args: |
+            NEXT_PUBLIC_YANDEX_MAPS_API_KEY=${{ secrets.NEXT_PUBLIC_YANDEX_MAPS_API_KEY }}
+          tags: |
+            ${{ env.IMAGE_NAME }}:latest
+            ${{ env.IMAGE_NAME }}:${{ github.sha }}
+
+  deploy:
+    name: Deploy on VDS
+    needs: build-and-push
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pull & restart via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ env.VDS_HOST }}
+          username: ${{ env.VDS_USER }}
+          key: ${{ secrets.VDS_SSH_KEY }}
+          command_timeout: 10m
+          script: |
+            set -e
+
+            echo "=== Pulling image ==="
+            docker pull ${{ env.IMAGE_NAME }}:latest
+
+            echo "=== Replacing container ==="
+            docker rm -f ${{ env.CONTAINER_NAME }} 2>/dev/null || true
+
+            docker run -d \
+              --name ${{ env.CONTAINER_NAME }} \
+              --restart unless-stopped \
+              -p ${{ env.HOST_PORT }}:3000 \
+              -e SMTP_HOST="${{ secrets.SMTP_HOST }}" \
+              -e SMTP_PORT="${{ secrets.SMTP_PORT }}" \
+              -e SMTP_SECURE="${{ secrets.SMTP_SECURE }}" \
+              -e SMTP_USER="${{ secrets.SMTP_USER }}" \
+              -e SMTP_PASS="${{ secrets.SMTP_PASS }}" \
+              ${{ env.IMAGE_NAME }}:latest
+
+            echo "=== Status ==="
+            docker ps --filter "name=${{ env.CONTAINER_NAME }}"
+
+            echo "=== Health check ==="
+            sleep 3
+            curl -sf http://localhost:${{ env.HOST_PORT }}/en/home > /dev/null && echo "Site OK" || echo "Site NOT responding"
