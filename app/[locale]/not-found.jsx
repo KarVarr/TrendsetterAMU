@@ -25,6 +25,7 @@ export default function MainAboutPage1() {
                       alt="Trendsetter"
                       width={203}
                       height={15}
+                      unoptimized
                       className="logo-white"
                     />
                     <Image
@@ -32,6 +33,7 @@ export default function MainAboutPage1() {
                       alt="Trendsetter"
                       width={203}
                       height={15}
+                      unoptimized
                       className="logo-dark"
                     />
                   </Link>

@@ -43,6 +43,7 @@ export default function Header8({ links }) {
             alt="Trendsetter"
             width={176}
             height={13}
+            unoptimized
             className="light-mode-logo"
           />
           <Image
@@ -50,6 +51,7 @@ export default function Header8({ links }) {
             alt="Trendsetter"
             width={176}
             height={13}
+            unoptimized
             className="dark-mode-logo"
           />
         </a>

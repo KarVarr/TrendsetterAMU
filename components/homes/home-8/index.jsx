@@ -419,6 +419,7 @@ export default function Home8({
                     alt="AMUNCE"
                     width={631}
                     height={89}
+                    unoptimized
                     style={{ width: 'auto', height: '0.75em', maxWidth: '100%' }}
                   />
                 </span>

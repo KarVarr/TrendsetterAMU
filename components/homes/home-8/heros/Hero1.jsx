@@ -22,6 +22,7 @@ export default function Hero1() {
               width={1134}
               height={84}
               alt="Trendsetter"
+              unoptimized
             />{" "}
             {/* TRENDSETTER */}
             

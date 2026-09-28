@@ -9,6 +9,7 @@ const withNextIntl = require('next-intl/plugin')('./next-intl.config.js');
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'standalone',
+  agentRules: false,
   async redirects() {
     return [
       {
